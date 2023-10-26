@@ -1,9 +1,7 @@
 @import url('../../Helper/Reset.css');
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
-h2,h3,h4,p,li{
-    font-family:'Montserrat' ;
-}
+
 
 @media (max-width: 767px){
 .servicios {
@@ -27,6 +25,8 @@ h2,h3,h4,p,li{
     color: #ff0000;
     margin-top: 20px;
     text-transform: uppercase;
+    font-family: 'Montserrat';
+
     
 }
 .servicios__cards{
@@ -65,6 +65,8 @@ h2,h3,h4,p,li{
     text-align: center;
     margin-top: 20px;
     font-size: 25px;
+    font-family: 'Montserrat';
+
 
 }
 .card__body{
@@ -79,6 +81,8 @@ h2,h3,h4,p,li{
     list-style:decimal;
     font-weight: 500;
     font-size: 15px;
+    font-family: 'Montserrat';
+
 }
 
 .card-red{
@@ -112,6 +116,8 @@ h2,h3,h4,p,li{
     margin-top: 20px;
     font-weight: bolder;
     font-size: 25px;
+    font-family: 'Montserrat';
+
 }
 .card__body-black{
     display: flex;
@@ -141,6 +147,14 @@ h2,h3,h4,p,li{
     display: flex;
     flex-flow: column wrap;
     color: #fff;
+    background:url('../../../src//img/portrait.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    min-height: 30vh;
+    margin-top: 100px;
+
 }
 .fechas__container{
     margin-top: 20px;
@@ -154,11 +168,15 @@ h2,h3,h4,p,li{
     text-transform: uppercase;
     color: red;
     text-align: center;
+    font-family: 'Montserrat';
+
 }
 
 .fechas__cards{
     display: flex;
     flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 }
 .cards{
     border: 1px solid #fff;
@@ -168,6 +186,7 @@ h2,h3,h4,p,li{
     margin: 20px;
     position: relative;
     opacity: 0;
+    width: 200px;
 }
 .fechas__cards__inscripciones__titulo{
     font-size: 20px;
@@ -175,10 +194,14 @@ h2,h3,h4,p,li{
     text-align: center;
     margin-bottom: 15px;
     font-weight: bolder;
+    font-family: 'Montserrat';
+
 }
 .fechas__cards__inscripciones__parrafo{
     font-size: 18px;
     text-transform: capitalize;
+    font-family: 'Montserrat';
+
 }
 .cards-show{
     opacity: 1;
@@ -202,7 +225,7 @@ h2,h3,h4,p,li{
     text-transform: uppercase;
     margin-bottom: 30px;
     margin-top:30px;
-
+    font-family: 'Montserrat';
 }
 
 .medios{
@@ -367,6 +390,8 @@ h2,h3,h4,p,li{
         display: flex;
         flex-flow: column wrap;
         color: #fff;
+        min-height: 30vh;
+        margin-top: 100px;
     }
     .fechas__container{
         margin-top: 20px;
@@ -448,7 +473,6 @@ h2,h3,h4,p,li{
 
 @media screen and (min-width: 1023px){
     .servicios {
-        background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(124, 78, 78));
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
@@ -466,7 +490,7 @@ h2,h3,h4,p,li{
         font-style: italic;
         font-size: 40px;
         text-transform: uppercase;
-        text-decoration: underline;
+        color: #ff0000;
     }
     .servicios__cards{
         display: flex;
@@ -483,7 +507,7 @@ h2,h3,h4,p,li{
     
     .card{
         display: flex;
-        width: 20%;
+        width: 30%;
         margin: 20px;
         border-radius: 10px;
         border: 1px solid black;
@@ -509,7 +533,7 @@ h2,h3,h4,p,li{
         text-transform: uppercase;
         text-align: center;
         margin-top: 20px;
-        font-size:20px ;
+        font-size:25px ;
     
     }
     .card__body{
@@ -523,7 +547,7 @@ h2,h3,h4,p,li{
         line-height: 25px;
         list-style:decimal;
         font-weight: 500;
-        font-size: 15px;
+        font-size: 20px;
     }
     
     .card-red{
@@ -543,7 +567,7 @@ h2,h3,h4,p,li{
         flex-flow: column wrap;
         margin-top: 20px;
         border-radius: 10px;
-        border: 1px solid black;
+        border: 1px solid #ffffff;
         box-shadow: 0 2px 4px rgba(229, 189, 189, 0.1);
         background-color: rgb(0, 0, 0);
         position: relative;
@@ -575,5 +599,107 @@ h2,h3,h4,p,li{
         left: -80px;
         opacity: 0;
         transition: 1s linear;
+    }
+
+    .mas-servicios{
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+    }
+    .fechas{
+        background:url('../../../src//img/portrait.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.8;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        color: #fff;
+        min-height: 30vh;
+        margin-top: 100px;
+    }
+    .fechas__container{
+        margin-top: 20px;
+     display: flex;
+     justify-content: center;
+    }
+    .fechas__titulo{
+        font-size: 30px;
+        font-weight: bolder;
+        font-style: italic;
+        text-transform: uppercase;
+        color: red;
+        text-align: center;
+    }
+    
+    .fechas__cards{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
+    .cards{
+        border: 1px solid #fff;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        margin: 20px;
+        position: relative;
+        opacity: 0;
+        width: 25%;
+    }
+    .fechas__cards__inscripciones__titulo{
+        font-size: 25px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 15px;
+        font-weight: bolder;
+        font-style: italic;
+    }
+    .fechas__cards__inscripciones__parrafo{
+        font-size: 25px;
+        text-transform: capitalize;
+    }
+    .cards-show{
+        opacity: 1;
+        transition: 1s ease-in;
+    }
+    .cards-show-outer{
+        opacity: 0;
+        transition: 1s ease-out;
+    }
+    .cards:nth-child(1){
+        background-color: rgb(255, 255, 255);
+        color: black;
+    }
+    .cards:nth-child(2){
+        background-color: #000;
+    }
+    .cards:nth-child(3){
+        background-color: rgb(255, 0, 0);
+    }
+    .tarifas-pagos{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        margin: 100px 0 0 0 ;
+    }
+    .tarifas__cards__titulo{
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        margin-top:30px;
+    
+    }
+
+    .medios{
+        margin-top: 80px;
+    }
+    
+    .medios__buttons__container{
+        margin-top: 20px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
     }
 }

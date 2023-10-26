@@ -1,21 +1,33 @@
+@media (max-width: 767px){
+.box{
+display: flex;
+flex-flow: column wrap;
+justify-content: space-evenly;
+}
+.priceCard{
+width: 80%;
+}
+}
 
-    @media (max-width: 767px){
-        .box{
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: space-evenly;
-        }
-        .priceCard{
-            width: 80%;
-        }
-    }
-    @media (min-width: 768px) and (max-width: 1023px){
-        .box{
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-evenly;
-        }
-        .priceCard{
-            width: 30%;
-        }
-    }
+@media (min-width: 768px) and (max-width: 1023px){
+
+.box{
+display: flex;
+flex-flow: row wrap;
+justify-content: space-evenly;
+}
+.priceCard{
+width: 30%;
+}
+}
+
+@media screen and (min-width: 1023px){
+.box{
+display: flex;
+flex-flow: row wrap;
+justify-content: space-evenly;
+}
+.priceCard{
+width: 35%;
+}
+}

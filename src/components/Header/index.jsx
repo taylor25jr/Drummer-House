@@ -6,7 +6,7 @@ export const Header = () => {
     <>
       <section className="header">
         <img
-          src="../../img/header-logo.png"
+          src="../../../src/img/header-logo.png"
           alt=""
           className="header__logo"
         />

@@ -52,3 +52,33 @@
         margin: 10px;
     }
 }
+
+@media screen and (min-width: 1023px){
+    .boxContainer{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .buttonContainer{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+    .logo{
+        width: 20px;
+        margin-right: 10px;
+    }
+    
+    .titulo{
+        font-family:'Montserrat' ;
+        font-weight: bolder;
+        font-size: 20px;
+    }
+ 
+    .parrafo{
+        font-family:'Montserrat' ;
+        font-size: 18px;
+        color: #fff;
+        font-weight: bold;
+        margin: 10px;
+    }
+}
