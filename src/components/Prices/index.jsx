@@ -18,9 +18,6 @@ export default function PricingCards() {
     <Box
       sx={{
         width: '100%',
-        display: 'grid',
-        gridTemplateColumns: 'repeat(1,100%)',
-        gridTemplateRows: 'repeat(2,1fr)',
         justifyItems:'center',
         alignContent:'center',
         gap: 2,
