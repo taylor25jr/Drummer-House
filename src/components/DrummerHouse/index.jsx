@@ -12,11 +12,11 @@ export const DrummerHouse = () => {
         <header className='contenedor__header'>
            <Header/>
         </header>
-        <body className='contenedor__body'>
+        <section className='contenedor__body'>
            <UncontrolledExample/>
             <SobreMi/>
             <Servicios/>
-        </body>
+        </section>
         </div>
       
   )
