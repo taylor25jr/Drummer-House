@@ -1,0 +1,557 @@
+@import url('../../Helper/Reset.css');
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+h2,h3,h4,p,li{
+    font-family:'Montserrat' ;
+}
+
+@media (max-width: 767px){
+.servicios {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.servicios__info{
+    display: flex;
+    flex-flow:column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.servicios__info__titulo{
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 28px;
+}
+.servicios__cards{
+    padding: 20px;
+}
+
+.servicios__info__logo{
+    width: 200px;
+}
+
+.card{
+    display: flex;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    left: -80px;
+    opacity: 0;
+}
+.card__header{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card__header__img{
+    width: 100px;
+}
+
+.card__header__titulo{
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+
+}
+.card__body{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.container__list__item{
+    line-height: 25px;
+    list-style:decimal;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.card-red{
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgb(220, 108, 108);
+    position: relative;
+    left: -80px;
+    opacity: 0.1;
+}
+.card-black{
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0 2px 4px rgba(229, 189, 189, 0.1);
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    left: -80px;
+    opacity: 0.1;
+}
+.card__header__titulo-avanzado{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bolder;
+}
+.card__body-black{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    color: #fff;
+}
+.card-effect{
+    left: 0;
+    opacity: 1;
+    transition: 1s linear;
+}
+.card-effect-outer{
+    left: -80px;
+    opacity: 0;
+    transition: 1s linear;
+}
+
+.mas-servicios{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+}
+.fechas{
+    display: flex;
+    flex-flow: column wrap;
+    color: #fff;
+}
+.fechas__container{
+    margin-top: 20px;
+ display: flex;
+ justify-content: center;
+}
+.fechas__titulo{
+    font-size: 30px;
+    font-weight: bolder;
+    font-style: italic;
+    text-transform: uppercase;
+    color: red;
+    text-align: center;
+}
+
+.fechas__cards{
+    display: flex;
+    flex-flow: column wrap;
+}
+.cards{
+    border: 1px solid #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px;
+    position: relative;
+    opacity: 0;
+}
+
+.cards-show{
+    opacity: 1;
+    transition: 1s ease-in;
+}
+.cards-show-outer{
+    opacity: 0;
+    transition: 1s ease-out;
+}
+.cards:nth-child(1){
+    background-color: rgb(82, 109, 44);
+}
+.cards:nth-child(3){
+    background-color: rgb(246, 79, 79);
+}
+.tarifas__cards__titulo{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-top:30px;
+
+}
+
+.medios{
+    margin-top: 30px;
+}
+
+.medios__buttons__container{
+    margin-top: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+
+}
+@media (min-width: 768px) and (max-width: 1023px){
+    .servicios {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .servicios__info{
+        display: flex;
+        flex-flow:row wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .servicios__info__titulo{
+        color: red;
+        font-weight: bolder;
+        font-style: italic;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    .servicios__cards{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .servicios__info__logo{
+        width: 200px;
+        order: 1;
+    }
+    
+    .card{
+        display: flex;
+        width: 50%;
+        margin: 20px;
+        border-radius: 10px;
+        border: 1px solid black;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: relative;
+        left: -80px;
+        opacity: 0;
+    }
+    .card__header{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .card__header__img{
+        width: 100px;
+    }
+    
+    .card__header__titulo{
+        font-weight: bolder;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 25px;
+    
+    }
+    .card__body{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 40px;
+    }
+    .container__list__item{
+        line-height: 25px;
+        list-style:decimal;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    
+    .card-red{
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 20px;
+        border-radius: 10px;
+        border: 1px solid black;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: rgb(220, 108, 108);
+        position: relative;
+        left: -80px;
+        opacity: 0.1;
+    }
+    .card-black{
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 20px;
+        border-radius: 10px;
+        border: 1px solid #ffffff;
+        box-shadow: 0 2px 4px rgba(229, 189, 189, 0.1);
+        background-color: rgb(0, 0, 0);
+        position: relative;
+        left: -80px;
+        opacity: 0.1;
+    }
+    .card__header__titulo-avanzado{
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 20px;
+        font-weight: bolder;
+        font-size: 25px;
+    }
+    .card__body-black{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        color: #fff;
+    }
+    .card-effect{
+        left: 0;
+        opacity: 1;
+        transition: 1s linear;
+    }
+    .card-effect-outer{
+        left: -80px;
+        opacity: 0;
+        transition: 1s linear;
+    }
+
+    .mas-servicios{
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+    }
+    .fechas{
+        background:url('../../../src//img/portrait.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.8;
+        display: flex;
+        flex-flow: column wrap;
+        color: #fff;
+    }
+    .fechas__container{
+        margin-top: 20px;
+     display: flex;
+     justify-content: center;
+    }
+    .fechas__titulo{
+        font-size: 30px;
+        font-weight: bolder;
+        font-style: italic;
+        text-transform: uppercase;
+        color: red;
+        text-align: center;
+    }
+    
+    .fechas__cards{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
+    .cards{
+        border: 1px solid #fff;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        margin: 20px;
+        position: relative;
+        opacity: 0;
+        width: 20%;
+    }
+    .fechas__cards__inscripciones__titulo{
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 15px;
+        font-weight: bolder;
+    }
+    .fechas__cards__inscripciones__parrafo{
+        font-size: 18px;
+        text-transform: capitalize;
+    }
+    .cards-show{
+        opacity: 1;
+        transition: 1s ease-in;
+    }
+    .cards-show-outer{
+        opacity: 0;
+        transition: 1s ease-out;
+    }
+    .cards:nth-child(1){
+        background-color: rgb(255, 255, 255);
+        color: black;
+    }
+    .cards:nth-child(2){
+        background-color: #000;
+    }
+    .cards:nth-child(3){
+        background-color: rgb(255, 0, 0);
+    }
+    .tarifas__cards__titulo{
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        margin-top:30px;
+    
+    }
+
+    .medios{
+        margin-top: 80px;
+    }
+    
+    .medios__buttons__container{
+        margin-top: 20px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 1023px){
+    .servicios {
+        background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(124, 78, 78));
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .servicios__info{
+        display: flex;
+        flex-flow:row wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+    }
+    .servicios__info__titulo{
+        font-weight: bolder;
+        font-style: italic;
+        font-size: 40px;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+    .servicios__cards{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .servicios__info__logo{
+        width: 300px;
+        order: 1;
+    }
+    
+    .card{
+        display: flex;
+        width: 20%;
+        margin: 20px;
+        border-radius: 10px;
+        border: 1px solid black;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: relative;
+        left: -80px;
+        opacity: 0;
+    }
+    .card__header{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .card__header__img{
+        width: 100px;
+    }
+    
+    .card__header__titulo{
+        font-weight: bolder;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 20px;
+        font-size:20px ;
+    
+    }
+    .card__body{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+    }
+    .container__list__item{
+        line-height: 25px;
+        list-style:decimal;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    
+    .card-red{
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 20px;
+        border-radius: 10px;
+        border: 1px solid black;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: rgb(220, 108, 108);
+        position: relative;
+        left: -80px;
+        opacity: 0.1;
+    }
+    .card-black{
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 20px;
+        border-radius: 10px;
+        border: 1px solid black;
+        box-shadow: 0 2px 4px rgba(229, 189, 189, 0.1);
+        background-color: rgb(0, 0, 0);
+        position: relative;
+        left: -80px;
+        opacity: 0.1;
+    }
+    .card__header__titulo-avanzado{
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 20px;
+        font-weight: bolder;
+        font-size: 20px;
+    }
+    .card__body-black{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        color: #fff;
+    }
+    .card-effect{
+        left: 0;
+        opacity: 1;
+        transition: 1s linear;
+    }
+    .card-effect-outer{
+        left: -80px;
+        opacity: 0;
+        transition: 1s linear;
+    }
+}

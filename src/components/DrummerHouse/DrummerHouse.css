@@ -1,0 +1,19 @@
+@import url('../../Helper/Reset.css');
+
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    'header header'
+    'body   body';
+    min-height:100vh;
+}
+.contenedor__header{
+    grid-area: header;
+}
+.contenedor__body{
+    min-height: 100vh;
+    background-color: #000 ;
+    grid-area: body;
+}

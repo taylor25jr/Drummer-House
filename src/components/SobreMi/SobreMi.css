@@ -1,0 +1,184 @@
+@import url('../../Helper/Reset.css');
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+
+@media (max-width: 767px){
+.aboutContainer{
+    margin-top: 20px;
+    height: 70vh;
+    font-size: 30px;
+    display: flex;
+    font-family: 'Montserrat';
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.aboutContainer img{
+    width: 180px;
+    margin: 0 40px;
+}
+
+.aboutContainer__info {
+    width: 90%;
+    margin-top: 10px;
+    position: relative;
+    bottom: -80px;
+    opacity: 0.1;
+}
+
+.aboutContainer__info h2 {
+    color: #ff0000;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.aboutContainer__info p {
+    font-size: 10px;
+    padding: 10px;
+    width: 100%;
+    line-height: 15px;
+    text-align: center;
+
+}
+
+.aboutContainer__img{
+    position: relative;
+    left: -100px;
+    opacity: 0.1;
+
+}
+.aboutMeEffect {
+    left: 0px;
+    opacity: 1;
+    transition: 1s linear;
+}
+.aboutContainerEffect {
+    bottom: 0px;
+    opacity: 1;
+    transition: 1s linear;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .aboutContainer{
+        margin-top: 20px;
+        height: 70vh;
+        font-size: 30px;
+        display: flex;
+        font-family: 'Montserrat';
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+    
+    .aboutContainer img{
+        width: 250px;
+        margin: 0 60px;
+    }
+    
+    .aboutContainer__info {
+        width: 50%;
+        margin-top: 20px;
+        opacity: 0.1;
+        position: relative;
+        right: -80px;
+    }
+    
+    .aboutContainer__info h2 {
+        color: #ff0000;
+        font-weight: bolder;
+        font-style: italic;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .aboutContainer__info p {
+        font-size: 15px;
+        padding: 10px;
+        line-height: 20px;
+    }
+    
+    .aboutContainer__img{
+        position: relative;
+        left: -100px;
+        opacity: 0.1;
+    
+    }
+    .aboutMeEffect {
+        left: 0px;
+        opacity: 1;
+        transition: 1s linear;
+    }
+
+    .aboutContainerEffect {
+        right: 0px;
+        opacity: 1;
+        transition: 1s linear;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    .aboutContainer{
+        margin-top: 20px;
+        height: 70vh;
+        font-size: 30px;
+        display: flex;
+        font-family: 'Montserrat';
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+    
+    .aboutContainer img{
+        width: 300px;
+        margin: 0 80px;
+    }
+    
+    .aboutContainer__info {
+        width: 50%;
+        margin-top: 20px;
+        opacity: 0.1;
+        position: relative;
+        right: -80px;
+    }
+    
+    .aboutContainer__info h2 {
+        color: #ff0000;
+        font-weight: bolder;
+        font-style: italic;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .aboutContainer__info p {
+        font-size: 18px;
+        padding: 10px;
+        line-height: 25px;
+    }
+    
+    .aboutContainer__img{
+        position: relative;
+        left: -100px;
+        opacity: 0.1;
+    
+    }
+    .aboutMeEffect {
+        left: 0px;
+        opacity: 1;
+        transition: 1s linear;
+    }
+
+    .aboutContainerEffect {
+        right: 0px;
+        opacity: 1;
+        transition: 1s linear;
+    }
+}

@@ -1,0 +1,149 @@
+@import url(../../Helper/Reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap');
+
+
+@media (max-width: 767px) {
+    .header{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        background-color: #000;
+    }
+    
+     .header__logo{
+        width: 120px;
+        padding: 5px;
+    }
+
+    .nav{
+        display: inherit;
+        align-items: center;
+    }
+
+    .nav__list{
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .nav__list__item{
+        padding: 5px;
+        color: #fff;
+        font-size:7px;
+        margin: 10px;
+        font-family: 'Inria Sans', sans-serif;
+        text-transform: uppercase;
+        transition: 0.4s;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 0 10px;
+        margin:10px;
+        border-radius: 5px;
+      
+    }
+    .nav__list__item:hover{
+        background-color: #c45252;
+        color: #ffffff;
+        padding: 10px;
+    }
+
+
+  }
+  
+@media (min-width: 768px) and (max-width: 1023px) {
+    .header{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        width: 100%;
+        background-color: #000;
+    }
+    
+     .header__logo{
+        width: 150px;
+        padding: 5px;
+    }
+
+    .nav{
+        display: inherit;
+        align-items: center;
+    }
+
+    .nav__list{
+        display: flex;
+    }
+
+    .nav__list__item{
+        padding: 5px;
+        color: #fff;
+        font-size: 12px;
+        margin: 10px;
+        font-family: 'Inria Sans', sans-serif;
+        text-transform: uppercase;
+        transition: 0.4s;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 0 10px;
+        margin:10px;
+        border-radius: 5px;
+      
+    }
+    .nav__list__item:hover{
+        background-color: #c45252;
+        color: #ffffff;
+        padding: 10px 10px;
+    }
+
+}
+
+@media screen and (min-width: 1023px) {
+    .header{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        width: 100%;
+        background-color: #000;
+    }
+    
+     .header__logo{
+        width: 180px;
+        padding: 5px;
+    }
+
+    .nav{
+        display: inherit;
+        align-items: center;
+    }
+
+    .nav__list{
+        display: flex;
+    }
+
+    .nav__list__item{
+        padding: 5px;
+        color: #fff;
+        font-size: 12px;
+        margin: 10px;
+        font-family: 'Inria Sans', sans-serif;
+        text-transform: uppercase;
+        transition: 0.4s;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 0 10px;
+        margin:10px;
+        border-radius: 5px;
+        cursor: pointer;
+      
+    }
+    .nav__list__item:hover{
+        background-color: #c45252;
+        color: #ffffff;
+        padding: 10px 10px;
+    }
+
+} 
+
+  
+  
+
+  

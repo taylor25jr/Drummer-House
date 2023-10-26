@@ -1,0 +1,54 @@
+@import url('../../Helper/Reset.css');
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+@media (max-width: 767px){
+.buttonContainer{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.logo{
+    width: 20px;
+    margin-right: 2px;
+}
+
+.titulo{
+    font-family:'Montserrat' ;
+    font-weight: bolder;
+}
+.parrafo{
+    font-family:'Montserrat' ;
+    color: #fff;
+    font-weight: bold;
+    margin: 10px;
+}
+}
+@media (min-width: 768px) and (max-width: 1023px){
+    .boxContainer{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .buttonContainer{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+    .logo{
+        width: 20px;
+        margin-right: 10px;
+    }
+    
+    .titulo{
+        font-family:'Montserrat' ;
+        font-weight: bolder;
+        font-size: 20px;
+    }
+ 
+    .parrafo{
+        font-family:'Montserrat' ;
+        font-size: 18px;
+        color: #fff;
+        font-weight: bold;
+        margin: 10px;
+    }
+}

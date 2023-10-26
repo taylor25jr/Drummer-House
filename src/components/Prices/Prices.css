@@ -1,0 +1,16 @@
+
+    @media (max-width: 767px){
+        .priceCard{
+            width: 90%;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1023px){
+        .box{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+        }
+        .priceCard{
+            width: 30%;
+        }
+    }
