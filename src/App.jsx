@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import { DrummerHouse } from './components/Drummerhouse'
+import { DrummerHouse } from '../src/components/DrummerHouse/index'
 
 function App() {
 
