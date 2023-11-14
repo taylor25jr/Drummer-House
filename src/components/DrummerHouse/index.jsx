@@ -4,6 +4,7 @@ import  { Header } from '../Header'
 import UncontrolledExample from '../Carousel'
 import { SobreMi } from '../SobreMi'
 import { Servicios } from '../Servicios'
+import { Otros } from '../Otros'
 
 
 export const DrummerHouse = () => {
@@ -16,6 +17,7 @@ export const DrummerHouse = () => {
            <UncontrolledExample/>
             <SobreMi/>
             <Servicios/>
+            <Otros/>
         </section>
         </div>
       

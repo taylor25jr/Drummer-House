@@ -13,7 +13,7 @@ function Nequi() {
         aria-expanded={open}
         className='buttonContainer bg-black border-primary'
       >
-        <img src="../../../src/img/nequi.png" alt="bancolombia" className='logo' />
+        <img src="https://drive.google.com/uc?export=download&id=1r9fOR_i4weUsJmfTzVuLmLMmRLTZcbUO" alt="bancolombia" className='logo' />
         <h2 className='titulo'>Nequi</h2>
       </Button>
       <Fade in={open}>

@@ -26,7 +26,7 @@ export const SobreMi = () => {
 
   return (
     <section className='aboutContainer'>
-    <img src="../../../src/img/about-me-fotor-2023101719130.png" alt="" className='aboutContainer__img' id='about'/>
+    <img src="https://drive.google.com/uc?export=download&id=17nKh-vhvalflf7bFRYwy-mxJ2HbRNPbb" alt="" className='aboutContainer__img' id='about'/>
     <article className="aboutContainer__info" id='container-info'>
         <h2>SOBRE MI</h2>
         <p>Johan Sebastián , Es un joven de 22 años, nacido en la ciudad de Barranquilla. Hijo único, criado por su abuela paterna.

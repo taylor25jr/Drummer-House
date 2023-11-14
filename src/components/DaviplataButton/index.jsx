@@ -13,7 +13,7 @@ function Daviplata() {
         aria-expanded={open}
         className='buttonContainer bg-black border-danger'
       >
-        <img src="../../../src/img/Icono_daviplata.png" alt="bancolombia" className='logo' />
+        <img src="https://drive.google.com/uc?export=download&id=1LZfA5W36xZjyA2ud8Yrsa9S2_Bc98env" alt="bancolombia" className='logo' />
         <h2 className='titulo'>Daviplata</h2>
       </Button>
       <Fade in={open}>

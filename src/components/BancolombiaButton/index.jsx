@@ -14,7 +14,7 @@ function Bancolombia() {
         aria-expanded={open}
         className='buttonContainer bg-black border-warning'
       >
-        <img src="../../../src/img/LogoBancolombia.png" alt="bancolombia" className='logo' />
+        <img src="https://drive.google.com/uc?export=download&id=10BgHIfUeQhrlDUsD20H7j5f2Cp8jCNZo" alt="bancolombia" className='logo' />
         <h2 className='titulo'>Bancolombia</h2>
       </Button>
       <Fade in={open}>

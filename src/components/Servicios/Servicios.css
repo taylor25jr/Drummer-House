@@ -607,7 +607,7 @@
         width: 100%;
     }
     .fechas{
-        background:url('../../../src//img/portrait.jpg');
+        background:url('https://drive.google.com/uc?export=download&id=1GhDg7m8AcFH0d2Rhck1heb__rNi6si__');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -670,7 +670,7 @@
         transition: 1s ease-out;
     }
     .cards:nth-child(1){
-        background-color: rgb(255, 255, 255);
+        background-color: rgba(226, 80, 80, 0.73);
         color: black;
     }
     .cards:nth-child(2){
@@ -678,6 +678,7 @@
     }
     .cards:nth-child(3){
         background-color: rgb(255, 0, 0);
+        color: black;
     }
     .tarifas-pagos{
         display: flex;

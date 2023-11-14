@@ -1,0 +1,98 @@
+@media (max-width: 767px){
+    .otrosContainer{
+        display: flex;
+        background-image: url('https://i.pinimg.com/564x/ca/b5/8d/cab58d443cfc37b59fe01ca1ce4a9c1e.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.8;
+        flex-flow: column wrap;
+        justify-content: center;
+        width: 100%;
+        min-height: 50vh;
+        padding: 20px;
+    }
+    .otrosContainer__titulo {
+        margin-bottom: 30px;
+    }
+    .otrosContainer__titulo h1{
+        font-size: 30px;
+        font-weight: bolder;
+        font-style: italic;
+        text-transform: uppercase;
+        color: red;
+        text-align: center;
+        font-family: 'Montserrat';
+    }
+
+    .otrosContainer__descripcion{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    }
+
+    .otrosContainer__descripcion__img{
+        width: 200px;
+        align-self: center;
+        border: 1px solid black;
+    }
+
+   
+    .buttonOtros{
+        width: 50%;
+        align-self: center;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .otrosContainer{
+        background-image: url('https://img.freepik.com/free-photo/drum-kit-dark-background-with-stage-lighting-copy-space_169016-13944.jpg?w=826&t=st=1698871571~exp=1698872171~hmac=7711201c8f0495b6adb465e1e2a73d95f5aa9141136afe3448975c7d5b74b3ae');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-flow: column wrap;
+        justify-content: center;
+        width: 100%;
+        padding: 20px;
+        margin-top: 80px;
+    }
+    .otrosContainer__titulo {
+        margin-bottom: 30px;
+    }
+    .otrosContainer__titulo h1{
+        font-size: 30px;
+        font-weight: bolder;
+        font-style: italic;
+        text-transform: uppercase;
+        color: red;
+        text-align: center;
+        font-family: 'Montserrat';
+    }
+
+    .otrosContainer__descripcion{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    align-content: space-evenly;
+    justify-content: space-between;
+    }
+
+    .otrosContainer__descripcion__img{
+        width: 200px;
+        align-self: center;
+        border: 1px solid black;
+    }
+
+   
+    .buttonOtros{
+        width: 20%;
+        align-self: center;
+    }
+}
+

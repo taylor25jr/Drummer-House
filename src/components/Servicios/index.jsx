@@ -60,7 +60,7 @@ export const Servicios = () => {
       <section className="servicios">
         <article className="servicios__info">
           <img
-            src="../../../src/img/header-logo.png"
+            src="https://drive.google.com/uc?export=download&id=1fR05iaPoF2x8C4oUJ8XfOe89UqNtrLg1"
             alt=""
             className="servicios__info__logo"
           />
@@ -70,7 +70,7 @@ export const Servicios = () => {
           <article className="card" id="cards">
             <header className="card__header">
               <img
-                src="../../../src/img/play.png"
+                src="https://drive.google.com/uc?export=download&id=1nuDK-gJsjNhi4H0-fznYdzYAsLeZTjai"
                 alt=""
                 className="card__header__img"
               />
@@ -91,7 +91,7 @@ export const Servicios = () => {
           <article className="card card-red" id="cards">
             <header className="card__header">
               <img
-                src="../../../src/img/drum-set copy.png"
+                src="https://drive.google.com/uc?export=download&id=1lITRDQaFR4Nv0CIBiuJ-kxgby__KQGGr"
                 alt=""
                 className="card__header__img"
               />
@@ -111,7 +111,7 @@ export const Servicios = () => {
           <article className="card card-black" id="cards">
             <header className="card__header">
               <img
-                src="../../../src/img/drums.png"
+                src="https://drive.google.com/uc?export=download&id=12MjVEy7DfFZ4-6L6Aycby7Ic1aFeLgvp"
                 alt=""
                 className="card__header__img"
               />
