@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.css"
 
-export const Header = () => {
+export const Header = ({showChange}) => {
   return (
     <>
       <section className="header">
@@ -15,7 +15,7 @@ export const Header = () => {
             <li className="nav__list__item">sobre mi</li>
             <li className="nav__list__item">servicios</li>
             <li className="nav__list__item">otros</li>
-            <li className="nav__list__item">contacto</li>
+            <li className="nav__list__item" onClick={showChange}>contacto</li>
           </ul>
         </nav>
       </section>

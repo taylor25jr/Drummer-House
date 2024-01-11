@@ -1,0 +1,24 @@
+@import url('../../Helper/Reset.css');
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+
+h1{
+    color: black;
+    margin-bottom: 50px;
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: 'Montserrat';
+    font-size: 19px;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+.formContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

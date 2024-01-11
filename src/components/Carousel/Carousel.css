@@ -36,7 +36,6 @@ h3,p{
         font-weight: bolder;
     }
     .carousel__caption-main{
-        font-family: 'Montserrat';
         font-weight: bolder;
         font-style: italic;
         padding-top: 1.25rem;
@@ -51,12 +50,16 @@ h3,p{
         font-size: 10px;
         margin-bottom: 5px;
         color: #dd5f5f;
+        font-family: 'Montserrat';
+
     }
     .carousel__description{
         font-weight: lighter;
         font-style: italic;
         font-size: 10px;
         margin-bottom: 5px;
+        font-family: 'Montserrat';
+
     }
     
 
@@ -73,7 +76,6 @@ h3,p{
         font-weight: bolder;
     }
     .carousel__caption-main{
-        font-family: 'Montserrat';
         font-weight: bolder;
         font-style: italic;
         position: absolute;
@@ -88,6 +90,7 @@ h3,p{
     }
     .carousel__caption{
         text-transform: uppercase;
+        font-family: 'Montserrat';
         font-weight: bolder;
         font-style: italic;
         font-size: 30px;
@@ -99,6 +102,7 @@ h3,p{
         font-style: italic;
         font-size: 20px;
         margin-bottom: 5px;
+        font-family: 'Montserrat';
     }
     
 }
@@ -123,10 +127,8 @@ h3,p{
         object-position: 0 20px;
     }
     .carousel__caption-main{
-        font-family: 'Montserrat';
         font-weight: bolder;
         font-style: italic;
-   
         color: #dd5f5f;
         text-align: center;
     }
@@ -137,6 +139,7 @@ h3,p{
         font-weight: bolder;
         font-style: italic;
         font-size: 30px;
+        font-family: 'Montserrat';
         margin-bottom: 5px;
         color: #dd5f5f;
 
@@ -146,5 +149,6 @@ h3,p{
         font-style: italic;
         font-size: 20px;
         margin-bottom: 5px;
+        font-family: 'Montserrat';
     }
 }
