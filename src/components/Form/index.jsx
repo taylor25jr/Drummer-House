@@ -1,74 +1,111 @@
-import React from 'react'
-import "./Form.css"
-import { FormControl, FormGroup, InputLabel, Input, Button, ThemeProvider, createTheme } from '@mui/material';
-import { makeStyles } from '@mui/styles'; 
+import React from "react";
+import "./Form.css";
+import { useForm } from "../../hooks/useForm";
+import { Loader } from "../Loader";
+import { SuccessMessage } from "../Success";
 
-const useStyle = makeStyles (() => ({
-    formStyle: {
-        width: "80%",
-        margin: "auto",
-        paddingTop: "20px",
-        padding: "20px",
-        border:"1px solid white",
-        borderRadius:"2%",
-        boxShadow: "0px 0px 10px",
-        backgroundColor:'white',
-        display:"flex",
-        justifyContent:"center",
-        alignContent:"center",
-    },
-    myBtn:{
-        marginTop:"15px",
-        width:"10%",
-        alignSelf:"center"
-    },
-    Inputs:{
-        margin: "20px",
-    }
-}))
+const intialForm = {
+  name: "",
+  email: "",
+  subject: "",
+  comments: "",
+};
 
+const validation = (form) => {
+  let errors = {};
+  let regexName = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
+  let regexEmail = /^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$/;
+  let regexComments = /^.{1,255}$/;
 
-const theme = createTheme({
-        palette: {
-        primary: {
-                main: '#4caf50', 
-            },
-          secondary: {
-            light: '#ff7961',
-            main: '#f44336',
-            dark: '#ba000d',
-            contrastText: '#000',
-          },
-        },
-    });
+  if (!form.name.trim()) {
+    errors.name = "Este campo no puede quedar vacio";
+  } else if (!regexName.test(form.name.trim())) {
+    errors.name = "Este campo solo acepta letras y espacios en blanco";
+  }
+  if (!form.email.trim()) {
+    errors.email = "El campo email es requerido";
+  } else if (!regexEmail.test(form.email.trim())) {
+    errors.email = "El campo email es incorrecto";
+  }
+  if (!form.subject.trim()) {
+    errors.subject = "El campo asunto es requerido";
+  }
+  if (!form.comments.trim()) {
+    errors.comments = "El campo comentarios es requerido";
+  } else if (!regexComments.test(form.comments.trim())) {
+    errors.comments = "El campo comentarios solo acepta 255 caracteres";
+  }
+  return errors;
+};
 
 export const Form = () => {
-
- const classes = useStyle();
+  const {
+    form,
+    errors,
+    loading,
+    response,
+    handleChange,
+    handleBlur,
+    handleSubmit,
+  } = useForm(intialForm, validation);
 
   return (
-
-      <ThemeProvider theme={theme}>
-        <div className='formContainer'>
-        <FormGroup className={classes.formStyle}>
-        <h1>Enviame un Mensaje</h1>
-          <FormControl  className={classes.Inputs}>
-            <InputLabel>Nombre</InputLabel>
-            <Input/>
-          </FormControl>
-          <FormControl className={classes.Inputs}>
-            <InputLabel>Apellido</InputLabel>
-            <Input />
-          </FormControl>
-          <FormControl className={classes.Inputs}>
-            <Input aria-label="minimum height" minRows={3} maxRows={10} placeholder="Escribe tu consulta"  />
-          </FormControl>
-          <Button variant="contained" color="primary" className={classes.myBtn}>
-            Enviar
-          </Button>
-        </FormGroup>
-      </div>
-    </ThemeProvider>
-
-  )
-}
+    <>
+      {loading ? (
+        <Loader />
+      ) : (
+        <div className="container__form">
+          <h1 className="container__form__title">Formulario de contacto</h1>
+          <form className="container__form__form" onSubmit={handleSubmit}>
+            <input
+              type="text"
+              name="name"
+              placeholder="Escribe tu nombre"
+              onChange={handleChange}
+              value={form.name}
+              onBlur={handleBlur}
+              required
+            />
+            {errors.name && <p>{errors.name}</p>}
+            <br />
+            <input
+              type="email"
+              name="email"
+              placeholder="Escribe tu email"
+              onChange={handleChange}
+              value={form.email}
+              onBlur={handleBlur}
+              required
+            />
+            {errors.email && <p>{errors.email}</p>}
+            <br />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Escribe tu asunto a tratar"
+              onChange={handleChange}
+              value={form.subject}
+              onBlur={handleBlur}
+              required
+            />
+            {errors.subject && <p>{errors.subject}</p>}
+            <br />
+            <textarea
+              name="comments"
+              cols="50"
+              rows="5"
+              placeholder="Escribe tus comentarios"
+              value={form.comments}
+              onBlur={handleBlur}
+              onChange={handleChange}
+              required
+            ></textarea>
+            {errors.comments && <p>{errors.comments}</p>}
+            <input type="submit" value="Enviar" />
+          </form>
+          {response && <SuccessMessage />}
+        </div>
+      )}
+    </>
+  );
+};

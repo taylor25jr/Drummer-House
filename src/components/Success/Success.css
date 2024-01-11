@@ -1,0 +1,18 @@
+/* SuccessMessage.css */
+
+.success-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4CAF50; /* Color verde de éxito, puedes ajustarlo según tus preferencias */
+    color: #ffffff; /* Color del texto */
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .success-message span {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  

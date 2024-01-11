@@ -1,9 +1,17 @@
 @import url('../../Helper/Reset.css');
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
+.container__form{
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 90px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px
+}
 
 h1{
-    color: black;
+    color: rgb(230, 125, 125);
     margin-bottom: 50px;
     width: 100%;
     text-align: center;
@@ -13,12 +21,67 @@ h1{
     font-family: 'Montserrat';
     font-size: 19px;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 
 }
-.formContainer{
+p{
+    font-family: 'Montserrat';
+    color: red;
+    font-size: 12px;
+}
+input[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  width: 50%;
+  font-family: 'Montserrat';
+  text-align: center;
+  text-decoration: none;
+  align-self: center;
+  cursor: pointer;
+  border: 1px solid #999999;
+  border-radius: 4px;
+  background-color: #65d490;
+  color: #333333;
+}
+.container__form__form{
+    max-width: 400px;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Esto hace que el padding no afecte el ancho total */
+  font-size: 16px;
+}
+::placeholder {
+  font-family: 'Montserrat';
+  color: #999999;
+  font-size: 12px;
+}
+
+/* Estilos para textarea */
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  resize: vertical; /* Permite cambiar solo la altura vertical */
+  font-family: inherit;
+  resize: none;
 }
