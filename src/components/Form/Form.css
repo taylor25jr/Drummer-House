@@ -3,15 +3,15 @@
 
 .container__form{
     display: flex;
-    flex-flow: column wrap;
-    margin-top: 90px;
-    justify-content: center;
+    flex-flow: row wap ;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 20px
+    padding: 20px;
+    height: 100%;
 }
 
 h1{
-    color: rgb(230, 125, 125);
+    color: rgb(0, 0, 0);
     margin-bottom: 50px;
     width: 100%;
     text-align: center;

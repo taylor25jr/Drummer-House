@@ -10,6 +10,7 @@ export const Servicios = () => {
 
 
     useEffect(() => {
+      
       const handleScroll = () => {
         const $cards = document.querySelectorAll("#cards");
         const $fechaCards = document.querySelectorAll("#cardsFecha");

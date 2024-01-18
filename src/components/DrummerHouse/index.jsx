@@ -1,6 +1,6 @@
 import "./DrummerHouse.css"
 import  { Header } from '../Header'
-import UncontrolledExample from '../Carousel'
+import UncontrolledExample from '../Main'
 import { SobreMi } from '../SobreMi'
 import { Servicios } from '../Servicios'
 import { useState } from "react"
@@ -8,17 +8,18 @@ import { Form } from "../Form"
 import { Footer } from "../Footer"
 import { useForm } from "../../hooks/useForm"
 import { Loader } from "../Loader"
+import { ParticleBg } from "../Particle"
 
 export const DrummerHouse = () => {
 
    const [showForm, setShowForm] = useState(false);
-   const {loading} = useForm()
 
    const showChange = () => {
       setShowForm(!showForm);
    }
   return (
     <>
+    <ParticleBg/>
         <div className="contenedor">
           <header className="contenedor__header">
             <Header showChange={showChange} />
@@ -28,13 +29,11 @@ export const DrummerHouse = () => {
             {showForm || (
               <>
                 <UncontrolledExample />
-                <SobreMi />
-                <Servicios />
               </>
             )}
           </section>
           <footer className="contenedor__footer">
-            <Footer />
+         <Footer/>
           </footer>
         </div>
     </>

@@ -6,7 +6,7 @@ export const Header = ({showChange}) => {
     <>
       <section className="header">
         <img
-          src="https://drive.google.com/uc?export=download&id=1fR05iaPoF2x8C4oUJ8XfOe89UqNtrLg1"
+          src="/src/img/header-logo.png"
           alt=""
           className="header__logo"
         />

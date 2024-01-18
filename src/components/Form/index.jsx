@@ -3,6 +3,7 @@ import "./Form.css";
 import { useForm } from "../../hooks/useForm";
 import { Loader } from "../Loader";
 import { SuccessMessage } from "../Success";
+import { Footer } from "../Footer";
 
 const intialForm = {
   name: "",
@@ -55,8 +56,8 @@ export const Form = () => {
         <Loader />
       ) : (
         <div className="container__form">
-          <h1 className="container__form__title">Formulario de contacto</h1>
           <form className="container__form__form" onSubmit={handleSubmit}>
+          <h1 className="container__form__title">Formulario de contacto</h1>
             <input
               type="text"
               name="name"
