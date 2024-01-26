@@ -12,8 +12,11 @@ import Typography from '@mui/joy/Typography';
 import Check from '@mui/icons-material/Check';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import "./Prices.css"
+import ModalForm from '../Modal';
 
-export default function PricingCards() {
+export default function PricingCards({handleShow}) {
+
+
   return (
     <Box
       sx={{
@@ -57,6 +60,7 @@ export default function PricingCards() {
             variant="soft"
             color="neutral"
             endDecorator={<KeyboardArrowRight />}
+            onClick={handleShow}
           >
             Start now
           </Button>

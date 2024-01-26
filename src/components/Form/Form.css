@@ -25,7 +25,7 @@ h1 {
 
 }
 
-p {
+.errorAlert {
   font-family: 'Montserrat';
   color: red;
   font-size: 12px;
@@ -44,6 +44,7 @@ input[type="submit"] {
   border-radius: 4px;
   background-color: #65d490;
   color: #333333;
+  margin-top: 15px;
 }
 
 .container__form__form {

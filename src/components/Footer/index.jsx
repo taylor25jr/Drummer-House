@@ -1,11 +1,11 @@
 import React from 'react'
-import LightSpeed from 'react-reveal/LightSpeed';
+// import LightSpeed from 'react-reveal/LightSpeed';
 import "./Footer.css"
 
 export const Footer = () => {
   return (
       <>
-      <LightSpeed left>
+      {/* <LightSpeed left> */}
         <section className='footer'>
         <h2 className='social__creator'>Made by Taylor</h2>
        <article className="social">
@@ -23,7 +23,7 @@ export const Footer = () => {
           ></i>
       </article>
           </section>
-      </LightSpeed>
+      {/* </LightSpeed> */}
       </>
 
   )

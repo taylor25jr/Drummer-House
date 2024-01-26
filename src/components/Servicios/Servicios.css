@@ -45,13 +45,13 @@
         display: flex;
         margin-top: 20px;
         border-radius: 10px;
-        border: 1px solid purple;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         position: relative;
         left: -80px;
         opacity: 0;
         background-color: transparent;
         color: #fff;
+        align-items: center;
 
     }
 
@@ -61,10 +61,12 @@
         justify-content: center;
         align-items: center;
         padding: 20px;
+        width: 100%;
     }
 
     .card__header__img {
-        width: 100%;
+        width: 180px;
+        height: 150px;
         border-radius: 20px;
     }
 
@@ -75,8 +77,6 @@
         margin-bottom: 30px;
         font-size: 25px;
         font-family: 'Montserrat';
-
-
     }
 
     .card__body {
@@ -85,6 +85,7 @@
         justify-content: center;
         align-items: center;
         padding: 20px;
+        width: 100%;
     }
 
     .container__list {
@@ -94,20 +95,8 @@
     .container__list__item {
         line-height: 25px;
         list-style: decimal;
-        font-weight: lighter;
-        font-size: 15px;
-        font-family: 'Montserrat';
-
-    }
-
-
-    .card__header__titulo-avanzado {
-        color: #fff;
-        text-transform: uppercase;
-        text-align: center;
-        margin-top: 20px;
         font-weight: bolder;
-        font-size: 25px;
+        font-size: 15px;
         font-family: 'Montserrat';
 
     }
@@ -187,6 +176,7 @@
 
     .fechas__cards__inscripciones__parrafo {
         font-size: 18px;
+        color: #e48983;
         text-transform: capitalize;
         font-family: 'Montserrat';
 
@@ -286,10 +276,12 @@
         justify-content: center;
         align-items: center;
         padding: 20px;
+        width: 50%;
     }
 
     .card__header__img {
-        width: 80%;
+        width: 300px;
+        height: 300px;
         border-radius: 20px;
 
     }
@@ -308,8 +300,9 @@
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         padding: 20px;
+        width: 50%;
     }
 
     .container__list {
@@ -317,7 +310,7 @@
     }
 
     .container__list__item {
-        line-height: 25px;
+        line-height: 30px;
         list-style: decimal;
         font-weight: lighter;
         font-weight: 500;
@@ -325,17 +318,6 @@
         font-family: 'Montserrat';
 
 
-    }
-
-
-    .card__header__titulo-avanzado {
-        color: #fff;
-        text-transform: uppercase;
-        text-align: center;
-        margin-top: 20px;
-        font-weight: bolder;
-        font-size: 25px;
-        font-family: 'Montserrat';
     }
 
     .card-effect {
@@ -409,6 +391,7 @@
 
     .fechas__cards__inscripciones__parrafo {
         font-size: 18px;
+        color: #e48983;
         text-transform: capitalize;
         font-family: 'Montserrat';
     }
@@ -532,16 +515,6 @@
         font-size: 20px;
     }
 
-    .card__header__titulo-avanzado {
-        color: #fff;
-        text-transform: uppercase;
-        text-align: center;
-        margin-top: 20px;
-        font-weight: bolder;
-        font-size: 20px;
-        font-family: 'Montserrat';
-    }
-
     .card-effect {
         left: 0;
         opacity: 1;
@@ -614,6 +587,7 @@
 
     .fechas__cards__inscripciones__parrafo {
         font-size: 25px;
+        color: #e48983;
         text-transform: capitalize;
         font-family: 'Montserrat';
     }

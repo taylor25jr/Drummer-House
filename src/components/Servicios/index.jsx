@@ -1,24 +1,18 @@
-import React, { useEffect } from 'react'
-import "./Servicios.css"
-import PricingCards from '../Prices';
-import Bancolombia from '../BancolombiaButton';
-import Daviplata from '../DaviplataButton';
-import Nequi from '../NequiButton';
-import { handleScroll } from '../../hooks/Servicios/useScroll';
-import { Footer } from '../Footer';
+import React, { useEffect } from "react";
+import "./Servicios.css";
+import PricingCards from "../Prices";
+import { handleScroll } from "../../hooks/Servicios/useScroll";
+import { Footer } from "../Footer";
+import PaymentsMethods from "../PaymentsMethods";
 
-
-export const Servicios = () => {
-
-
-    useEffect(() => {
-      
-      handleScroll();
-      window.addEventListener("scroll", handleScroll);
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }, []);
+export const Servicios = ({ handleShow }) => {
+  useEffect(() => {
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>
@@ -30,7 +24,7 @@ export const Servicios = () => {
           <article className="card" id="cards">
             <header className="card__header">
               <img
-                src="https://i.pinimg.com/736x/e1/10/14/e11014695e69b5042fc67b6c46dae5b3.jpg"
+                src="https://i.pinimg.com/736x/bd/6b/4a/bd6b4ab4f8d5ad8e5d6f2c394f698562.jpg"
                 alt=""
                 className="card__header__img"
               />
@@ -77,7 +71,7 @@ export const Servicios = () => {
               />
             </header>
             <div className="card__body">
-              <h3 className="card__header__titulo-avanzado">Avanzado</h3>
+              <h3 className="card__header__titulo">Avanzado</h3>
               <ol className="container__list">
                 <li className="container__list__item">Teoria 3</li>
                 <li className="container__list__item">Concepto</li>
@@ -90,45 +84,54 @@ export const Servicios = () => {
         </article>
       </section>
       <section className="mas-servicios">
-      <section className="fechas">
-        <article className="fechas__container">
-          <h3 className="fechas__titulo">Fechas</h3>
-        </article>
-        <article className="fechas__cards">
-          <div className="cards fechas__cards__inscripciones"  id='cardsFecha'>
-            <h4 className='fechas__cards__inscripciones__titulo'>Inscripciones</h4>
-            <p className='fechas__cards__inscripciones__parrafo'>Del 20 de enero al 3 de febrero</p>
-          </div>
-          <div className=" cards fechas__cards__inicio" id='cardsFecha'>
-            <h4 className='fechas__cards__inscripciones__titulo'>Inicio de clases</h4>
-            <p  className='fechas__cards__inscripciones__parrafo'>4 de febrero del 2024</p>
-          </div>
-          <div className="cards fechas__cards__periodo" id='cardsFecha'>
-            <h4 className='fechas__cards__inscripciones__titulo'>Periodo de pago</h4>
-            <p  className='fechas__cards__inscripciones__parrafo'>Del 20 de enero al 4 de febrero</p>
-          </div>
-        </article>
-      </section>
-      <section className='tarifas-pagos'>
-        <article className="tarifas__cards">
-            <h3 className='fechas__titulo tarifas__cards__titulo'>Tarifas</h3>
-            <PricingCards/>
-        </article>
-
-        <article className="medios">
-          <article className="medios__titulo">
-            <h2 className='fechas__titulo'>Medios de pago</h2>
+        <section className="fechas">
+          <article className="fechas__container">
+            <h3 className="fechas__titulo">Fechas</h3>
           </article>
-          <article className="medios__buttons__container">
-            <Bancolombia/>
-            <Daviplata/>
-            <Nequi/>
+          <article className="fechas__cards">
+            <div className="cards fechas__cards__inscripciones" id="cardsFecha">
+              <h4 className="fechas__cards__inscripciones__titulo">
+                Inscripciones
+              </h4>
+              <p className="fechas__cards__inscripciones__parrafo">
+                Del 20 de enero al 3 de febrero
+              </p>
+            </div>
+            <div className=" cards fechas__cards__inicio" id="cardsFecha">
+              <h4 className="fechas__cards__inscripciones__titulo">
+                Inicio de clases
+              </h4>
+              <p className="fechas__cards__inscripciones__parrafo">
+                4 de febrero del 2024
+              </p>
+            </div>
+            <div className="cards fechas__cards__periodo" id="cardsFecha">
+              <h4 className="fechas__cards__inscripciones__titulo">
+                Periodo de pago
+              </h4>
+              <p className="fechas__cards__inscripciones__parrafo">
+                Del 20 de enero al 4 de febrero
+              </p>
+            </div>
           </article>
-        </article>
+        </section>
+        <section className="tarifas-pagos">
+          <article className="tarifas__cards">
+            <h3 className="fechas__titulo tarifas__cards__titulo">Tarifas</h3>
+            <PricingCards handleShow={handleShow} />
+          </article>
 
+          <article className="medios">
+            <article className="medios__titulo">
+              <h2 className="fechas__titulo">Medios de pago</h2>
+            </article>
+            <article className="medios__buttons__container">
+              <PaymentsMethods />
+            </article>
+          </article>
+        </section>
       </section>
-      </section>
-      <Footer/>
+      <Footer />
     </>
   );
-}
+};

@@ -67,7 +67,7 @@ export const Form = () => {
               onBlur={handleBlur}
               required
             />
-            {errors.name && <p>{errors.name}</p>}
+            {errors.name && <p className="errorAlert">{errors.name}</p>}
             <br />
             <input
               type="email"
@@ -78,7 +78,7 @@ export const Form = () => {
               onBlur={handleBlur}
               required
             />
-            {errors.email && <p>{errors.email}</p>}
+            {errors.email && <p className="errorAlert">{errors.email}</p>}
             <br />
             <input
               type="text"
@@ -89,7 +89,7 @@ export const Form = () => {
               onBlur={handleBlur}
               required
             />
-            {errors.subject && <p>{errors.subject}</p>}
+            {errors.subject && <p className="errorAlert">{errors.subject}</p>}
             <br />
             <textarea
               name="comments"
@@ -101,11 +101,10 @@ export const Form = () => {
               onChange={handleChange}
               required
             ></textarea>
-            {errors.comments && <p>{errors.comments}</p>}
+            {errors.comments && <p className="errorAlert">{errors.comments}</p>}
             <input type="submit" value="Enviar" />
           </form>
           {response && <SuccessMessage />}
-          <Footer/>
         </div>
       )}
     </>
