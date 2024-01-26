@@ -105,6 +105,7 @@ export const Form = () => {
             <input type="submit" value="Enviar" />
           </form>
           {response && <SuccessMessage />}
+          <Footer/>
         </div>
       )}
     </>

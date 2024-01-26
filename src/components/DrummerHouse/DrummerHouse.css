@@ -9,14 +9,16 @@
     'body   body'
     'footer  footer' 
     ;
+    gap: 0;
 
 }
 .contenedor__header{
     grid-area: header;
     height: 15vh;
+    z-index: 2;
 }
 .contenedor__body{
-    height: calc(100vh - 20vh);
+    min-height: calc(100vh - 15vh);
     flex-grow: 1;
     background-color: #000 ;
     grid-area: body;

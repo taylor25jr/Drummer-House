@@ -1,24 +1,52 @@
-import React from "react";
-import "./Header.css"
+import Menu from "@mui/joy/Menu";
+import MenuButton from "@mui/joy/MenuButton";
+import MenuItem from "@mui/joy/MenuItem";
+import Dropdown from "@mui/joy/Dropdown";
+import {  BrowserRouter, Link} from 'react-router-dom'
+import "./Header.css";
+import { useEffect, useState } from "react";
 
-export const Header = ({showChange}) => {
+//Cambiar color al burger y la ui en mobile
+
+export const Header = () => {
+
+  const [isPC, setIsPC] = useState(window.innerWidth > 768);
+
+useEffect(() => {
+    const handleResize = () => {
+      setIsPC(window.innerWidth > 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []); 
+
+
   return (
     <>
-      <section className="header">
-        <img
-          src="/src/img/header-logo.png"
-          alt=""
-          className="header__logo"
-        />
-        <nav className="nav">
-          <ul className="nav__list">
-            <li className="nav__list__item">sobre mi</li>
-            <li className="nav__list__item">servicios</li>
-            <li className="nav__list__item">otros</li>
-            <li className="nav__list__item" onClick={showChange}>contacto</li>
-          </ul>
-        </nav>
-      </section>
+      {
+        <section className="header">
+         <Link to="/"><img src="/src/img/header-logo.png" alt="" className="header__logo" /></Link>
+          {(!isPC) ? 
+          <Dropdown>
+            <MenuButton>☰</MenuButton>
+            <Menu>
+              <MenuItem><Link to="/servicios">Servicios</Link></MenuItem>
+              <MenuItem><Link to="/sobre-mi">Sobre mi</Link></MenuItem>
+              <MenuItem><Link to="/otros">Otros</Link></MenuItem>
+              <MenuItem><Link to="/contacto">Contacto</Link></MenuItem>
+            </Menu>
+          </Dropdown> : 
+          <nav className=" nav__list">
+          <Link className=" nav__list__item" to="/servicios">Servicios</Link>
+          <Link className=" nav__list__item" to="/sobre-mi">Sobre mí</Link>
+          <Link className=" nav__list__item" to="/otros">Otros</Link>
+          <Link className=" nav__list__item" to="/contacto">Contacto</Link>
+        </nav> }
+        </section>
+      }
     </>
   );
 };

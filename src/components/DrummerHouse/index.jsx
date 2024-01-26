@@ -1,41 +1,31 @@
-import "./DrummerHouse.css"
-import  { Header } from '../Header'
-import UncontrolledExample from '../Main'
-import { SobreMi } from '../SobreMi'
-import { Servicios } from '../Servicios'
-import { useState } from "react"
-import { Form } from "../Form"
-import { Footer } from "../Footer"
-import { useForm } from "../../hooks/useForm"
-import { Loader } from "../Loader"
-import { ParticleBg } from "../Particle"
+import "./DrummerHouse.css";
+import { Header } from "../Header";
+import { SobreMi } from "../SobreMi";
+import { Servicios } from "../Servicios";
+import { Otros } from "../Otros";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Form } from "../Form";
+import Main from "../Main";
 
 export const DrummerHouse = () => {
-
-   const [showForm, setShowForm] = useState(false);
-
-   const showChange = () => {
-      setShowForm(!showForm);
-   }
   return (
     <>
-    <ParticleBg/>
+      <BrowserRouter>
         <div className="contenedor">
           <header className="contenedor__header">
-            <Header showChange={showChange} />
+            <Header />
           </header>
           <section className="contenedor__body">
-            {showForm && <Form />}
-            {showForm || (
-              <>
-                <UncontrolledExample />
-              </>
-            )}
+            <Routes>
+              <Route path="/" element={<Main />} />
+              <Route path="/servicios" element={<Servicios />} />
+              <Route path="/sobre-mi" element={<SobreMi/>} />
+              <Route path="/otros" element={<Otros/>}/>
+              <Route path="/contacto" element={<Form/>}/>
+            </Routes>
           </section>
-          <footer className="contenedor__footer">
-         <Footer/>
-          </footer>
         </div>
+      </BrowserRouter>
     </>
   );
-}
+};

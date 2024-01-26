@@ -6,14 +6,16 @@
     .header{
         display: flex;
         flex-flow: row wrap;
+        align-items: center;
         justify-content: space-evenly;
         width: 100%;
-        background-color: #000;
+        background-color: #0c0b0b;
         height: 100%;
     }
     
      .header__logo{
         width: 120px;
+        height: 60px;
         padding: 5px;
     }
 
@@ -56,13 +58,15 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
+        align-items: center;
         width: 100%;
-        background-color: #000;
+        background-color: #0c0b0b;
         height: 100%;
     }
     
      .header__logo{
         width: 150px;
+        height: 80px;
         padding: 5px;
     }
 
@@ -103,13 +107,15 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
+        align-items: center;
         width: 100%;
-        background-color: #000;
+        background-color: #0c0b0b;
         height: 100%;
     }
     
      .header__logo{
         width: 180px;
+        height: 90px;
         padding: 5px;
     }
 

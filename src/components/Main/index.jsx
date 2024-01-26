@@ -1,50 +1,30 @@
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./main.css";
+import Button from 'react-bootstrap/Button';
+import Fade from 'react-reveal/Fade';
 import { useEffect } from "react";
-import { Footer } from "../Footer";
+import { Header } from "../Header";
 
-function UncontrolledExample() {
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const $cards = document.querySelectorAll("#card");
-
-      $cards.forEach((card) => {
-        card.classList.add("card-effect");
-      });
-    };
-    handleScroll();
-
-    return () => {
-      handleScroll()
-    };
-  }, []);
+function Main() {
 
   return (
-    <div className="externalContainer">
+    <>
       <div className="mainContainer">
-        <div className="mainContainer__backContainer" id="card">
-          <iframe
-            className="mainContainer__backContainer__iframe"
-            src="https://www.youtube.com/embed/0W35CciDl7A?si=C0riiQe4jT1UOoxy&amp;controls=0&amp;start=108&autoplay=1&mute=1&showinfo=0&disablekb=1"
-            title="YouTube video player"
-            allow="autoplay loop;"
-            width="100%"
-            height="100%"
-            style={{ border: "none" }}
-          ></iframe>
-        </div>
-        <section className="mainContainer__description" id="card">
-          <h1 className="mainContainer__description__titulo">
-            Hey! Soy Johan Sebas
-          </h1>
-          <p className="mainContainer__description__parrafo">
-            Soy Musico y baterista 
-          </p>
-        </section>
+      <Fade>
+        <h1 className="mainContainer__title">
+          Welcome to the World of Rhythm!
+        </h1>
+        <p className="mainContainer__text">Discover the Power of Drumming</p>
+        </Fade>
+        <Fade bottom>
+          <Button className="mainContainer__button" variant="danger">
+            Get started!
+          </Button>
+          </Fade>
       </div>
-    </div>
+    </>
+ 
   );
 }
 
-export default UncontrolledExample;
+export default Main;
