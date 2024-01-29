@@ -4,8 +4,9 @@ import PricingCards from "../Prices";
 import { handleScroll } from "../../hooks/Servicios/useScroll";
 import { Footer } from "../Footer";
 import PaymentsMethods from "../PaymentsMethods";
+import PropTypes from 'prop-types';
 
-export const Servicios = ({ handleShow }) => {
+export const Servicios = ({ handleShow, handleClick }) => {
   useEffect(() => {
     handleScroll();
     window.addEventListener("scroll", handleScroll);
@@ -118,7 +119,7 @@ export const Servicios = ({ handleShow }) => {
         <section className="tarifas-pagos">
           <article className="tarifas__cards">
             <h3 className="fechas__titulo tarifas__cards__titulo">Tarifas</h3>
-            <PricingCards handleShow={handleShow} />
+            <PricingCards handleShow={handleShow} handleClick={handleClick} />
           </article>
 
           <article className="medios">
@@ -135,3 +136,9 @@ export const Servicios = ({ handleShow }) => {
     </>
   );
 };
+
+
+Servicios.propTypes = {
+  handleShow: PropTypes.func,
+  handleClick: PropTypes.func,
+}

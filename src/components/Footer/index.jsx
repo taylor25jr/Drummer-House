@@ -1,30 +1,44 @@
-import React from 'react'
-// import LightSpeed from 'react-reveal/LightSpeed';
-import "./Footer.css"
+import React from "react";
+import "./Footer.css";
 
 export const Footer = () => {
   return (
-      <>
-      {/* <LightSpeed left> */}
-        <section className='footer'>
-        <h2 className='social__creator'>Made by Taylor</h2>
-       <article className="social">
-        <i
-          className="bi bi-facebook icon"
-          style={{ color: "#ffffff", fontSize: "25px", marginRight: "10px" }}
-          ></i>
-        <i
-          className="bi bi-whatsapp icon"
-          style={{ color: "#ffffff", fontSize: "25px", marginRight: "10px" }}
-          ></i>
-        <i
-          className="bi bi-instagram icon"
-          style={{ color: "#ffffff", fontSize: "25px", marginRight: "10px" }}
-          ></i>
-      </article>
-          </section>
-      {/* </LightSpeed> */}
-      </>
-
-  )
-}
+    <footer>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-12 row-1">
+            <ul>
+              <i
+                className="bi bi-facebook icon"
+                style={{
+                  color: "#ffffff",
+                  fontSize: "25px",
+                  marginRight: "10px",
+                }}
+              ></i>
+              <i
+                className="bi bi-whatsapp icon"
+                style={{
+                  color: "#ffffff",
+                  fontSize: "25px",
+                  marginRight: "10px",
+                }}
+              ></i>
+              <i
+                className="bi bi-instagram icon"
+                style={{
+                  color: "#ffffff",
+                  fontSize: "25px",
+                  marginRight: "10px",
+                }}
+              ></i>
+              <p>&copy; Copyright 2024</p>
+            </ul>
+            <br />
+            <p className="madeby">Made by Taylor</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};

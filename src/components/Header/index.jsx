@@ -28,7 +28,7 @@ useEffect(() => {
     <>
       {
         <section className="header">
-         <Link to="/"><img src="/src/img/header-logo.png" alt="" className="header__logo" /></Link>
+         <Link to="/"><img src="/src/img/header-logo.png" alt="logo" className="header__logo" /></Link>
           {(!isPC) ? 
           <Dropdown>
             <MenuButton>☰</MenuButton>

@@ -3,7 +3,6 @@ import "./Form.css";
 import { useForm } from "../../hooks/useForm";
 import { Loader } from "../Loader";
 import { SuccessMessage } from "../Success";
-import { Footer } from "../Footer";
 
 const intialForm = {
   name: "",
@@ -52,61 +51,65 @@ export const Form = () => {
 
   return (
     <>
-      {loading ? (
-        <Loader />
-      ) : (
-        <div className="container__form">
-          <form className="container__form__form" onSubmit={handleSubmit}>
-          <h1 className="container__form__title">Formulario de contacto</h1>
-            <input
-              type="text"
-              name="name"
-              placeholder="Escribe tu nombre"
-              onChange={handleChange}
-              value={form.name}
-              onBlur={handleBlur}
-              required
-            />
-            {errors.name && <p className="errorAlert">{errors.name}</p>}
-            <br />
-            <input
-              type="email"
-              name="email"
-              placeholder="Escribe tu email"
-              onChange={handleChange}
-              value={form.email}
-              onBlur={handleBlur}
-              required
-            />
-            {errors.email && <p className="errorAlert">{errors.email}</p>}
-            <br />
-            <input
-              type="text"
-              name="subject"
-              placeholder="Escribe tu asunto a tratar"
-              onChange={handleChange}
-              value={form.subject}
-              onBlur={handleBlur}
-              required
-            />
-            {errors.subject && <p className="errorAlert">{errors.subject}</p>}
-            <br />
-            <textarea
-              name="comments"
-              cols="50"
-              rows="5"
-              placeholder="Escribe tus comentarios"
-              value={form.comments}
-              onBlur={handleBlur}
-              onChange={handleChange}
-              required
-            ></textarea>
-            {errors.comments && <p className="errorAlert">{errors.comments}</p>}
-            <input type="submit" value="Enviar" />
-          </form>
-          {response && <SuccessMessage />}
-        </div>
-      )}
+      <div className="container__form">
+        <form className="container__form__form" onSubmit={handleSubmit}>
+          {loading ? (
+            <Loader />
+          ) : (
+            <>
+              <h1 className="container__form__title">Formulario de contacto</h1>
+              <input
+                type="text"
+                name="name"
+                placeholder="Escribe tu nombre"
+                onChange={handleChange}
+                value={form.name}
+                onBlur={handleBlur}
+                required
+              />
+              {errors.name && <p className="errorAlert">{errors.name}</p>}
+              <br />
+              <input
+                type="email"
+                name="email"
+                placeholder="Escribe tu email"
+                onChange={handleChange}
+                value={form.email}
+                onBlur={handleBlur}
+                required
+              />
+              {errors.email && <p className="errorAlert">{errors.email}</p>}
+              <br />
+              <input
+                type="text"
+                name="subject"
+                placeholder="Escribe tu asunto a tratar"
+                onChange={handleChange}
+                value={form.subject}
+                onBlur={handleBlur}
+                required
+              />
+              {errors.subject && <p className="errorAlert">{errors.subject}</p>}
+              <br />
+              <textarea
+                name="comments"
+                cols="50"
+                rows="5"
+                placeholder="Escribe tus comentarios"
+                value={form.comments}
+                onBlur={handleBlur}
+                onChange={handleChange}
+                required
+              ></textarea>
+              {errors.comments && (
+                <p className="errorAlert">{errors.comments}</p>
+              )}
+              <input type="submit" value="Enviar" />
+            </>
+          )}
+        </form>
+        {response && <SuccessMessage />}
+      </div>
     </>
   );
 };

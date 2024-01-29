@@ -9,11 +9,28 @@ import { Form } from "../Form";
 import Main from "../Main";
 import ModalForm from "../Modal";
 
+
 export const DrummerHouse = () => {
+  
   const [show, setShow] = useState(false);
+  const [formShow, setFormShow] = useState(null);
+
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const handleClick = (ref) => {
+    console.log("hola")
+    if(ref.current.name === "boton1")  {
+     setFormShow(true);
+     handleShow();
+    }
+    if(ref.current.name === "boton2")  {
+     setFormShow(false);
+     handleShow();
+    }
+   };
+ 
 
   return (
     <>
@@ -23,10 +40,10 @@ export const DrummerHouse = () => {
             <Header />
           </header>
           <section className="contenedor__body">
-            <ModalForm show={show} handleClose={handleClose} handleShow={handleShow} />
+            <ModalForm show={show} handleClose={handleClose} formShow={formShow} />
             <Routes>
               <Route path="/" element={<Main />} />
-              <Route path="/servicios" element={<Servicios handleShow={handleShow} />} />
+              <Route path="/servicios" element={<Servicios handleClick={handleClick} />} />
               <Route path="/sobre-mi" element={<SobreMi/>} />
               <Route path="/otros" element={<Otros/>}/>
               <Route path="/contacto" element={<Form/>}/>

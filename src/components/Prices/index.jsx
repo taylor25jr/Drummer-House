@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useRef, useState } from 'react';
 import Box from '@mui/joy/Box';
 import Button from '@mui/joy/Button';
 import Card from '@mui/joy/Card';
@@ -12,9 +13,13 @@ import Typography from '@mui/joy/Typography';
 import Check from '@mui/icons-material/Check';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import "./Prices.css"
-import ModalForm from '../Modal';
+import PropTypes from 'prop-types';
 
-export default function PricingCards({handleShow}) {
+
+export default function PricingCards({handleClick}) {
+
+  const boton1Ref = useRef(null);
+  const boton2Ref = useRef(null);
 
 
   return (
@@ -58,9 +63,11 @@ export default function PricingCards({handleShow}) {
         <CardActions>
           <Button
             variant="soft"
+            name='boton1'
             color="neutral"
             endDecorator={<KeyboardArrowRight />}
-            onClick={handleShow}
+            ref={boton1Ref}
+            onClick={() => handleClick(boton1Ref)}
           >
             Start now
           </Button>
@@ -108,9 +115,15 @@ export default function PricingCards({handleShow}) {
         </List>
         <Divider inset="none" />
         <CardActions>
-          <Button endDecorator={<KeyboardArrowRight />}>Start now</Button>
+          <Button endDecorator={<KeyboardArrowRight />} ref={boton2Ref} onClick={() => handleClick(boton2Ref)} name="boton2">Start now</Button>
         </CardActions>
       </Card>
     </Box>
   );
 }
+
+PricingCards.propTypes = {
+  handleClick:PropTypes.func,
+}
+
+

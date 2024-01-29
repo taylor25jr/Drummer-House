@@ -1,0 +1,100 @@
+@import url('../../Helper/Reset.css');
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+.container__form {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  height: 100%;
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+  margin-bottom: 50px;
+  width: 100%;
+  text-align: center;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-style: italic;
+  font-family: 'Montserrat';
+  font-size: 19px;
+  text-align: center;
+  margin-bottom: 30px;
+
+}
+
+.errorAlert {
+  font-family: 'Montserrat';
+  color: red;
+  font-size: 12px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  width: 50%;
+  font-family: 'Montserrat';
+  text-align: center;
+  text-decoration: none;
+  align-self: center;
+  cursor: pointer;
+  border: 1px solid #999999;
+  border-radius: 4px;
+  background-color: #65d490;
+  color: #333333;
+  margin-top: 15px;
+}
+
+.container__form__form {
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-self: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container__form__title {
+  font-family: 'Montserrat';
+  margin: 5px;
+}
+
+input[type="text"],
+input[type="email"],input[type="number"]  {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  /* Esto hace que el padding no afecte el ancho total */
+  font-size: 16px;
+}
+
+::placeholder {
+  font-family: 'Montserrat';
+  color: #999999;
+  font-size: 12px;
+}
+
+/* Estilos para textarea */
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  resize: vertical;
+  /* Permite cambiar solo la altura vertical */
+  font-family: inherit;
+  resize: none;
+  margin-top: 10px;
+}

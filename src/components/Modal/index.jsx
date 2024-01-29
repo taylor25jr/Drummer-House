@@ -1,19 +1,18 @@
-import { useState } from 'react';
-import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import {Form} from '../Form'
+import {WindowForm} from '../WindowForm'
+import PropTypes from 'prop-types';
 
-function ModalForm({show,handleClose,handleShow}) {
 
+function ModalForm({show,handleClose,formShow}) {
 
   return (
     <>
-      <Modal show={show} onHide={handleClose} >
+      <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title> Contactate conmigo</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-            <Form/>
+            <WindowForm formShow={formShow}/>
         </Modal.Body>
       </Modal>
     </>
@@ -21,3 +20,10 @@ function ModalForm({show,handleClose,handleShow}) {
 }
 
 export default ModalForm;
+
+ModalForm.propTypes = {
+  show: PropTypes.bool,
+  handleClose: PropTypes.func,
+  formShow: PropTypes.func,
+}
+
