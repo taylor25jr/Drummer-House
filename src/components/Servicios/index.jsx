@@ -24,7 +24,7 @@ export const Servicios = ({ handleShow }) => {
           <article className="card" id="cards">
             <header className="card__header">
               <img
-                src="https://i.pinimg.com/736x/bd/6b/4a/bd6b4ab4f8d5ad8e5d6f2c394f698562.jpg"
+                src="https://media.istockphoto.com/id/805751134/es/foto/rock-n-roll-baterista-destellos-en-el-aire.jpg?s=1024x1024&w=is&k=20&c=KHb4bS1WH4zKIq5X2A8uZveMKyhzBJlzYBTrY5xCmP4="
                 alt=""
                 className="card__header__img"
               />
@@ -45,7 +45,7 @@ export const Servicios = ({ handleShow }) => {
           <article className="card" id="cards">
             <article className="card__header">
               <img
-                src="https://i.pinimg.com/736x/54/fb/0e/54fb0e9b57f0a4a0163c24f787353a6f.jpg"
+                src="https://media.istockphoto.com/id/1308514040/es/foto/el-baterista-toca-la-bater%C3%ADa-hermoso-fondo-azul-y-rojo-con-rayos-de-luz-hermosos-efectos.jpg?s=1024x1024&w=is&k=20&c=e9ULbQHde-rulNQ3ThTNBhQ6qy52TqikRMKaiMoz8gU="
                 alt=""
                 className="card__header__img"
               />
@@ -65,7 +65,7 @@ export const Servicios = ({ handleShow }) => {
           <article className="card" id="cards">
             <header className="card__header">
               <img
-                src="https://i.pinimg.com/736x/53/e2/01/53e201517b82e2a4f17d5a13b4603ae8.jpg"
+                src="https://media.istockphoto.com/id/1311312996/es/foto/baterista-tocando-la-bater%C3%ADa-con-humo-y-polvo-en-el-fondo.jpg?s=1024x1024&w=is&k=20&c=dmhws8nlrwbpDpHRR2IdFf-dNYz9P6ecK6sNp24G_uM="
                 alt=""
                 className="card__header__img"
               />
