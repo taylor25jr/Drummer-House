@@ -32,11 +32,11 @@ useEffect(() => {
           {(!isPC) ? 
           <Dropdown>
             <MenuButton>☰</MenuButton>
-            <Menu>
-              <MenuItem><Link to="/servicios">Servicios</Link></MenuItem>
-              <MenuItem><Link to="/sobre-mi">Sobre mi</Link></MenuItem>
-              <MenuItem><Link to="/otros">Otros</Link></MenuItem>
-              <MenuItem><Link to="/contacto">Contacto</Link></MenuItem>
+            <Menu style={{backgroundColor:"black"}}>
+              <MenuItem ><Link to="/servicios" className=" nav__list__item">Servicios</Link></MenuItem>
+              <MenuItem><Link to="/sobre-mi" className=" nav__list__item">Sobre mi</Link></MenuItem>
+              <MenuItem><Link to="/otros" className=" nav__list__item">Otros</Link></MenuItem>
+              <MenuItem><Link to="/contacto" className=" nav__list__item">Contacto</Link></MenuItem>
             </Menu>
           </Dropdown> : 
           <nav className=" nav__list">

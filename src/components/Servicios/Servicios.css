@@ -1,4 +1,5 @@
 @import url('../../Helper/Reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap');
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
 
@@ -23,15 +24,12 @@
 
     .servicios__info__titulo {
         font-weight: bolder;
-        font-style: italic;
         font-size: 30px;
         text-align: center;
-        color: #ff0000;
+        color: #ffffff;
         margin-top: 20px;
         text-transform: uppercase;
-        font-family: 'Montserrat';
-
-
+        font-family: 'Inria Sans', sans-serif;
     }
 
     .servicios__cards {
@@ -123,7 +121,6 @@
         display: flex;
         flex-flow: column wrap;
         color: #fff;
-        opacity: 0.8;
         min-height: 30vh;
         margin-top: 100px;
 
@@ -138,11 +135,11 @@
     .fechas__titulo {
         font-size: 30px;
         font-weight: bolder;
-        font-style: italic;
         text-transform: uppercase;
-        color: red;
+        color: #ffff;
         text-align: center;
-        font-family: 'Montserrat';
+        font-family: 'Inria Sans', sans-serif;
+
 
     }
 
@@ -196,7 +193,8 @@
         text-transform: uppercase;
         margin-bottom: 30px;
         margin-top: 20px;
-        font-family: 'Montserrat';
+        font-family: 'Inria Sans', sans-serif;
+        color: #fff;
     }
 
     .medios {
@@ -229,18 +227,18 @@
     .servicios__info {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-evenly;
+        justify-content: flex-start;
         align-items: center;
         width: 100%;
+        padding: 30px;
         margin-top: 50px;
 
     }
 
     .servicios__info__titulo {
-        color: red;
+        color: rgb(255, 255, 255);
         font-weight: bolder;
         font-family: 'Montserrat';
-        font-style: italic;
         font-size: 30px;
         text-transform: uppercase;
     }
@@ -339,12 +337,12 @@
     }
 
     .fechas {
-        opacity: 0.8;
         display: flex;
         flex-flow: column wrap;
         color: #fff;
         min-height: 30vh;
         margin-top: 100px;
+        
     }
 
     .fechas__container {
@@ -356,10 +354,9 @@
     .fechas__titulo {
         font-size: 30px;
         font-weight: bolder;
-        font-style: italic;
-        font-family: 'Montserrat';
+        font-family: 'Inria Sans', sans-serif;
         text-transform: uppercase;
-        color: red;
+        color: rgb(255, 255, 255);
         text-align: center;
     }
 
@@ -381,7 +378,7 @@
     }
 
     .fechas__cards__inscripciones__titulo {
-        font-size: 20px;
+        font-size: 15px;
         text-transform: uppercase;
         font-family: 'Montserrat';
         text-align: center;
@@ -405,10 +402,19 @@
         opacity: 0;
         transition: 1s ease-out;
     }
+    .tarifas-pagos {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        margin-top: 100px;
+    }
+
+    
 
     .tarifas__cards__titulo {
         text-transform: uppercase;
         margin-bottom: 30px;
+        font-family: 'Inria Sans', sans-serif;
         margin-top: 20px;
 
     }
@@ -436,18 +442,19 @@
     .servicios__info {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-evenly;
+        justify-content: flex-start;
+        padding: 50px;
         align-items: center;
+        width: 100%;
         margin-top: 30px;
     }
 
     .servicios__info__titulo {
         font-weight: bolder;
-        font-style: italic;
         font-size: 40px;
-        font-family: 'Montserrat';
+        font-family: 'Inria Sans', sans-serif;
         text-transform: uppercase;
-        color: #ff0000;
+        color: #ffffff;
     }
 
     .servicios__cards {
@@ -545,17 +552,17 @@
     .fechas__container {
         margin-top: 20px;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
+        padding: 30px;
     }
 
     .fechas__titulo {
         font-size: 30px;
         font-weight: bolder;
-        font-style: italic;
         text-transform: uppercase;
-        color: red;
+        color: rgb(255, 255, 255);
         text-align: center;
-        font-family: 'Montserrat';
+        font-family: 'Inria Sans', sans-serif;
     }
 
     .fechas__cards {
@@ -606,13 +613,15 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
-        margin: 100px 0 0 0;
+        margin-top: 100px;
     }
 
     .tarifas__cards__titulo {
         text-transform: uppercase;
         margin-bottom: 30px;
         margin-top: 10px;
+        font-family: 'Inria Sans', sans-serif;
+        color: #fff;
 
     }
 

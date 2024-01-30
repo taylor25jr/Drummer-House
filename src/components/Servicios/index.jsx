@@ -5,6 +5,8 @@ import { handleScroll } from "../../hooks/Servicios/useScroll";
 import { Footer } from "../Footer";
 import PaymentsMethods from "../PaymentsMethods";
 import PropTypes from 'prop-types';
+import BasicCard from "../CardGroup";
+import PensumCard from "../CardGroup";
 
 export const Servicios = ({ handleShow, handleClick }) => {
   useEffect(() => {
@@ -15,6 +17,8 @@ export const Servicios = ({ handleShow, handleClick }) => {
     };
   }, []);
 
+  const topicsInitiation = ["Rudimentos esenciales","Ritmos Basicos"," Teoria 1 (basico y esencial)"]
+
   return (
     <>
       <section className="servicios">
@@ -22,7 +26,14 @@ export const Servicios = ({ handleShow, handleClick }) => {
           <h3 className="servicios__info__titulo">Nuestro pensum</h3>
         </article>
         <article className="servicios__cards">
-          <article className="card" id="cards">
+          <PensumCard
+            img="https://media.istockphoto.com/id/805751134/es/foto/rock-n-roll-baterista-destellos-en-el-aire.jpg?s=1024x1024&w=is&k=20&c=KHb4bS1WH4zKIq5X2A8uZveMKyhzBJlzYBTrY5xCmP4="
+            title="Iniciacion del instrumento"
+            description="
+Un pensum de iniciación para el aprendizaje del instrumento de batería proporciona una guía estructurada para los estudiantes que desean desarrollar habilidades fundamentales en la percusión. Este pensum abarcará desde los conceptos básicos hasta las técnicas más avanzadas"
+            topics={topicsInitiation}
+          />
+          {/*<article className="card" id="cards">
             <header className="card__header">
               <img
                 src="https://media.istockphoto.com/id/805751134/es/foto/rock-n-roll-baterista-destellos-en-el-aire.jpg?s=1024x1024&w=is&k=20&c=KHb4bS1WH4zKIq5X2A8uZveMKyhzBJlzYBTrY5xCmP4="
@@ -81,7 +92,7 @@ export const Servicios = ({ handleShow, handleClick }) => {
                 </li>
               </ol>
             </div>
-          </article>
+          </article>*/}
         </article>
       </section>
       <section className="mas-servicios">
@@ -133,6 +144,7 @@ export const Servicios = ({ handleShow, handleClick }) => {
         </section>
       </section>
       <Footer />
+      <BasicCard />
     </>
   );
 };
