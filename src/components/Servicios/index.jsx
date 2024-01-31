@@ -33,6 +33,20 @@ export const Servicios = ({ handleShow, handleClick }) => {
 Un pensum de iniciación para el aprendizaje del instrumento de batería proporciona una guía estructurada para los estudiantes que desean desarrollar habilidades fundamentales en la percusión. Este pensum abarcará desde los conceptos básicos hasta las técnicas más avanzadas"
             topics={topicsInitiation}
           />
+          <PensumCard
+            img="https://media.istockphoto.com/id/805751134/es/foto/rock-n-roll-baterista-destellos-en-el-aire.jpg?s=1024x1024&w=is&k=20&c=KHb4bS1WH4zKIq5X2A8uZveMKyhzBJlzYBTrY5xCmP4="
+            title="Iniciacion del instrumento"
+            description="
+Un pensum de iniciación para el aprendizaje del instrumento de batería proporciona una guía estructurada para los estudiantes que desean desarrollar habilidades fundamentales en la percusión. Este pensum abarcará desde los conceptos básicos hasta las técnicas más avanzadas"
+            topics={topicsInitiation}
+          />
+          <PensumCard
+            img="https://media.istockphoto.com/id/805751134/es/foto/rock-n-roll-baterista-destellos-en-el-aire.jpg?s=1024x1024&w=is&k=20&c=KHb4bS1WH4zKIq5X2A8uZveMKyhzBJlzYBTrY5xCmP4="
+            title="Iniciacion del instrumento"
+            description="
+Un pensum de iniciación para el aprendizaje del instrumento de batería proporciona una guía estructurada para los estudiantes que desean desarrollar habilidades fundamentales en la percusión. Este pensum abarcará desde los conceptos básicos hasta las técnicas más avanzadas"
+            topics={topicsInitiation}
+          />
           {/*<article className="card" id="cards">
             <header className="card__header">
               <img
@@ -144,7 +158,6 @@ Un pensum de iniciación para el aprendizaje del instrumento de batería proporc
         </section>
       </section>
       <Footer />
-      <BasicCard />
     </>
   );
 };

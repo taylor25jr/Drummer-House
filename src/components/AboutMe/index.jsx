@@ -1,28 +1,27 @@
-import * as React from 'react';
-import Avatar from '@mui/joy/Avatar';
-import Chip from '@mui/joy/Chip';
-import Box from '@mui/joy/Box';
-import Button from '@mui/joy/Button';
-import ButtonGroup from '@mui/joy/ButtonGroup';
-import Card from '@mui/joy/Card';
-import CardContent from '@mui/joy/CardContent';
-import CardOverflow from '@mui/joy/CardOverflow';
-import CardActions from '@mui/joy/CardActions';
-import IconButton from '@mui/joy/IconButton';
-import Typography from '@mui/joy/Typography';
-import SvgIcon from '@mui/joy/SvgIcon';
+import * as React from "react";
+import Avatar from "@mui/joy/Avatar";
+import Chip from "@mui/joy/Chip";
+import Box from "@mui/joy/Box";
+import Card from "@mui/joy/Card";
+import CardContent from "@mui/joy/CardContent";
+import IconButton from "@mui/joy/IconButton";
+import Typography from "@mui/joy/Typography";
+import SvgIcon from "@mui/joy/SvgIcon";
 
 export default function BioCard() {
   return (
     <Card
       sx={{
         width: 320,
-        maxWidth: '100%',
-        boxShadow: 'lg',
+        maxWidth: "100%",
+        boxShadow: "lg",
       }}
     >
-      <CardContent sx={{ alignItems: 'center', textAlign: 'center' }}>
-        <Avatar src="/static/images/avatar/1.jpg" sx={{ '--Avatar-size': '4rem' }} />
+      <CardContent sx={{ alignItems: "center", textAlign: "center" }}>
+        <Avatar
+          src="/src/img/Johan-mobile.jpg"
+          sx={{ "--Avatar-size": "4rem" }}
+        />
         <Chip
           size="sm"
           variant="soft"
@@ -30,23 +29,24 @@ export default function BioCard() {
           sx={{
             mt: -1,
             mb: 1,
-            border: '3px solid',
-            borderColor: 'background.surface',
+            border: "3px solid",
+            borderColor: "background.surface",
           }}
         >
           PRO
         </Chip>
-        <Typography level="title-lg">Josephine Blanton</Typography>
-        <Typography level="body-sm" sx={{ maxWidth: '24ch' }}>
-          Hello, this is my bio and I am a PRO member of MUI. I am a developer and I
-          love to code.
+        <Typography level="title-lg">Johan Sebastian</Typography>
+        <Typography level="body-sm" sx={{ maxWidth: "24ch" }}>
+          Baterista altamente competente con una sólida formación musical,
+          comprometido con aportar energía y dinamismo a cualquier proyecto
+          musical.
         </Typography>
         <Box
           sx={{
-            display: 'flex',
+            display: "flex",
             gap: 2,
             mt: 2,
-            '& > button': { borderRadius: '2rem' },
+            "& > button": { borderRadius: "2rem" },
           }}
         >
           <IconButton size="sm" variant="plain" color="neutral">

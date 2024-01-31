@@ -7,7 +7,7 @@ import IconButton from '@mui/joy/IconButton';
 import Typography from '@mui/joy/Typography';
 import BookmarkAdd from '@mui/icons-material/BookmarkAddOutlined';
 import "./CardGroup.css"
-import { List, ListItem, ListItemText } from '@mui/material';
+import { List, ListItem } from '@mui/material';
 
 export default function PensumCard({img,title,description,topics}) {
 
@@ -58,7 +58,7 @@ export default function PensumCard({img,title,description,topics}) {
             <List >
                 {topicList.map((el, index) => (
                   <ListItem key={index}>
-                 |  {el}
+                   {el}
                   </ListItem>
                 ))}
             </List>

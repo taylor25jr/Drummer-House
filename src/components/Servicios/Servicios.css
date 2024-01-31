@@ -33,8 +33,12 @@
     }
 
     .servicios__cards {
+        display: flex;
         padding: 20px;
         width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
     }
 
 
@@ -227,7 +231,7 @@
     .servicios__info {
         display: flex;
         flex-flow: row wrap;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         width: 100%;
         padding: 30px;
@@ -342,7 +346,7 @@
         color: #fff;
         min-height: 30vh;
         margin-top: 100px;
-        
+
     }
 
     .fechas__container {
@@ -402,6 +406,7 @@
         opacity: 0;
         transition: 1s ease-out;
     }
+
     .tarifas-pagos {
         display: flex;
         flex-flow: row wrap;
@@ -409,7 +414,7 @@
         margin-top: 100px;
     }
 
-    
+
 
     .tarifas__cards__titulo {
         text-transform: uppercase;
@@ -442,7 +447,7 @@
     .servicios__info {
         display: flex;
         flex-flow: row wrap;
-        justify-content: flex-start;
+        justify-content: center;
         padding: 50px;
         align-items: center;
         width: 100%;
@@ -552,7 +557,7 @@
     .fechas__container {
         margin-top: 20px;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         padding: 30px;
     }
 

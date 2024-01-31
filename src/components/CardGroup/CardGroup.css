@@ -1,21 +1,33 @@
 @media (max-width: 767px) {
-    .ContainerPensumCard{
-        width: 100%;
-    }
-    .li{
-        list-style-type: disc;
-    }
 
+    .ContainerPensumCard{
+        width: 80%;
+        margin-top: 15px;
+    }
   }
   
 @media (min-width: 768px) and (max-width: 1023px) {
-
+    .ContainerPensumCard{
+        margin-top: 20px;
+        width: 40%;
+    }
+    
+    .li{
+        list-style-type: disc;
+    }
 
 }
 
 @media screen and (min-width: 1023px) {
  
-
+    .ContainerPensumCard{
+        margin-top: 20px;
+        width: 40%;
+    }
+    
+    .li{
+        list-style-type: disc;
+    }
 } 
 
   

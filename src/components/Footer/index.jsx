@@ -32,10 +32,12 @@ export const Footer = () => {
                   marginRight: "10px",
                 }}
               ></i>
-              <p>&copy; Copyright 2024</p>
             </ul>
             <br />
+          </div>
+          <div className="footerinfo">
             <p className="madeby">Made by Taylor</p>
+            <p>&copy; Copyright 2024</p>
           </div>
         </div>
       </div>
