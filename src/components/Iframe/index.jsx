@@ -16,7 +16,7 @@ export function MediaIframe() {
             autoPlay
             loop
             muted
-            poster="https://assets.codepen.io/6093409/river.jpg"
+            poster="/src/img/portrait3_Image.jpg"
             style={{ height: "100%" }}
           >
             <source src="/src/assets/iframe.mp4" type="video/mp4" />

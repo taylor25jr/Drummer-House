@@ -65,12 +65,23 @@
         font-size: 12px;
         line-height: 2rem;
     }
-
     .bigraphyCard {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-top: 50px;
+    }
+
+    .bigraphyCard>h2 {
+        color: #fff;
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+        font-weight: bolder;
+        text-transform: capitalize;
+        font-size: 20px;
+        margin-bottom: 50px;
+        text-transform: uppercase;
     }
 
     .aboutMeEffect {
@@ -150,10 +161,23 @@
 
     .bigraphyCard {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-top: 50px;
     }
+
+    .bigraphyCard>h2 {
+        color: #fff;
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+        font-weight: bolder;
+        text-transform: capitalize;
+        font-size: 20px;
+        margin-bottom: 50px;
+        text-transform: uppercase;
+    }
+
 
     .aboutMeEffect {
         left: 0px;
