@@ -1,5 +1,5 @@
 
-export const handleScroll = () => {
+export const handleScrollServicios = () => {
     const $cards = document.querySelectorAll("#cards");
     const $fechaCards = document.querySelectorAll("#cardsFecha");
 
@@ -24,16 +24,8 @@ export const handleScroll = () => {
       const fechaCardDistance =
         window.innerHeight - card.getBoundingClientRect().top;
 
-      if (fechaCardDistance >= 400) {
+      if (fechaCardDistance >= 200) {
         card.classList.add("cards-show");
-      } else {
-        card.classList.remove("cards-show");
-      }
-
-      if (fechaCardDistance <= 400) {
-        card.classList.add("cards-show-outer");
-      } else {
-        card.classList.remove("cards-show-outer");
-      }
+      } 
     });
   };

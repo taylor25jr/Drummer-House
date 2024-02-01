@@ -1,18 +1,19 @@
 import React, { useEffect } from "react";
 import "./Servicios.css";
 import PricingCards from "../Prices";
-import { handleScroll } from "../../hooks/Servicios/useScroll";
+import { handleScrollServicios } from "../../hooks/Servicios/useScroll";
 import { Footer } from "../Footer";
 import PaymentsMethods from "../PaymentsMethods";
 import PropTypes from "prop-types";
 import PensumCard from "../CardGroup";
 
 export const Servicios = ({ handleShow, handleClick }) => {
+  
   useEffect(() => {
-    handleScroll();
-    window.addEventListener("scroll", handleScroll);
+    handleScrollServicios();
+    window.addEventListener("scroll", handleScrollServicios);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", handleScrollServicios);
     };
   }, []);
 
@@ -22,13 +23,27 @@ export const Servicios = ({ handleShow, handleClick }) => {
     " Teoria 1 (basico y esencial)",
   ];
 
+  const topicsIntermediate = [
+    "Teoría 2 (Rudimentos, independencia y lectura al mismo tiempo)",
+
+    "Ritmos intermedios",
+    "Ensamble",
+    "Técnicas (avanzadas)",
+  ];
+
+  const topicsProfessional = [
+    "Teoria 3",
+    "Concepto",
+    "Ensamble, Ritmos y Desplazamiento de ejercicios",
+  ];
+
   return (
     <>
       <section className="servicios">
         <article className="servicios__info">
           <h3 className="servicios__info__titulo">Nuestro pensum</h3>
         </article>
-        <article className="servicios__cards">
+        <article className="servicios__cards" id="cards">
           <PensumCard
             img="https://i.pinimg.com/736x/fa/12/7a/fa127a00ce9da5c440c9ec9cb9eeaf1b.jpg"
             title="Iniciacion del instrumento"
@@ -44,7 +59,7 @@ export const Servicios = ({ handleShow, handleClick }) => {
             description="
             Este programa de estudio intermedio en batería proporciona una sólida formación para músicos en desarrollo.
              Desde la consolidación de técnicas fundamentales hasta la exploración de estilos diversos."
-            topics={topicsInitiation}
+            topics={topicsIntermediate}
           />
           <PensumCard
             img="https://i.pinimg.com/736x/3f/3f/93/3f3f9367dbb700b3132960acf3c786a6.jpg"
@@ -52,7 +67,7 @@ export const Servicios = ({ handleShow, handleClick }) => {
             description="
             Dirigido a bateristas experimentados, el pensum avanzado en batería se sumerge en la complejidad y la expresión artística. 
             Desde la maestría de ritmos polirrítmicos hasta la improvisación avanzada."
-            topics={topicsInitiation}
+            topics={topicsProfessional}
           />
         </article>
       </section>

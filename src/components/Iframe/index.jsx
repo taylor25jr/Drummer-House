@@ -19,7 +19,7 @@ export function MediaIframe() {
             poster="https://i.ibb.co/zR10MNS/portrait3-Image.jpg"
             style={{ height: "100%" }}
           >
-            <source src="./video/iframe.mp4" type="video/mp4" />
+            <source src="/public/iframe.mp4" type="video/mp4" />
           </video>
         </CardCover>
       </Card>
