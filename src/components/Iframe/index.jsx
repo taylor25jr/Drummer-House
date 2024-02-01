@@ -16,10 +16,10 @@ export function MediaIframe() {
             autoPlay
             loop
             muted
-            poster="/src/img/portrait3_Image.jpg"
+            poster="https://i.ibb.co/zR10MNS/portrait3-Image.jpg"
             style={{ height: "100%" }}
           >
-            <source src="/src/assets/iframe.mp4" type="video/mp4" />
+            <source src="./video/iframe.mp4" type="video/mp4" />
           </video>
         </CardCover>
       </Card>

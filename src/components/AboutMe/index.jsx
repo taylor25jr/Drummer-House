@@ -19,7 +19,7 @@ export default function BioCard() {
     >
       <CardContent sx={{ alignItems: "center", textAlign: "center" }}>
         <Avatar
-          src="/src/img/Johan-mobile.jpg"
+          src="https://i.ibb.co/4jngJX5/Johan-mobile.jpg"
           sx={{ "--Avatar-size": "4rem" }}
         />
         <Chip

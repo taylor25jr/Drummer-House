@@ -4,8 +4,7 @@ import PricingCards from "../Prices";
 import { handleScroll } from "../../hooks/Servicios/useScroll";
 import { Footer } from "../Footer";
 import PaymentsMethods from "../PaymentsMethods";
-import PropTypes from 'prop-types';
-import BasicCard from "../CardGroup";
+import PropTypes from "prop-types";
 import PensumCard from "../CardGroup";
 
 export const Servicios = ({ handleShow, handleClick }) => {
@@ -17,7 +16,11 @@ export const Servicios = ({ handleShow, handleClick }) => {
     };
   }, []);
 
-  const topicsInitiation = ["Rudimentos esenciales","Ritmos Basicos"," Teoria 1 (basico y esencial)"]
+  const topicsInitiation = [
+    "Rudimentos esenciales",
+    "Ritmos Basicos",
+    " Teoria 1 (basico y esencial)",
+  ];
 
   return (
     <>
@@ -27,86 +30,30 @@ export const Servicios = ({ handleShow, handleClick }) => {
         </article>
         <article className="servicios__cards">
           <PensumCard
-            img="https://media.istockphoto.com/id/805751134/es/foto/rock-n-roll-baterista-destellos-en-el-aire.jpg?s=1024x1024&w=is&k=20&c=KHb4bS1WH4zKIq5X2A8uZveMKyhzBJlzYBTrY5xCmP4="
+            img="https://i.pinimg.com/736x/fa/12/7a/fa127a00ce9da5c440c9ec9cb9eeaf1b.jpg"
             title="Iniciacion del instrumento"
             description="
-Un pensum de iniciación para el aprendizaje del instrumento de batería proporciona una guía estructurada para los estudiantes que desean desarrollar habilidades fundamentales en la percusión. Este pensum abarcará desde los conceptos básicos hasta las técnicas más avanzadas"
+           Un pensum de iniciación para el aprendizaje del instrumento de batería proporciona una guía
+            estructurada para los estudiantes que desean desarrollar habilidades fundamentales en la percusión.
+            Este pensum abarcará desde los conceptos básicos hasta las técnicas más avanzadas"
             topics={topicsInitiation}
           />
           <PensumCard
-            img="https://media.istockphoto.com/id/805751134/es/foto/rock-n-roll-baterista-destellos-en-el-aire.jpg?s=1024x1024&w=is&k=20&c=KHb4bS1WH4zKIq5X2A8uZveMKyhzBJlzYBTrY5xCmP4="
-            title="Iniciacion del instrumento"
+            img="https://i.pinimg.com/736x/c2/c3/59/c2c359eabf1d22928f581249afd4d91e.jpg"
+            title="Intermedio"
             description="
-Un pensum de iniciación para el aprendizaje del instrumento de batería proporciona una guía estructurada para los estudiantes que desean desarrollar habilidades fundamentales en la percusión. Este pensum abarcará desde los conceptos básicos hasta las técnicas más avanzadas"
+            Este programa de estudio intermedio en batería proporciona una sólida formación para músicos en desarrollo.
+             Desde la consolidación de técnicas fundamentales hasta la exploración de estilos diversos."
             topics={topicsInitiation}
           />
           <PensumCard
-            img="https://media.istockphoto.com/id/805751134/es/foto/rock-n-roll-baterista-destellos-en-el-aire.jpg?s=1024x1024&w=is&k=20&c=KHb4bS1WH4zKIq5X2A8uZveMKyhzBJlzYBTrY5xCmP4="
-            title="Iniciacion del instrumento"
+            img="https://i.pinimg.com/736x/3f/3f/93/3f3f9367dbb700b3132960acf3c786a6.jpg"
+            title="Avanzado"
             description="
-Un pensum de iniciación para el aprendizaje del instrumento de batería proporciona una guía estructurada para los estudiantes que desean desarrollar habilidades fundamentales en la percusión. Este pensum abarcará desde los conceptos básicos hasta las técnicas más avanzadas"
+            Dirigido a bateristas experimentados, el pensum avanzado en batería se sumerge en la complejidad y la expresión artística. 
+            Desde la maestría de ritmos polirrítmicos hasta la improvisación avanzada."
             topics={topicsInitiation}
           />
-          {/*<article className="card" id="cards">
-            <header className="card__header">
-              <img
-                src="https://media.istockphoto.com/id/805751134/es/foto/rock-n-roll-baterista-destellos-en-el-aire.jpg?s=1024x1024&w=is&k=20&c=KHb4bS1WH4zKIq5X2A8uZveMKyhzBJlzYBTrY5xCmP4="
-                alt=""
-                className="card__header__img"
-              />
-            </header>
-            <div className="card__body">
-              <h3 className="card__header__titulo">
-                Iniciacion del instrumento
-              </h3>
-              <ol className="container__list">
-                <li className="container__list__item">Rudimentos esenciales</li>
-                <li className="container__list__item">Ritmos básicos</li>
-                <li className="container__list__item">
-                  Teoria 1 (basico y esencial)
-                </li>
-              </ol>
-            </div>
-          </article>
-          <article className="card" id="cards">
-            <article className="card__header">
-              <img
-                src="https://media.istockphoto.com/id/1308514040/es/foto/el-baterista-toca-la-bater%C3%ADa-hermoso-fondo-azul-y-rojo-con-rayos-de-luz-hermosos-efectos.jpg?s=1024x1024&w=is&k=20&c=e9ULbQHde-rulNQ3ThTNBhQ6qy52TqikRMKaiMoz8gU="
-                alt=""
-                className="card__header__img"
-              />
-            </article>
-            <div className="card__body">
-              <h3 className="card__header__titulo">Intermedio</h3>
-              <ol className="container__list">
-                <li className="container__list__item">
-                  Teoria 2 (Rudimentos, Independencia y Lectura al mismo tiempo)
-                </li>
-                <li className="container__list__item">Ritmos intermedios</li>
-                <li className="container__list__item">Ensamble</li>
-                <li className="container__list__item">Técnicas (avanzadas)</li>
-              </ol>
-            </div>
-          </article>
-          <article className="card" id="cards">
-            <header className="card__header">
-              <img
-                src="https://media.istockphoto.com/id/1311312996/es/foto/baterista-tocando-la-bater%C3%ADa-con-humo-y-polvo-en-el-fondo.jpg?s=1024x1024&w=is&k=20&c=dmhws8nlrwbpDpHRR2IdFf-dNYz9P6ecK6sNp24G_uM="
-                alt=""
-                className="card__header__img"
-              />
-            </header>
-            <div className="card__body">
-              <h3 className="card__header__titulo">Avanzado</h3>
-              <ol className="container__list">
-                <li className="container__list__item">Teoria 3</li>
-                <li className="container__list__item">Concepto</li>
-                <li className="container__list__item">
-                  Ensamble, Ritmos y Desplazamiento de ejercicios
-                </li>
-              </ol>
-            </div>
-          </article>*/}
         </article>
       </section>
       <section className="mas-servicios">
@@ -162,8 +109,7 @@ Un pensum de iniciación para el aprendizaje del instrumento de batería proporc
   );
 };
 
-
 Servicios.propTypes = {
   handleShow: PropTypes.func,
   handleClick: PropTypes.func,
-}
+};

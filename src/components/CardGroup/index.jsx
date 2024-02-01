@@ -1,46 +1,31 @@
-import * as React from 'react';
-import { useState,useEffect } from 'react';
-import AspectRatio from '@mui/joy/AspectRatio';
-import Card from '@mui/joy/Card';
-import CardContent from '@mui/joy/CardContent';
-import IconButton from '@mui/joy/IconButton';
-import Typography from '@mui/joy/Typography';
-import BookmarkAdd from '@mui/icons-material/BookmarkAddOutlined';
-import "./CardGroup.css"
-import { List, ListItem } from '@mui/material';
+import * as React from "react";
+import { useState, useEffect } from "react";
+import AspectRatio from "@mui/joy/AspectRatio";
+import Card from "@mui/joy/Card";
+import CardContent from "@mui/joy/CardContent";
+import Typography from "@mui/joy/Typography";
+import "./CardGroup.css";
+import PropTypes from "prop-types";
 
-export default function PensumCard({img,title,description,topics}) {
+export default function PensumCard({ img, title, description, topics }) {
+  
+  const [topicList, setTopicList] = useState([]);
 
-    const [topicList, setTopicList] = useState([]);
-
-    useEffect(() => {
-        const handleSetTopic = () => {
-        setTopicList([...topicList,topics]); 
-        }
-        handleSetTopic();
-    
-      return () => {
-        handleSetTopic();
-      }
-    }, [])
-    
-   
+  useEffect(() => {
+    const handleSetTopic = () => {
+      setTopicList([...topics]);
+    };
+    handleSetTopic();
+  }, [topics]);
 
   return (
     <Card className="ContainerPensumCard">
       <div>
-        <Typography level="title-lg">{title}</Typography>
-        <IconButton
-          aria-label="bookmark Bahamas Islands"
-          variant="plain"
-          color="neutral"
-          size="sm"
-          sx={{ position: "absolute", top: "0.875rem", right: "0.5rem" }}
-        >
-          <BookmarkAdd />
-        </IconButton>
+        <Typography level="title-lg" textTransform="uppercase">
+          {title}
+        </Typography>
       </div>
-      <AspectRatio minHeight="120px" maxHeight="200px">
+      <AspectRatio minHeight="120px" maxHeight="150px">
         <img src={img} srcSet={img} loading="lazy" alt="cardLogo" />
       </AspectRatio>
       <CardContent orientation="horizontal">
@@ -55,17 +40,22 @@ export default function PensumCard({img,title,description,topics}) {
           >
             Contenido
           </Typography>
-            <List >
-                {topicList.map((el, index) => (
-                  <ListItem key={index}>
-                   {el}
-                  </ListItem>
-                ))}
-            </List>
+          <ul className="contentList">
+            {topicList.map((el, index) => (
+              <li key={index} value={el}>
+                {el}
+              </li>
+            ))}
+          </ul>
         </div>
       </CardContent>
     </Card>
   );
 }
 
-//finalizar las viñetas
+PensumCard.propTypes = {
+  img: PropTypes.string,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  topics: PropTypes.array,
+};
