@@ -33,10 +33,10 @@ useEffect(() => {
           <Dropdown>
             <MenuButton>☰</MenuButton>
             <Menu style={{backgroundColor:"black"}}>
-              <MenuItem ><Link to="/servicios" className=" nav__list__item">Servicios</Link></MenuItem>
-              <MenuItem><Link to="/sobre-mi" className=" nav__list__item">Sobre mi</Link></MenuItem>
-              <MenuItem><Link to="/otros" className=" nav__list__item">Otros</Link></MenuItem>
-              <MenuItem><Link to="/contacto" className=" nav__list__item">Contacto</Link></MenuItem>
+              <MenuItem style={{backgroundColor:"black"}} ><Link to="/servicios" className=" nav__list__item">Servicios</Link></MenuItem>
+              <MenuItem style={{backgroundColor:"black"}}><Link to="/sobre-mi" className=" nav__list__item">Sobre mi</Link></MenuItem>
+              <MenuItem style={{backgroundColor:"black"}}><Link to="/otros" className=" nav__list__item">Otros</Link></MenuItem>
+              <MenuItem style={{backgroundColor:"black"}}><Link to="/contacto" className=" nav__list__item">Contacto</Link></MenuItem>
             </Menu>
           </Dropdown> : 
           <nav className=" nav__list">
