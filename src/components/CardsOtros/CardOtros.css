@@ -4,235 +4,117 @@
     font-family: arial;
 }
 
-.contenedorOtros {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    transition: all 0.3s ease-out;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    display: block;
-}
-
-.contenedor-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-
-
-.contenedor-cards .contenedor-card-item:hover {
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-    -webkit-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    -o-transform: translateY(-10px);
-    transform: translateY(-10px);
-}
-
-.contenedor-card-item-wrapper {
-    overflow: hidden;
-    position: relative !important;
-    border-radius: 5px;
-}
-
-.contenedor-card-item img {
-    max-width: 100%;
-    position: relative;
-    top: 0;
-    -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-    border-radius: 5px;
-}
-
-.contenedor-card-item .contenedor-info {
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    bottom: -90px;
-    -webkit-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
-    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.contenedor-card-item .contenedor-info .fondo {
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.73) 53%, rgba(0, 0, 0, 0.88) 100%);
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.73) 53%, rgba(0, 0, 0, 0.88) 100%);
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.73) 53%, rgba(0, 0, 0, 0.88) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#e0000000', GradientType=0);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.contenedor-card-item .contenedor-info .info {
-    color: #fff;
-    position: relative;
-    z-index: 500;
-    padding: 20px 15px;
-}
-
-.contenedor-card-item .contenedor-info .info .titulo {
-    margin: 0;
-    font-size: 20px;
-}
-
-.contenedor-card-item .contenedor-info .info .categoria {
-    display: block;
-    font-size: 10px;
-}
-
-.contenedor-card-item:hover .contenedor-info {
-    bottom: 0;
-}
-
-.contenedor-card-item:hover img {
-    top: -30px;
-    -webkit-transform: rotate(-5deg) scale(2);
-    -ms-transform: rotate(-5deg) scale(2);
-    -o-transform: rotate(-5deg) scale(2);
-    transform: rotate(-5deg) scale(2);
-    cursor: pointer;
-}
-
 
 @media (max-width: 767px) {
-    .contenedorOtros {
-        position: relative;
+
+    .cardOtherServices {
         width: 70%;
-        margin: 0 auto;
-        transition: all 0.3s ease-out;
-        margin-top: 50px;
-        margin-bottom: 20px;
-        display: block;
+        margin-bottom: 50px;
     }
 
-
-    .contenedor-cards .contenedor-card-item {
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        -o-box-sizing: border-box;
+    .cardOtherServices__img {
         width: 100%;
-        margin: 1%;
-        -webkit-transition: all 0.3s ease-out;
-        -o-transition: all 0.3s ease-out;
-        transition: all 0.3s ease-out;
-        border-radius: 5px;
-        cursor: help;
+        height: 200px;
     }
 
-
-
-    .ContainerCard__title {
+    .cardContentTitle {
+        font-size: 18px;
         color: #000000;
-        margin-top: 20px;
-        text-align: center;
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 500;
+        font-weight: 400;
+        text-transform: capitalize;
         font-family: 'Montserrat';
     }
 
-    .buttonGetIt {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .CardContentText {
+        font-size: 15px;
+        color: #000000;
+        margin-top: 10px;
+        font-weight: 300;
+        font-style: italic;
+        font-family: 'Montserrat';
     }
+
+    .cardContent button {
+        margin-top: 20px;
+    }
+
 }
 
-@media (min-width: 768px) {
-    .contenedorOtros {
-        position: relative;
-        width: 30%;
-        margin: 50px;
-        transition: all 0.3s ease-out;
-        margin-top: 50px;
-        margin-bottom: 20px;
-        display: block;
+@media (min-width: 767px) {
+
+    .cardOtherServices {
+        width: 350px;
+        margin-bottom: 50px;
     }
 
-
-    .contenedor-cards .contenedor-card-item {
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        -o-box-sizing: border-box;
+    .cardOtherServices__img {
         width: 100%;
-        margin: 1%;
-        -webkit-transition: all 0.3s ease-out;
-        -o-transition: all 0.3s ease-out;
-        transition: all 0.3s ease-out;
-        border-radius: 5px;
-        cursor: help;
+        height: 200px;
     }
 
-
-
-    .ContainerCard__title {
+    .cardContentTitle {
+        height: 40px;
+        font-size: 18px;
         color: #000000;
-        margin-top: 20px;
-        text-align: center;
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 500;
+        font-weight: 400;
+        text-transform: capitalize;
         font-family: 'Montserrat';
     }
 
-    .buttonGetIt {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .CardContentText {
+        font-size: 15px;
+        color: #000000;
+        margin-top: 10px;
+        font-weight: 300;
+        font-style: italic;
+        font-family: 'Montserrat';
     }
 
+    .cardContent button {
+        margin-top: 20px;
+    }
 }
 
 @media screen and (min-width: 1023px) {
-    .contenedorOtros {
-        position: relative;
-        width: 28%;
-        margin: 40px;
-        transition: all 0.3s ease-out;
-        margin-top: 50px;
-        margin-bottom: 20px;
-        display: block;
+    .cardOtherServices {
+        width: 300px;
+        margin-bottom: 50px;
     }
 
-    .contenedorCardsOtros {
-        width: 50%;
-        margin-right: 20px;
-        border-radius: 4%;
-        background-color: rgba(255, 255, 255, 0.904) !important;
-        padding: 2px;
-    }
-
-    .contenedor-cards .contenedor-card-item {
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        -o-box-sizing: border-box;
+    .cardOtherServices__img {
         width: 100%;
-        margin: 1%;
-        -webkit-transition: all 0.3s ease-out;
-        -o-transition: all 0.3s ease-out;
-        transition: all 0.3s ease-out;
-        border-radius: 5px;
-        cursor: help;
+        height: 200px;
     }
 
+    .cardContent {
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        align-content: space-around;
+        justify-content: space-between;
+    }
 
-
-    .ContainerCard__title {
+    .cardContentTitle {
+        height: 40px;
+        font-size: 18px;
         color: #000000;
         margin-top: 20px;
-        text-align: center;
-        font-size: 1rem;
-        font-style: normal;
         font-weight: 500;
+        text-transform: capitalize;
         font-family: 'Montserrat';
     }
 
-    .buttonGetIt {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .CardContentText {
+        height: 100px;
+        font-size: 15px;
+        color: #000000;
+        margin-top: 25px;
+        font-weight: 300;
+        font-style: italic;
+        font-family: 'Montserrat';
+    }
+
+    .cardContent button {
+        margin-top: 20px;
     }
 }

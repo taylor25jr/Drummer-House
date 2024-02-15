@@ -8,7 +8,6 @@ import "./CardGroup.css";
 import PropTypes from "prop-types";
 
 export default function PensumCard({ img, title, description, topics }) {
-
   const [topicList, setTopicList] = useState([]);
 
   useEffect(() => {
@@ -17,7 +16,6 @@ export default function PensumCard({ img, title, description, topics }) {
     };
     handleSetTopic();
   }, [topics]);
-
 
   return (
     <Card className="ContainerPensumCard" id="cards">

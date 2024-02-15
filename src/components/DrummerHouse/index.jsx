@@ -20,7 +20,6 @@ export const DrummerHouse = () => {
   const handleShow = () => setShow(true);
 
   const handleClick = (ref) => {
-    console.log("hola")
     if(ref.current.name === "boton1")  {
      setFormShow(true);
      handleShow();
