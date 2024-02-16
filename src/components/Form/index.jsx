@@ -1,4 +1,6 @@
 import React from "react";
+import Button from "@mui/material/Button";
+import SendIcon from "@mui/icons-material/Send";
 import "./Form.css";
 import { useForm } from "../../hooks/useForm";
 import { Loader } from "../Loader";
@@ -104,7 +106,9 @@ export const Form = () => {
               {errors.comments && (
                 <p className="errorAlert">{errors.comments}</p>
               )}
-              <input type="submit" value="Enviar" />
+                 <Button type="submit" variant="contained" endIcon={<SendIcon />}>
+            Send
+          </Button>
             </>
           )}
         </form>
