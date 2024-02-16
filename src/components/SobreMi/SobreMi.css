@@ -31,8 +31,8 @@
         color: #fff;
     }
 
-    
-    .aboutSection2{
+
+    .aboutSection2 {
         margin-top: 90px;
     }
 
@@ -48,11 +48,16 @@
         margin-bottom: 30px;
     }
 
-    
-    .container2{
+
+    .container2 {
         order: 1;
+        margin-top: 30px;
     }
 
+    .container3 {
+        order: 1;
+        margin-top: 30px;
+    }
 
     .aboutContainer__textoContenedor {
         margin-top: 10px;
@@ -75,12 +80,14 @@
         font-size: 12px;
         line-height: 2rem;
     }
+
     .bigraphyCard {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-top: 50px;
+        padding: 20px;
     }
 
     .bigraphyCard>h2 {
@@ -133,10 +140,11 @@
         align-items: center;
         color: #fff;
     }
-    
-    .aboutSection2{
+
+    .aboutSection2 {
         margin-top: 90px;
     }
+
     .aboutContainer__imagenContenedor {
         position: relative;
         left: -100px;
@@ -149,8 +157,15 @@
         margin-bottom: 30px;
     }
 
-    .container2{
+    .container2 {
         order: 1;
+        margin-top: 30px;
+
+    }
+
+    .container3 {
+        order: 1;
+        margin-top: 30px;
     }
 
     .aboutContainer__textoContenedor {
@@ -235,9 +250,10 @@
         color: #fff;
     }
 
-    .aboutSection2{
+    .aboutSection2 {
         margin-top: 90px;
     }
+
     .aboutContainer__imagenContenedor {
         position: relative;
         left: -100px;
@@ -249,9 +265,11 @@
         border-radius: 50%;
         margin-bottom: 30px;
     }
-    .container2{
+
+    .container2 {
         order: 1;
     }
+
     .aboutContainer__textoContenedor {
         margin-top: 10px;
         position: relative;

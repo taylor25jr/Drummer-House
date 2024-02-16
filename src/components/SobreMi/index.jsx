@@ -42,7 +42,10 @@ export const SobreMi = () => {
           </article>
         </section>
         <section className="aboutContainer aboutSection2">
-          <article className="aboutContainer__imagenContenedor container2" id="about">
+          <article
+            className="aboutContainer__imagenContenedor container2"
+            id="about"
+          >
             <MediaIframe />
           </article>
           <article
@@ -50,7 +53,7 @@ export const SobreMi = () => {
             id="container-info"
           >
             <h2 className="aboutContainer__textoContenedor__titulo">
-              baterista revelacion en el drumfest 2019 
+              baterista revelacion en el drumfest 2019
             </h2>
             <br />
             <p className="aboutContainer__textoContenedor__parrafo">
@@ -64,8 +67,11 @@ export const SobreMi = () => {
             </p>
           </article>
         </section>
-        <section className="aboutContainer">
-          <article className="aboutContainer__imagenContenedor" id="about">
+        <section className="aboutContainer aboutSection2">
+          <article
+            className="aboutContainer__imagenContenedor container3"
+            id="about"
+          >
             <MediaIframe />
           </article>
           <article
@@ -73,7 +79,7 @@ export const SobreMi = () => {
             id="container-info"
           >
             <h2 className="aboutContainer__textoContenedor__titulo">
-              Participé en expodrummer 2020 
+              Participé en expodrummer 2020
             </h2>
             <br />
             <p className="aboutContainer__textoContenedor__parrafo">
