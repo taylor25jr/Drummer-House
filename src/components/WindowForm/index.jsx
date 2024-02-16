@@ -1,9 +1,11 @@
 import React from "react";
+import Button from "@mui/material/Button";
+import SendIcon from "@mui/icons-material/Send";
 import "./WindowForm.css";
 import { useForm } from "../../hooks/useForm";
 import { Loader } from "../Loader";
 import { SuccessMessage } from "../Success";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 const intialForm = {
   name: "",
@@ -52,97 +54,95 @@ export const WindowForm = ({ formShow }) => {
       {loading ? (
         <Loader />
       ) : (
-        <div className="container__form">
-          <form className="container__form__form" onSubmit={handleSubmit}>
-            <h1 className="container__form__title">
-              {formShow
-                ? "Formulario de contacto Nacionales"
-                : "Formulario de contacto Internacionales"}
-            </h1>
+        <form className="container__form__form" onSubmit={handleSubmit}>
+          <h1 className="container__form__title">
+            {formShow
+              ? "Formulario de contacto Nacionales"
+              : "Formulario de contacto Internacionales"}
+          </h1>
+          <input
+            type="text"
+            name="name"
+            placeholder="Escribe tu nombre"
+            onChange={handleChange}
+            value={form.name}
+            onBlur={handleBlur}
+            required
+          />
+          {errors.name && <p className="errorAlert">{errors.name}</p>}
+          <br />
+          <label htmlFor="clase" className="radioLabel">
             <input
-              type="text"
-              name="name"
-              placeholder="Escribe tu nombre"
+              type="radio"
+              name="option"
+              id="clase"
               onChange={handleChange}
-              value={form.name}
+              value="Clase"
               onBlur={handleBlur}
               required
-            />
-            {errors.name && <p className="errorAlert">{errors.name}</p>}
-            <br />
-            <label htmlFor="clase">
-              <input
-                type="radio"
-                name="option"
-                id="clase"
-                onChange={handleChange}
-                value="Clase"
-                onBlur={handleBlur}
-                required
-              />{" "}
-              Clase
-            </label>
-            <br />
-            <label htmlFor="claseMensual">
-              <input
-                type="radio"
-                name="option"
-                id="claseMensual"
-                onChange={handleChange}
-                value="Clase Mensual"
-                onBlur={handleBlur}
-                required
-              />{" "}
-              Clase Mensual
-            </label>
-            <br />
-            <label htmlFor="claseMensual2">
-              <input
-                type="radio"
-                name="option"
-                id="claseMensual2"
-                onChange={handleChange}
-                value="Clase Mensual X2"
-                onBlur={handleBlur}
-                required
-              />{" "}
-              Clase Mensual x2
-            </label>
-            <br />
-            {errors.option && <p className="errorAlert">{errors.option}</p>}
-            <br />
+            />{" "}
+            Clase
+          </label>
+          <br />
+          <label htmlFor="claseMensual" className="radioLabel">
             <input
-              type="number"
-              name="cellphone"
-              placeholder="Escribe tu numero de telefono"
+              type="radio"
+              name="option"
+              id="claseMensual"
               onChange={handleChange}
-              value={form.cellphone}
+              value="Clase Mensual"
               onBlur={handleBlur}
               required
-            />
-            {errors.cellphone && (
-              <p className="errorAlert">{errors.cellphone}</p>
-            )}
-            <textarea
-              name="comments"
-              cols="50"
-              rows="5"
-              placeholder="Escribe algun comentario"
-              value={form.comments}
-              onBlur={handleBlur}
+            />{" "}
+            Clase Mensual
+          </label>
+          <br />
+          <label htmlFor="claseMensual2" className="radioLabel">
+            <input
+              type="radio"
+              name="option"
+              id="claseMensual2"
               onChange={handleChange}
+              value="Clase Mensual X2"
+              onBlur={handleBlur}
               required
-            ></textarea>
-            {errors.comments && <p className="errorAlert">{errors.comments}</p>}
-            <input type="submit" value="Enviar" />
-          </form>
+            />{" "}
+            Clase Mensual x2
+          </label>
+          <br />
+          {errors.option && <p className="errorAlert">{errors.option}</p>}
+          <br />
+          <input
+            type="number"
+            name="cellphone"
+            placeholder="Escribe tu numero de telefono"
+            onChange={handleChange}
+            value={form.cellphone}
+            onBlur={handleBlur}
+            required
+          />
+          {errors.cellphone && <p className="errorAlert">{errors.cellphone}</p>}
+          <textarea
+            name="comments"
+            cols="50"
+            rows="5"
+            placeholder="Escribe algun comentario"
+            value={form.comments}
+            onBlur={handleBlur}
+            onChange={handleChange}
+            required
+          ></textarea>
+          {errors.comments && <p className="errorAlert">{errors.comments}</p>}
+          <Button type="submit" variant="contained" endIcon={<SendIcon />}>
+            Send
+          </Button>
           {response && <SuccessMessage />}
-        </div>
+        </form>
       )}
     </>
   );
 };
 
 WindowForm.propTypes = {
-  formShow:PropTypes.bool,
-}
+  formShow: PropTypes.bool,
+};
