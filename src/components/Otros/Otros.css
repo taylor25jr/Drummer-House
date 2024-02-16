@@ -16,8 +16,8 @@
     .otrosContainer__titulo h1 {
         font-size: 30px;
         color: #fff;
+        font-style: normal;
         margin-top: 20px;
-        font-style: italic;
         font-family: 'Montserrat';
     }
 
@@ -53,11 +53,11 @@
         margin-bottom: 30px;
     }
 
-    .otrosContainer__titulo h1 {
+    .otrosTitulo {
         font-size: 30px;
         font-weight: bolder;
-        font-style: italic;
         text-transform: uppercase;
+        font-style: normal;
         color: rgb(255, 255, 255);
         text-align: center;
         font-family: 'Montserrat';

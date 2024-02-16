@@ -17,8 +17,7 @@
         margin-top: 20px;
         font-size: 40px;
         font-style: normal;
-        font-family: 'Inria Sans', sans-serif;
-
+        font-family: 'Montserrat';
     }
 
     .aboutContainer {
@@ -54,7 +53,7 @@
 
     .aboutContainer__textoContenedor__titulo {
         text-align: center;
-        font-family: 'Inter', sans-serif;
+        font-family: 'Montserrat';
         font-weight: 500;
         text-transform: capitalize;
     }
@@ -76,7 +75,7 @@
     .bigraphyCard>h2 {
         color: #fff;
         text-align: center;
-        font-family: 'Inter', sans-serif;
+        font-family: 'Montserrat';
         font-weight: bolder;
         text-transform: capitalize;
         font-size: 20px;
@@ -110,8 +109,7 @@
         margin-top: 20px;
         font-size: 40px;
         font-style: normal;
-        font-family: 'Inria Sans', sans-serif;
-
+        font-family: 'Montserrat';
     }
 
     .aboutContainer {
@@ -147,7 +145,7 @@
 
     .aboutContainer__textoContenedor__titulo {
         text-align: center;
-        font-family: 'Inter', sans-serif;
+        font-family: 'Montserrat';
         font-weight: 500;
         text-transform: capitalize;
     }
@@ -170,7 +168,7 @@
     .bigraphyCard>h2 {
         color: #fff;
         text-align: center;
-        font-family: 'Inter', sans-serif;
+        font-family: 'Montserrat';
         font-weight: bolder;
         text-transform: capitalize;
         font-size: 20px;
@@ -205,8 +203,7 @@
         margin-top: 20px;
         font-size: 40px;
         font-style: normal;
-        font-family: 'Inria Sans', sans-serif;
-
+        font-family: 'Montserrat';
     }
 
     .aboutContainer {
@@ -242,13 +239,13 @@
 
     .aboutContainer__textoContenedor__titulo {
         text-align: center;
-        font-family: 'Inter', sans-serif;
+        font-family: 'Montserrat';
         font-weight: 500;
         text-transform: capitalize;
     }
 
     .aboutContainer__textoContenedor__parrafo {
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat';
         font-weight: lighter;
         font-size: 18px;
         line-height: 2rem;
@@ -265,7 +262,7 @@
     .bigraphyCard>h2 {
         color: #fff;
         text-align: center;
-        font-family: 'Inter', sans-serif;
+        font-family: 'Montserrat';
         font-weight: bolder;
         text-transform: capitalize;
         font-size: 20px;

@@ -25,7 +25,6 @@ export const Servicios = ({ handleShow, handleClick }) => {
 
   const topicsIntermediate = [
     "Teoría 2 (Rudimentos, independencia y lectura al mismo tiempo)",
-
     "Ritmos intermedios",
     "Ensamble",
     "Técnicas (avanzadas)",

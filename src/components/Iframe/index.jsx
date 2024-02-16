@@ -10,17 +10,15 @@ export function MediaIframe() {
       sx={{ display: "flex", gap: 2, flexWrap: "wrap", p: 0, m: 0 }}
       style={{ width: "100%", height: "100%", opacity: "0.8" }}
     >
-      <Card component="li" style={{ width: "100%", height: "100%" }}>
+      <Card component="li" style={{width:"100%", height:"100%"}}>
         <CardCover>
-          <video
-            autoPlay
-            loop
-            muted
-            poster="https://i.ibb.co/zR10MNS/portrait3-Image.jpg"
-            style={{ height: "100%" }}
-          >
-            <source src="/public/iframe.mp4" type="video/mp4" />
-          </video>
+          <img
+            src="https://i.ibb.co/zR10MNS/portrait3-Image.jpg"
+            srcSet="https://i.ibb.co/zR10MNS/portrait3-Image.jpg"
+            loading="lazy"
+            alt=""
+            style={{width:"100%", height:"100%"}}
+          />
         </CardCover>
       </Card>
     </Box>

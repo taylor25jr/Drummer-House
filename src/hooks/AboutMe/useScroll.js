@@ -1,13 +1,22 @@
 export const handleScrollAboutMe = () => {
-    const $img = document.querySelector("#about"),
-      $info = document.querySelector("#container-info"),
-      imgDistance = window.innerHeight - $img.getBoundingClientRect().top;
+  const $img = document.querySelectorAll("#about"),
+    $info = document.querySelectorAll("#container-info");
 
+  $img.forEach((el) => {
+    const imgDistance = window.innerHeight - el.getBoundingClientRect().top;
     if (imgDistance >= 50) {
-      $img.classList.add("aboutMeEffect");
-      $info.classList.add("aboutContainerEffect");
+      el.classList.add("aboutMeEffect");
     } else {
-      $img.classList.remove("aboutMeEffect");
-      $info.classList.remove("aboutContainerEffect");
+      el.classList.remove("aboutMeEffect");
     }
-  };
+  });
+
+  $info.forEach((el) => {
+    const imgDistance = window.innerHeight - el.getBoundingClientRect().top;
+    if (imgDistance >= 50) {
+      el.classList.add("aboutContainerEffect");
+    } else {
+      el.classList.remove("aboutContainerEffect");
+    }
+  });
+};
