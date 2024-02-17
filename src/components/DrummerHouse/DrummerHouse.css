@@ -1,31 +1,34 @@
 @import url('../../Helper/Reset.css');
 
 
-.contenedor{
+.contenedor {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-areas: 
-    'header header'
-    'body   body'
-    'footer  footer' 
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        'header header'
+        'body   body'
+        'footer  footer'
     ;
     gap: 0;
 
 }
-.contenedor__header{
+
+.contenedor__header {
     grid-area: header;
     height: 15vh;
     z-index: 2;
 }
-.contenedor__body{
+
+.contenedor__body {
     min-height: calc(100vh - 15vh);
     flex-grow: 1;
-    background-color: #000 ;
+    background-color: #000;
     grid-area: body;
 }
-.contenedor__footer{
+
+.contenedor__footer {
     min-height: 5vh;
     grid-area: footer;
-    background-color: #000 ;
+    background-color: #000;
     width: 100%;
 }

@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Form } from "../Form";
 import Main from "../Main";
 import ModalForm from "../Modal";
+import { Error404 } from "../Error404";
 
 
 export const DrummerHouse = () => {
@@ -46,6 +47,7 @@ export const DrummerHouse = () => {
               <Route path="/sobre-mi" element={<SobreMi/>} />
               <Route path="/otros" element={<Otros/>}/>
               <Route path="/contacto" element={<Form/>}/>
+              <Route path="*" element={<Error404/>}/>
             </Routes>
           </section>
         </div>
