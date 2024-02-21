@@ -2,6 +2,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import "./main.css";
 import Button from 'react-bootstrap/Button';
 import { Link } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Main() {
 
