@@ -4,6 +4,7 @@ import MenuItem from "@mui/joy/MenuItem";
 import Dropdown from "@mui/joy/Dropdown";
 import { NavLink } from "react-router-dom";
 import "./Header.css";
+import { LogoIcon } from "../Svg/Logo";
 import { useEffect, useState } from "react";
 
 //Cambiar color al burger y la ui en mobile
@@ -27,11 +28,7 @@ export const Header = () => {
       {
         <section className="header">
           <NavLink to="/">
-            <img
-              src="/src/assets/Logo W.svg"
-              alt="logo"
-              className="header__logo"
-            />
+                <LogoIcon/>
           </NavLink>
           {!isPC ? (
             <Dropdown>

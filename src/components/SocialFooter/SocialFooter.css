@@ -3,6 +3,6 @@
     flex-flow: row;
 }
 
-.social__footer > img{
+.social__footer > * {
     margin-right: 10px;
 }

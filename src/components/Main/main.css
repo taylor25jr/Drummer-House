@@ -63,10 +63,6 @@
         padding: 5px !important;
     }
 
-    .mainContainer__button>img {
-        width: 25%;
-    }
-
     .mainContainer__footer {
         z-index: 2;
         margin-bottom: 20px;
@@ -200,6 +196,10 @@
         font-size: 15px;
         text-transform: none !important;
         background-color: #A92935 !important;
+    }
+
+    .mainContainer__button__paragraph{
+        margin-right: 5px;
     }
 
     .mainContainer__footer {

@@ -1,12 +1,15 @@
 import React from 'react'
 import "./SocialFooter.css"
+import { FacebookIcon } from '../Svg/Facebook'
+import { InstagramIcon } from '../Svg/Instagram'
+import { WhatsappIcon } from '../Svg/Whatsapp'
 
 export const SocialFooter = () => {
   return (
     <div className='social__footer'>
-        <img src="/src/assets/IG.svg" alt="" />
-        <img src="/src/assets/FB.svg" alt="" />
-        <img src="/src/assets/whatsapp.svg" alt="" />
+        <FacebookIcon/>
+        <InstagramIcon/>
+        <WhatsappIcon/>
     </div>
   )
 }
