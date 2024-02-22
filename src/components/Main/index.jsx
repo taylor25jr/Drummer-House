@@ -1,23 +1,31 @@
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./main.css";
-import Button from 'react-bootstrap/Button';
+import Button from '@mui/material/Button';
 import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { SocialFooter } from "../SocialFooter";
 
 function Main() {
 
   return (
     <>
       <div className="mainContainer">
+        <section></section>
+        <section className="mainContainer__textSection">
         <h1 className="mainContainer__title">
-          Welcome to the World of Rhythm!
+        ¡BIENVENIDO AL MUNDO DEL RITMO!
         </h1>
-        <p className="mainContainer__text">Discover the Power of Drumming</p>
+        <p className="mainContainer__text">Descubre el poder de tocar batería</p>
          <Link to="/servicios">
-         <Button className="mainContainer__button" variant="danger">
-         Get started!
-         </Button>
+         <Button variant="contained" className="mainContainer__button">
+        Inicia ahora
+        <img src="/src/assets/arrow-right-circle.svg" alt="" />
+      </Button>
          </Link> 
+        </section>
+        <section className="mainContainer__footer">
+         <SocialFooter/>
+        </section>
       </div>
     </>
  

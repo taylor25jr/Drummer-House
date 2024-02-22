@@ -28,7 +28,7 @@ export const Header = () => {
         <section className="header">
           <NavLink to="/">
             <img
-              src="https://i.ibb.co/Wz73GbJ/header-Logo.png"
+              src="/src/assets/Logo W.svg"
               alt="logo"
               className="header__logo"
             />

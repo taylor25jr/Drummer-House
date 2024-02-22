@@ -1,0 +1,8 @@
+.social__footer{
+    display: flex;
+    flex-flow: row;
+}
+
+.social__footer > img{
+    margin-right: 10px;
+}
