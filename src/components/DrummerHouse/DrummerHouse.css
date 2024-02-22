@@ -17,6 +17,7 @@
     grid-area: header;
     height: 15vh;
     z-index: 2;
+    background: transparent;
 }
 
 .contenedor__body {
