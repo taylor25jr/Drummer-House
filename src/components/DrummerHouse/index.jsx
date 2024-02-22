@@ -14,7 +14,8 @@ import { BrowserRouter, Routes, Route} from "react-router-dom";
 export const DrummerHouse = () => {
   
   const [show, setShow] = useState(false),
-  [formShow, setFormShow] = useState(null);
+  [formShow, setFormShow] = useState(null),
+  [gradientHeader,setGradientHeader] = useState(false);
 
 
   const handleClose = () => setShow(false);
@@ -37,7 +38,7 @@ export const DrummerHouse = () => {
       <BrowserRouter>
         <div className="contenedor">
           <header className="contenedor__header">
-            <Header />
+            <Header setGradientHeader={setGradientHeader} gradientHeader={gradientHeader} />
           </header>
           <section className="contenedor__body">
             <ModalForm show={show} handleClose={handleClose} formShow={formShow} />

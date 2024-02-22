@@ -6,10 +6,11 @@ import { NavLink } from "react-router-dom";
 import "./Header.css";
 import { LogoIcon } from "../Svg/Logo";
 import { useEffect, useState } from "react";
+import PropTypes from "prop-types";
 
 //Cambiar color al burger y la ui en mobile
 
-export const Header = () => {
+export const Header = ({ setGradientHeader, gradientHeader }) => {
   const [isPC, setIsPC] = useState(window.innerWidth > 768);
 
   useEffect(() => {
@@ -26,9 +27,12 @@ export const Header = () => {
   return (
     <>
       {
-        <section className="header">
-          <NavLink to="/">
-                <LogoIcon/>
+        <section
+          className="header"
+          style={!gradientHeader ? { background: "#1E1E1E" } : null}
+        >
+          <NavLink to="/" onClick={() => setGradientHeader(true)}>
+            <LogoIcon />
           </NavLink>
           {!isPC ? (
             <Dropdown>
@@ -83,6 +87,7 @@ export const Header = () => {
                   `nav__list__item ${isActive ? "active-link" : null}`
                 }
                 to="/servicios"
+                onClick={() => setGradientHeader(false)}
               >
                 Servicios
               </NavLink>
@@ -91,6 +96,7 @@ export const Header = () => {
                   `nav__list__item ${isActive ? "active-link" : null}`
                 }
                 to="/sobre-mi"
+                onClick={() => setGradientHeader(false)}
               >
                 Sobre mí
               </NavLink>
@@ -99,6 +105,7 @@ export const Header = () => {
                   `nav__list__item ${isActive ? "active-link" : null}`
                 }
                 to="/otros"
+                onClick={() => setGradientHeader(false)}
               >
                 Otros
               </NavLink>
@@ -107,6 +114,7 @@ export const Header = () => {
                   `nav__list__item ${isActive ? "active-link" : null}`
                 }
                 to="/contacto"
+                onClick={() => setGradientHeader(true)}
               >
                 Contacto
               </NavLink>
@@ -116,4 +124,9 @@ export const Header = () => {
       }
     </>
   );
+};
+
+Header.propTypes = {
+  setGradientHeader: PropTypes.func,
+  gradientHeader: PropTypes.bool,
 };
