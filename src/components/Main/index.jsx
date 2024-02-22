@@ -1,4 +1,3 @@
-import "bootstrap-icons/font/bootstrap-icons.css";
 import "./main.css";
 import Button from '@mui/material/Button';
 import { Link } from "react-router-dom";
