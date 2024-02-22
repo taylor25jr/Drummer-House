@@ -27,9 +27,11 @@ export default function PensumCard({ img, title, description, topics }) {
       <AspectRatio minHeight="120px" maxHeight="150px">
         <img src={img} srcSet={img} loading="lazy" alt="cardLogo" />
       </AspectRatio>
-      <CardContent orientation="horizontal">
+      <CardContent className="cardText">
         <div>
           <Typography level="body-xs">{description}</Typography>
+        </div>
+        <div>
           <Typography
             fontSize="lg"
             fontWeight="lg"
@@ -39,14 +41,14 @@ export default function PensumCard({ img, title, description, topics }) {
           >
             Contenido
           </Typography>
-          <ul className="contentList">
-            {topicList.map((el, index) => (
-              <li key={index} value={el}>
-                {el}
-              </li>
-            ))}
-          </ul>
         </div>
+        <ul className="contentList">
+          {topicList.map((el, index) => (
+            <li className="contentList__item" key={index} value={el}>
+              {el}
+            </li>
+          ))}
+        </ul>
       </CardContent>
     </Card>
   );
