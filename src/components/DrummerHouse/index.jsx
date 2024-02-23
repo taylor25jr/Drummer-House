@@ -15,7 +15,7 @@ export const DrummerHouse = () => {
   
   const [show, setShow] = useState(false),
   [formShow, setFormShow] = useState(null),
-  [gradientHeader,setGradientHeader] = useState(false);
+  [gradientHeader,setGradientHeader] = useState(true);
 
 
   const handleClose = () => setShow(false);

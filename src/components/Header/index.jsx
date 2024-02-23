@@ -29,10 +29,22 @@ export const Header = ({ setGradientHeader, gradientHeader }) => {
       {
         <section
           className="header"
-          style={!gradientHeader ? { background: "#1E1E1E" } : null}
+          style={
+            gradientHeader
+              ? {
+                  background:
+                    "linear-gradient(180deg, rgba(30, 30, 30, 0.983871) 81.49%, rgba(30, 30, 30, 0) 100%)",
+                }
+              : {background: "#1E1E1E"
+              }
+          }
         >
-          <NavLink to="/" onClick={() => setGradientHeader(true)}>
-            <LogoIcon />
+          <NavLink
+            aria-current="page"
+            to="/"
+            onClick={() => setGradientHeader(true)}
+          >
+            <LogoIcon alt="Logo de la empresa" />
           </NavLink>
           {!isPC ? (
             <Dropdown>

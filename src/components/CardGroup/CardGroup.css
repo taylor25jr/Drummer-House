@@ -4,14 +4,25 @@
 @media (max-width: 767px) {
 
     .ContainerPensumCard {
-        width: 70%;
+        width: 80%;
         margin-top: 15px;
+    }
+    .cardText{
+        height: 100%;
+    }
+    .cardText__description{
+        width: 100%;
+        height: 40%;
+    }
+    .cardText__subtitle{
+        height: 10%;
     }
 
     .contentList {
         display: flex;
         flex-direction: column;
         padding: 15px;
+        height: 50%;
     }
 
     li {
@@ -25,10 +36,22 @@
         width: 40%;
     }
 
+    .cardText{
+        height: 100%;
+    }
+    .cardText__description{
+        width: 100%;
+        height: 40%;
+    }
+    .cardText__subtitle{
+        height: 10%;
+    }
+
     .contentList {
         display: flex;
         flex-direction: column;
         padding: 15px;
+        height: 50%;
     }
 
     .contentList__item {
@@ -51,11 +74,22 @@
         background: #FAFAFA !important;
 
     }
+    .cardText{
+        height: 100%;
+    }
+    .cardText__description{
+        width: 100%;
+        height: 40%;
+    }
+    .cardText__subtitle{
+        height: 10%;
+    }
 
     .contentList {
         display: flex;
         flex-direction: column;
         padding: 15px;
+        height: 50%;
     }
 
     .contentList__item {

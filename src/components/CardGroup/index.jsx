@@ -28,10 +28,10 @@ export default function PensumCard({ img, title, description, topics }) {
         <img src={img} srcSet={img} loading="lazy" alt="cardLogo" />
       </AspectRatio>
       <CardContent className="cardText">
-        <div>
+        <div className="cardText__description">
           <Typography level="body-xs">{description}</Typography>
         </div>
-        <div>
+        <div className="cardText__subtitle">
           <Typography
             fontSize="lg"
             fontWeight="lg"

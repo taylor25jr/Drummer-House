@@ -1,6 +1,6 @@
 import React from "react";
 
-export const LogoIcon = () => {
+export const LogoIcon = ({alt}) => {
   return (
     <>
       <svg
@@ -8,8 +8,9 @@ export const LogoIcon = () => {
         height="81"
         viewBox="0 0 175 81"
         fill="none"
+        alt={alt}
         xmlns="http://www.w3.org/2000/svg"
-        style={{width:"130px"}}
+        style={{width:"175px"}}
       >
         <g clipPath="url(#clip0_242_65)">
           <path
