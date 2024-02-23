@@ -35,14 +35,14 @@ export const Header = ({ setGradientHeader, gradientHeader }) => {
                   background:
                     "linear-gradient(180deg, rgba(30, 30, 30, 0.983871) 81.49%, rgba(30, 30, 30, 0) 100%)",
                 }
-              : {background: "#1E1E1E"
-              }
+              : { background: "#1E1E1E" }
           }
         >
           <NavLink
             aria-current="page"
             to="/"
             onClick={() => setGradientHeader(true)}
+            aria-label="Go to main page"
           >
             <LogoIcon alt="Logo de la empresa" />
           </NavLink>
@@ -56,6 +56,7 @@ export const Header = ({ setGradientHeader, gradientHeader }) => {
                     className={({ isActive }) =>
                       `nav__list__item ${isActive ? "active-link" : null}`
                     }
+                    onClick={() => setGradientHeader(false)}
                   >
                     Servicios
                   </NavLink>
@@ -66,6 +67,7 @@ export const Header = ({ setGradientHeader, gradientHeader }) => {
                     className={({ isActive }) =>
                       `nav__list__item ${isActive ? "active-link" : null}`
                     }
+                    onClick={() => setGradientHeader(false)}
                   >
                     Sobre mi
                   </NavLink>
@@ -76,6 +78,7 @@ export const Header = ({ setGradientHeader, gradientHeader }) => {
                     className={({ isActive }) =>
                       `nav__list__item ${isActive ? "active-link" : null}`
                     }
+                    onClick={() => setGradientHeader(false)}
                   >
                     Otros
                   </NavLink>
@@ -86,6 +89,7 @@ export const Header = ({ setGradientHeader, gradientHeader }) => {
                     className={({ isActive }) =>
                       `nav__list__item ${isActive ? "active-link" : null}`
                     }
+                    onClick={() => setGradientHeader(true)}
                   >
                     Contacto
                   </NavLink>
