@@ -1,6 +1,7 @@
 import React from "react";
 import "./Otros.css";
 import ServiceOtherCard from "../CardsOtros";
+import { Footer } from "../Footer";
 
 export const Otros = () => {
   return (
@@ -40,6 +41,7 @@ export const Otros = () => {
           />
         </div>
       </section>
+      <Footer />
     </>
   );
 };

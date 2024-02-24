@@ -1,6 +1,7 @@
 @import url('../../Helper/Reset.css');
 
 
+
 .contenedor {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -23,6 +24,5 @@
 .contenedor__body {
     min-height: calc(100vh - 15vh);
     flex-grow: 1;
-    background-color: #000;
     grid-area: body;
 }

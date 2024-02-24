@@ -1,8 +1,15 @@
 @import url('../../Helper/Reset.css');
-@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
-@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
-@import url('https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap');
 
+:root {
+    --h1: 48px;
+    --h2: 32px;
+    --h3: 20px;
+    --body: 16px;
+    --link: 16px;
+    --primary: #A92935;
+    --dark: #1E1E1E;
+    --white: #FFFFFF;
+}
 
 
 @media (max-width: 767px) {
@@ -10,6 +17,7 @@
     .generalContainer {
         display: flex;
         flex-direction: column;
+        background-color: var(--dark);
     }
 
     .generalContainer__titulo {
@@ -120,6 +128,8 @@
     .generalContainer {
         display: flex;
         flex-direction: column;
+        background-color: var(--dark);
+
     }
 
     .generalContainer__titulo {
@@ -229,6 +239,7 @@
     .generalContainer {
         display: flex;
         flex-direction: column;
+        background-color: var(--dark);
     }
 
     .generalContainer__titulo {

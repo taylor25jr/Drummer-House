@@ -60,7 +60,7 @@
         letter-spacing: -0.02em;
         text-align: left;
         color: var(--primary);
-
+        margin-top: 15px;
 
     }
 
@@ -91,12 +91,13 @@
 
     .ContainerPensumCard__title {
         font-family: Poppins;
-        font-size: var(--h3);
+        font-size: 18px;
         font-weight: 700;
         line-height: 30px;
         letter-spacing: -0.02em;
         text-align: left;
         text-transform: uppercase;
+        width: 100%;
     }
 
     .cardText {
@@ -110,7 +111,7 @@
 
     .cardText__description__body {
         font-family: Poppins;
-        font-size: var(--body);
+        font-size: 14px;
         font-weight: 400;
         line-height: 22px;
         letter-spacing: -0.02em;
@@ -196,6 +197,7 @@
         line-height: 22px;
         letter-spacing: -0.02em;
         text-align: justified;
+        height: 100%;
 
     }
 
@@ -212,6 +214,7 @@
         letter-spacing: -0.02em;
         text-align: left;
         color: var(--primary);
+        margin-top: 15px;
 
     }
 
