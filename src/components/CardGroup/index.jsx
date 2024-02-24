@@ -2,8 +2,6 @@ import * as React from "react";
 import { useState, useEffect } from "react";
 import AspectRatio from "@mui/joy/AspectRatio";
 import Card from "@mui/joy/Card";
-import CardContent from "@mui/joy/CardContent";
-import Typography from "@mui/joy/Typography";
 import "./CardGroup.css";
 import PropTypes from "prop-types";
 
@@ -20,27 +18,23 @@ export default function PensumCard({ img, title, description, topics }) {
   return (
     <Card className="ContainerPensumCard" id="cards">
       <div>
-        <Typography level="title-lg" textTransform="uppercase">
+        <h3 className="ContainerPensumCard__title">
           {title}
-        </Typography>
+        </h3>
       </div>
       <AspectRatio minHeight="120px" maxHeight="150px">
         <img src={img} srcSet={img} loading="lazy" alt="cardLogo" />
       </AspectRatio>
-      <CardContent className="cardText">
+      <div className="cardText">
         <div className="cardText__description">
-          <Typography level="body-xs">{description}</Typography>
+          <p className="cardText__description__body">{description}</p>
         </div>
         <div className="cardText__subtitle">
-          <Typography
-            fontSize="lg"
-            fontWeight="lg"
-            textTransform={"uppercase"}
-            textColor={"danger.400"}
-            marginTop={"10px"}
+          <h3
+          className="cardText__subtitle__h3"
           >
             Contenido
-          </Typography>
+          </h3>
         </div>
         <ul className="contentList">
           {topicList.map((el, index) => (
@@ -49,7 +43,7 @@ export default function PensumCard({ img, title, description, topics }) {
             </li>
           ))}
         </ul>
-      </CardContent>
+      </div>
     </Card>
   );
 }

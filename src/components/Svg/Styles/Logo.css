@@ -1,0 +1,10 @@
+@media (width <= 764px) {
+    .logo-header{
+      width: 110px;
+    }
+}
+@media (width > 764px) {
+    .logo-header{
+      width: 175px;
+    }
+}

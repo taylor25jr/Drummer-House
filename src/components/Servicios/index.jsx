@@ -6,9 +6,9 @@ import { Footer } from "../Footer";
 import PaymentsMethods from "../PaymentsMethods";
 import PropTypes from "prop-types";
 import PensumCard from "../CardGroup";
+import { ArrowIcon } from "../Svg/Arrow";
 
 export const Servicios = ({ handleShow, handleClick }) => {
-  
   useEffect(() => {
     handleScrollServicios();
     window.addEventListener("scroll", handleScrollServicios);
@@ -48,8 +48,7 @@ export const Servicios = ({ handleShow, handleClick }) => {
             title="Iniciacion del instrumento"
             description="
            Un pensum de iniciación para el aprendizaje del instrumento de batería proporciona una guía
-            estructurada para los estudiantes que desean desarrollar habilidades fundamentales en la percusión.
-            Este pensum abarcará desde los conceptos básicos hasta las técnicas más avanzadas"
+            estructurada para los estudiantes que desean desarrollar habilidades fundamentales en la percusión."
             topics={topicsInitiation}
           />
           <PensumCard
@@ -84,6 +83,9 @@ export const Servicios = ({ handleShow, handleClick }) => {
                 Del 20 de enero al 3 de febrero
               </p>
             </div>
+            <article className="fechas__cards__arrow" id="cardsFecha">
+              <ArrowIcon />
+            </article>
             <div className=" cards fechas__cards__inicio" id="cardsFecha">
               <h4 className="fechas__cards__inscripciones__titulo">
                 Inicio de clases
@@ -92,6 +94,9 @@ export const Servicios = ({ handleShow, handleClick }) => {
                 4 de febrero del 2024
               </p>
             </div>
+            <article className="fechas__cards__arrow" id="cardsFecha">
+              <ArrowIcon />
+            </article>
             <div className="cards fechas__cards__periodo" id="cardsFecha">
               <h4 className="fechas__cards__inscripciones__titulo">
                 Periodo de pago

@@ -1,6 +1,8 @@
 import React from "react";
+import "./Styles/Logo.css"
 
 export const LogoIcon = ({alt}) => {
+
   return (
     <>
       <svg
@@ -10,7 +12,7 @@ export const LogoIcon = ({alt}) => {
         fill="none"
         alt={alt}
         xmlns="http://www.w3.org/2000/svg"
-        style={{width:"175px"}}
+        className="logo-header"
       >
         <g clipPath="url(#clip0_242_65)">
           <path

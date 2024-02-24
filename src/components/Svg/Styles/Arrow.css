@@ -1,0 +1,18 @@
+@media (width < 767px) {
+    .arrowIcon {
+        width: 90px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+    .arrowIcon {
+        width: 55px;
+    }
+}
+
+@media (width > 900px) {
+    .arrowIcon {
+        width: 90px;
+        margin-bottom: 45px;
+    }
+}
