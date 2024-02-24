@@ -3,10 +3,12 @@ import "./Servicios.css";
 import PricingCards from "../Prices";
 import { handleScrollServicios } from "../../hooks/Servicios/useScroll";
 import { Footer } from "../Footer";
-import PaymentsMethods from "../PaymentsMethods";
 import PropTypes from "prop-types";
 import PensumCard from "../CardGroup";
 import { ArrowIcon } from "../Svg/Arrow";
+import { LineIcon } from "../Svg/Line";
+import {NequiIcon} from "../Svg/Nequi"
+
 
 export const Servicios = ({ handleShow, handleClick }) => {
   useEffect(() => {
@@ -112,16 +114,39 @@ export const Servicios = ({ handleShow, handleClick }) => {
             <h3 className="fechas__titulo tarifas__cards__titulo">Tarifas</h3>
             <PricingCards handleShow={handleShow} handleClick={handleClick} />
           </article>
-
+        </section>
           <article className="medios">
             <article className="medios__titulo">
-              <h2 className="fechas__titulo">Medios de pago</h2>
+              <h2 className="fechas__titulo medios__titulo__h2">Medios de pago</h2>
             </article>
-            <article className="medios__buttons__container">
-              <PaymentsMethods />
+            <article className="medios__methods__container">
+              <div>
+              <section className="logo__container">
+                  <NequiIcon/>
+              <h2 className="fechas__cards__inscripciones__titulo medios__methods__container__title">
+                  bbva
+                </h2>
+                </section>
+                <h3 className="fechas__cards__inscripciones__parrafo">
+                323 206 7061
+                </h3>
+              </div>
+              <div>
+                <LineIcon/>
+              </div>
+              <div>
+                <section className="logo__container">
+                  <NequiIcon/>
+              <h2 className="fechas__cards__inscripciones__titulo medios__methods__container__title">
+                  Nequi
+                </h2>
+                </section>
+                <h3 className="fechas__cards__inscripciones__parrafo">
+                323 206 7061
+                </h3>
+              </div>
             </article>
           </article>
-        </section>
       </section>
       <Footer />
     </>

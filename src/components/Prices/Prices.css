@@ -1,33 +1,342 @@
-@media (max-width: 767px){
-.box{
-display: flex;
-flex-flow: column wrap;
-justify-content: space-evenly;
-}
-.priceCard{
-width: 80%;
-}
+@import url('../../Helper/Reset.css');
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+
+:root {
+    --h1: 48px;
+    --h2: 32px;
+    --h3: 20px;
+    --body: 16px;
+    --link: 16px;
+    --primary: #A92935;
+    --dark: #1E1E1E;
+    --white: #FFFFFF;
 }
 
-@media (min-width: 768px) and (max-width: 1023px){
 
-.box{
-display: flex;
-flex-flow: row wrap;
-justify-content: space-evenly;
-}
-.priceCard{
-width: 30%;
-}
+@media (max-width: 767px) {
+    .box {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        width: 100% !important;
+    }
+
+    .priceCardWhite {
+        background-color: var(--white) !important;
+        width: 80%;
+    }
+
+    .spanBasicWhite {
+        font-family: Poppins !important;
+        font-size: 16px !important;
+        font-weight: 700 !important;
+        line-height: 22px !important;
+        letter-spacing: -0.02em !important;
+    }
+
+    .nacionalesTitle {
+        font-family: Poppins !important;
+        font-size: 1.5rem !important;
+        font-weight: 800 !important;
+        line-height: 36px !important;
+        letter-spacing: -0.02em !important;
+        text-align: left !important;
+        color: var(--dark) !important;
+
+    }
+
+    .listItemContainer {
+        display: flex !important;
+        flex-flow: row !important;
+        justify-content: space-between !important;
+        width: 100% !important;
+        margin-bottom: 10px !important;
+
+    }
+
+    .classType__container {
+        width: 50%;
+        display: flex !important;
+        align-items: flex-start !important;
+    }
+
+    .classesType {
+        font-family: Poppins !important;
+        font-size: var(--body) !important;
+        font-weight: 600 !important;
+        line-height: 22px !important;
+        letter-spacing: -0.02em !important;
+        text-align: justified !important;
+        margin-left: 10px !important;
+        width: 30%;
+
+    }
+
+    .classesPrice {
+        font-family: Poppins !important;
+        font-size: var(--body) !important;
+        font-weight: 400 !important;
+        line-height: 22px !important;
+        letter-spacing: -0.02em !important;
+        text-align: justified !important;
+
+    }
+
+    .priceCard {
+        width: 80%;
+    }
+
+    .buttonStart {
+        padding: 12px, 16px, 12px, 24px !important;
+        border-radius: 6px !important;
+        gap: 10px !important;
+        background-color: var(--primary) !important;
+        color: var(--white) !important;
+    }
+
+    .black {
+        padding: 20px !important;
+        border-radius: 20px !important;
+        gap: 20px !important;
+        background-color: var(--dark) !important;
+        border: 1px solid #CCCCCC !important;
+    }
+
+    .divider {
+        background-color: var(--white) !important;
+    }
+
+    .international {
+        color: var(--white) !important;
+        font-size: 1.5rem !important;
+    }
+
+    .blacktype {
+        color: var(--white) !important;
+    }
+
+    .blackPrice {
+        color: var(--white) !important;
+    }
 }
 
-@media screen and (min-width: 1023px){
-.box{
-display: flex;
-flex-flow: row wrap;
-justify-content: space-evenly;
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .box {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
+    .priceCardWhite {
+        background-color: var(--white) !important;
+        min-width: 241px !important;
+        max-width: 345px !important;
+    }
+
+    .spanBasicWhite {
+        font-family: Poppins !important;
+        font-size: 16px !important;
+        font-weight: 700 !important;
+        line-height: 22px !important;
+        letter-spacing: -0.02em !important;
+    }
+
+    .nacionalesTitle {
+        font-family: Poppins !important;
+        font-size: var(--h2) !important;
+        font-weight: 800 !important;
+        line-height: 36px !important;
+        letter-spacing: -0.02em !important;
+        text-align: left !important;
+        color: var(--dark) !important;
+
+    }
+
+    .listItemContainer {
+        display: flex !important;
+        flex-flow: row !important;
+        justify-content: space-between !important;
+        width: 100% !important;
+        margin-bottom: 10px !important;
+
+    }
+
+    .classType__container {
+        width: 50%;
+        display: flex !important;
+        align-items: flex-start !important;
+    }
+
+    .classesType {
+        font-family: Poppins !important;
+        font-size: var(--body) !important;
+        font-weight: 600 !important;
+        line-height: 22px !important;
+        letter-spacing: -0.02em !important;
+        text-align: justified !important;
+        margin-left: 10px !important;
+        width: 30%;
+
+
+    }
+
+    .classesPrice {
+        font-family: Poppins !important;
+        font-size: var(--body) !important;
+        font-weight: 400 !important;
+        line-height: 22px !important;
+        letter-spacing: -0.02em !important;
+        text-align: justified !important;
+
+    }
+
+    .priceCard {
+        width: 30%;
+    }
+
+    .buttonStart {
+        padding: 12px, 16px, 12px, 24px !important;
+        border-radius: 6px !important;
+        gap: 10px !important;
+        background-color: var(--primary) !important;
+        color: var(--white) !important;
+    }
+
+
+    .black {
+        padding: 20px !important;
+        border-radius: 20px !important;
+        gap: 20px !important;
+        background-color: var(--dark) !important;
+        border: 1px solid #CCCCCC !important;
+    }
+
+    .divider {
+        background-color: var(--white) !important;
+    }
+
+    .international {
+        color: var(--white) !important;
+    }
+
+    .blacktype {
+        color: var(--white) !important;
+    }
+
+    .blackPrice {
+        color: var(--white) !important;
+    }
 }
-.priceCard{
-width: 35%;
-}
+
+@media screen and (min-width: 1023px) {
+    .box {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
+    .priceCardWhite {
+        background-color: var(--white) !important;
+        min-width: 241px !important;
+        max-width: 345px !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+        gap: 20px !important;
+
+    }
+
+    .spanBasicWhite {
+        font-family: Poppins !important;
+        font-size: 16px !important;
+        font-weight: 700 !important;
+        line-height: 22px !important;
+        letter-spacing: -0.02em !important;
+    }
+
+    .nacionalesTitle {
+        font-family: Poppins !important;
+        font-size: var(--h2) !important;
+        font-weight: 800 !important;
+        line-height: 36px !important;
+        letter-spacing: -0.02em !important;
+        text-align: left !important;
+        color: var(--dark) !important;
+
+    }
+
+    .listItemContainer {
+        display: flex !important;
+        flex-flow: row !important;
+        justify-content: space-between !important;
+        width: 100% !important;
+        margin-bottom: 10px !important;
+
+    }
+
+    .classType__container {
+        width: 50%;
+        display: flex !important;
+        align-items: flex-start !important;
+    }
+
+    .classesType {
+        font-family: Poppins !important;
+        font-size: var(--body) !important;
+        font-weight: 600 !important;
+        line-height: 22px !important;
+        letter-spacing: -0.02em !important;
+        text-align: justified !important;
+        margin-left: 10px !important;
+        width: 30%;
+
+    }
+
+    .classesPrice {
+        font-family: Poppins !important;
+        font-size: var(--body) !important;
+        font-weight: 400 !important;
+        line-height: 22px !important;
+        letter-spacing: -0.02em !important;
+        text-align: justified !important;
+
+    }
+
+    .priceCard {
+        width: 50%;
+    }
+
+    .buttonStart {
+        padding: 12px, 16px, 12px, 24px !important;
+        border-radius: 6px !important;
+        gap: 10px !important;
+        background-color: var(--primary) !important;
+        color: var(--white) !important;
+    }
+
+
+    .black {
+        padding: 20px !important;
+        border-radius: 20px !important;
+        gap: 20px !important;
+        background-color: var(--dark) !important;
+        border: 1px solid #CCCCCC !important;
+    }
+
+    .divider {
+        background-color: var(--white) !important;
+    }
+
+    .international {
+        color: var(--white) !important;
+    }
+
+    .blacktype {
+        color: var(--white) !important;
+    }
+
+    .blackPrice {
+        color: var(--white) !important;
+    }
 }

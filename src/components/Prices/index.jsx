@@ -1,121 +1,137 @@
-import * as React from 'react';
-import { useRef, useState } from 'react';
-import Box from '@mui/joy/Box';
-import Button from '@mui/joy/Button';
-import Card from '@mui/joy/Card';
-import CardActions from '@mui/joy/CardActions';
-import Chip from '@mui/joy/Chip';
-import Divider from '@mui/joy/Divider';
-import List from '@mui/joy/List';
-import ListItem from '@mui/joy/ListItem';
-import ListItemDecorator from '@mui/joy/ListItemDecorator';
-import Typography from '@mui/joy/Typography';
-import Check from '@mui/icons-material/Check';
-import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
-import "./Prices.css"
-import PropTypes from 'prop-types';
+import * as React from "react";
+import { useRef } from "react";
+import Box from "@mui/joy/Box";
+import Button from "@mui/joy/Button";
+import Card from "@mui/joy/Card";
+import CardActions from "@mui/joy/CardActions";
+import Chip from "@mui/joy/Chip";
+import List from "@mui/joy/List";
+import ListItem from "@mui/joy/ListItem";
+import ListItemDecorator from "@mui/joy/ListItemDecorator";
+import Typography from "@mui/joy/Typography";
+import "./Prices.css";
+import { BlackCircle } from "../Svg/BlackCircle";
+import { WhiteCircle } from "../Svg/WhiteCircle";
+import { VectorIcon } from "../Svg/Vector";
+import PropTypes from "prop-types";
 
-
-export default function PricingCards({handleClick}) {
-
+export default function PricingCards({ handleClick }) {
   const boton1Ref = useRef(null);
   const boton2Ref = useRef(null);
-
 
   return (
     <Box
       sx={{
-        width: '100%',
-        justifyItems:'center',
-        alignContent:'center',
+        width: "100%",
+        justifyItems: "center",
+        alignContent: "center",
         gap: 2,
-        gridAutoFlow: 'column',
+        gridAutoFlow: "column",
+        display: "flex",
       }}
-      className='box'
+      className="box"
     >
-      <Card size="sm" variant="outlined" className='priceCard'>
-        <Chip size="sm" variant="outlined" color="neutral">
+      <Card size="sm" variant="outlined" className="priceCardWhite priceCard">
+        <Chip size="sm" variant="outlined" className="spanBasicWhite">
           BASIC
         </Chip>
-        <Typography level="h2">Nacionales</Typography>
-        <Divider inset="none" />
-        <List size="sm" sx={{ mx: 'calc(-1 * var(--ListItem-paddingX))' }}>
-          <ListItem>
-            <ListItemDecorator>
-              <Check />
+        <Typography level="h2" className="nacionalesTitle">
+          Nacionales
+        </Typography>
+        <hr className="divider" />
+        <List
+          size="sm"
+          sx={{ mx: "calc(-1 * var(--ListItem-paddingX))", padding: "2px" }}
+        >
+          <ListItem className="listItemContainer">
+            <ListItemDecorator className="classType__container">
+              <BlackCircle />
+              <h2 className="classesType">Clase</h2>
             </ListItemDecorator>
-            Clase: $40.000
+            <h3 className="classesPrice">$40.000</h3>
           </ListItem>
-          <ListItem>
-            <ListItemDecorator>
-              <Check />
+          <ListItem className="listItemContainer">
+            <ListItemDecorator className="classType__container">
+              <BlackCircle />
+              <h2 className="classesType">Clase mensual</h2>
             </ListItemDecorator>
-            Clase mensual: $120.000
+            <h3 className="classesPrice">$120.000</h3>
           </ListItem>
-          <ListItem>
-            <ListItemDecorator>
-              <Check />
+          <ListItem className="listItemContainer">
+            <ListItemDecorator className="classType__container">
+              <BlackCircle />
+              <h2 className="classesType">Clase mensual x2</h2>
             </ListItemDecorator>
-            Clase mensual x2: $200.000
+            <h3 className="classesPrice">$200.000</h3>
           </ListItem>
         </List>
-        <Divider inset="none" />
+        <hr className="divider" />
         <CardActions>
           <Button
             variant="soft"
-            name='boton1'
-            color="neutral"
-            endDecorator={<KeyboardArrowRight />}
+            name="boton1"
+            className="buttonStart"
+            endDecorator={<VectorIcon />}
             ref={boton1Ref}
             onClick={() => handleClick(boton1Ref)}
           >
-            Start now
+            Empieza ahora
           </Button>
         </CardActions>
       </Card>
+
+      {/* dark card start */}
+
       <Card
         size="sm"
-        variant="solid"
-        color="neutral"
-        invertedColors
-        sx={{ bgcolor: 'neutral.900', border:'1px solid #fff'}}
-        className='priceCard'
+        variant="outlined"
+        className="priceCardWhite priceCard black"
       >
-        <Chip size="sm" variant="outlined">
-          MOST POPULAR
+        <Chip size="sm" variant="outlined" className="spanBasicWhite">
+          MÁS POPULAR
         </Chip>
-        <Typography level="h3">Internacionales</Typography>
-        <Divider inset="none" />
+        <Typography level="h2" className="nacionalesTitle international">
+          Internacionales
+        </Typography>
+        <hr className="divider" />
         <List
           size="sm"
-          sx={{
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-            mx: 'calc(-1 * var(--ListItem-paddingX))',
-          }}
+          sx={{ mx: "calc(-1 * var(--ListItem-paddingX))", padding: "2px" }}
         >
-          <ListItem>
-            <ListItemDecorator>
-              <Check />
+          <ListItem className="listItemContainer">
+            <ListItemDecorator className="classType__container">
+              <WhiteCircle />
+              <h2 className="classesType blacktype">Clase</h2>
             </ListItemDecorator>
-            Clase: $20 USD
+            <h3 className="classesPrice blackPrice">$40.000</h3>
           </ListItem>
-          <ListItem>
-            <ListItemDecorator>
-              <Check />
+          <ListItem className="listItemContainer">
+            <ListItemDecorator className="classType__container">
+              <WhiteCircle />
+              <h2 className="classesType blacktype">Clase mensual</h2>
             </ListItemDecorator>
-            Clase mensual: $50 USD
+            <h3 className="classesPrice blackPrice">$120.000</h3>
           </ListItem>
-          <ListItem>
-            <ListItemDecorator>
-              <Check />
+          <ListItem className="listItemContainer">
+            <ListItemDecorator className="classType__container">
+              <WhiteCircle />
+              <h2 className="classesType blacktype">Clase mensual x2</h2>
             </ListItemDecorator>
-            Clase mensual x2: $280 USD
+            <h3 className="classesPrice blackPrice">$200.000</h3>
           </ListItem>
         </List>
-        <Divider inset="none" />
+        <hr className="divider" />
         <CardActions>
-          <Button endDecorator={<KeyboardArrowRight />} ref={boton2Ref} onClick={() => handleClick(boton2Ref)} name="boton2">Start now</Button>
+          <Button
+            variant="soft"
+            name="boton2"
+            className="buttonStart"
+            endDecorator={<VectorIcon />}
+            ref={boton2Ref}
+            onClick={() => handleClick(boton2Ref)}
+          >
+            Empieza ahora
+          </Button>
         </CardActions>
       </Card>
     </Box>
@@ -123,7 +139,5 @@ export default function PricingCards({handleClick}) {
 }
 
 PricingCards.propTypes = {
-  handleClick:PropTypes.func,
-}
-
-
+  handleClick: PropTypes.func,
+};

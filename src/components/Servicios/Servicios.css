@@ -152,6 +152,7 @@
         letter-spacing: -0.02em;
         text-align: center;
         text-transform: uppercase;
+        color: var(--white);
     }
 
     .fechas__cards {
@@ -199,29 +200,56 @@
         transition: 1s ease-in;
     }
 
+    .tarifas__cards {
+        width: 100%;
+    }
+
     .tarifas__cards__titulo {
-        text-transform: uppercase;
         margin-bottom: 30px;
         margin-top: 20px;
-        font-family: 'Montserrat';
         color: #fff;
     }
 
     .medios {
+        background-color: var(--white);
         margin-top: 30px;
+        height: 70vh;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+        width: 100%;
+        padding: 30px;
+    }
+
+    .medios__titulo__h2 {
+        color: var(--dark);
+        font-size: var(--h1);
     }
 
     .medios__titulo {
         padding: 20px;
+        width: 100%;
     }
 
-    .medios__buttons__container {
+    .medios__methods__container {
         margin-top: 20px;
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
         padding: 25px;
+        height: 100%;
+    }
 
+    .medios__methods__container__title {
+        color: var(--dark);
+        font-size: var(--h3);
+    }
 
+    .logo__container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
     }
 
 }
@@ -370,6 +398,8 @@
         letter-spacing: -0.02em;
         text-align: center;
         text-transform: uppercase;
+        color: var(--white);
+
     }
 
 
@@ -426,24 +456,46 @@
         margin-top: 100px;
     }
 
-
+    .tarifas__cards {
+        width: 100%;
+    }
 
     .tarifas__cards__titulo {
-        text-transform: uppercase;
         margin-bottom: 30px;
-        font-family: 'Montserrat';
         margin-top: 20px;
+        color: #ffffff;
+
 
     }
 
     .medios {
+        background-color: var(--white);
         margin-top: 80px;
+        height: 50vh;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
     }
 
-    .medios__buttons__container {
+    .medios__titulo__h2 {
+        color: var(--dark);
+    }
+
+    .medios__titulo {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .medios__methods__container {
         margin-top: 20px;
         display: flex;
         flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
+    .logo__container {
+        display: flex;
+        align-items: flex-start;
         justify-content: space-around;
     }
 }
@@ -555,6 +607,14 @@
         transition: 1s linear;
     }
 
+    .tarifas-pagos {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        margin-top: 100px;
+        height: 90vh;
+    }
+
     .mas-servicios {
         display: flex;
         flex-flow: column wrap;
@@ -586,6 +646,7 @@
         letter-spacing: -0.02em;
         text-align: center;
         text-transform: uppercase;
+        color: var(--white);
     }
 
     .fechas__cards {
@@ -639,23 +700,48 @@
         margin-top: 100px;
     }
 
+    .tarifas__cards {
+        width: 100%;
+    }
+
     .tarifas__cards__titulo {
-        text-transform: uppercase;
         margin-bottom: 30px;
         margin-top: 10px;
-        font-family: 'Montserrat';
         color: #ffffff;
-
     }
 
     .medios {
+        background-color: var(--white);
         margin-top: 80px;
+        height: 50vh;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
     }
 
-    .medios__buttons__container {
+    .medios__titulo__h2 {
+        color: var(--dark);
+    }
+
+    .medios__titulo {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .medios__methods__container {
         margin-top: 20px;
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
+    .medios__methods__container__title {
+        color: var(--dark);
+    }
+
+    .logo__container {
+        display: flex;
+        align-items: flex-start;
         justify-content: space-around;
     }
 }
