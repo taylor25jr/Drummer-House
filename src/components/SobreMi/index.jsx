@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import "./SobreMi.css";
 import { Footer } from "../Footer";
-import { MediaIframe } from "../Iframe";
 import { handleScrollAboutMe } from "../../hooks/AboutMe/useScroll";
+import PropTypes from "prop-types";
 
-export const SobreMi = () => {
+export const SobreMi = ({ footerColor }) => {
   useEffect(() => {
     handleScrollAboutMe();
     window.addEventListener("scroll", handleScrollAboutMe);
@@ -19,7 +19,7 @@ export const SobreMi = () => {
         <h1 className="generalContainer__titulo">Sobre mi</h1>
         <section className="aboutContainer">
           <article className="aboutContainer__imagenContenedor" id="about">
-            <MediaIframe />
+            <img src="https://i.ibb.co/hfPWj9H/Pic-2.png" />
           </article>
           <article
             className="aboutContainer__textoContenedor"
@@ -45,17 +45,17 @@ export const SobreMi = () => {
             className="aboutContainer__imagenContenedor container2"
             id="about"
           >
-            <MediaIframe />
+            <img src="https://i.ibb.co/RSNkd9q/Pic-1.png" />
           </article>
           <article
             className="aboutContainer__textoContenedor"
             id="container-info"
           >
-            <h2 className="aboutContainer__textoContenedor__titulo">
-              baterista revelacion en el drumfest 2019
+            <h2 className="aboutContainer__textoContenedor__titulo left">
+              Baterista revelacion en el Drumfest 2019
             </h2>
             <br />
-            <p className="aboutContainer__textoContenedor__parrafo">
+            <p className="aboutContainer__textoContenedor__parrafo left">
               Johan Sebastián es un joven de 22 años, nacido en la ciudad de
               Barranquilla. Hijo único, criado por su abuela paterna. Desde su
               primer año de edad mostró sus habilidades rítmicas por eso a los
@@ -66,19 +66,19 @@ export const SobreMi = () => {
             </p>
           </article>
         </section>
-        <section className="aboutContainer aboutSection2">
+        <section className="aboutContainer aboutSection2 expodrummer">
           <article
             className="aboutContainer__imagenContenedor container3"
             id="about"
           >
-            <MediaIframe />
+            <img src="https://i.ibb.co/hV8qqrV/Pic.png" />
           </article>
           <article
             className="aboutContainer__textoContenedor"
             id="container-info"
           >
             <h2 className="aboutContainer__textoContenedor__titulo">
-              Participé en expodrummer 2020
+              Expodrummer 2020
             </h2>
             <br />
             <p className="aboutContainer__textoContenedor__parrafo">
@@ -92,11 +92,12 @@ export const SobreMi = () => {
             </p>
           </article>
         </section>
-        <section className="bigraphyCard">
-          <h2>more about me</h2>
-        </section>
-        <Footer />
+        <Footer footerColor={footerColor} />
       </section>
     </>
   );
+};
+
+SobreMi.propTypes = {
+  footerColor: PropTypes.bool,
 };

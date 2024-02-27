@@ -10,7 +10,11 @@ import PropTypes from "prop-types";
 
 //Cambiar color al burger y la ui en mobile
 
-export const Header = ({ setGradientHeader, gradientHeader }) => {
+export const Header = ({
+  setGradientHeader,
+  gradientHeader,
+  handleChangeFooterColor,
+}) => {
   const [isPC, setIsPC] = useState(window.innerWidth > 768);
 
   useEffect(() => {
@@ -67,7 +71,10 @@ export const Header = ({ setGradientHeader, gradientHeader }) => {
                     className={({ isActive }) =>
                       `nav__list__item ${isActive ? "active-link" : null}`
                     }
-                    onClick={() => setGradientHeader(false)}
+                    onClick={() => {
+                      setGradientHeader(false);
+                      handleChangeFooterColor();
+                    }}
                   >
                     Sobre mi
                   </NavLink>
@@ -121,7 +128,10 @@ export const Header = ({ setGradientHeader, gradientHeader }) => {
                   `nav__list__item ${isActive ? "active-link" : null}`
                 }
                 to="/otros"
-                onClick={() => setGradientHeader(false)}
+                onClick={() => {
+                  setGradientHeader(false);
+                  handleChangeFooterColor();
+                }}
               >
                 Otros
               </NavLink>
@@ -145,4 +155,5 @@ export const Header = ({ setGradientHeader, gradientHeader }) => {
 Header.propTypes = {
   setGradientHeader: PropTypes.func,
   gradientHeader: PropTypes.bool,
+  handleChangeFooterColor: PropTypes.func,
 };
