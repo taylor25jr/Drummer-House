@@ -23,6 +23,13 @@
 
     .otrosContainer__titulo {
         margin-bottom: 30px;
+        font-family: Poppins;
+        font-size: var(--h1);
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: -0.02em;
+        text-align: center;
+
     }
 
     .otrosContainer__titulo h1 {
@@ -64,6 +71,13 @@
 
     .otrosContainer__titulo {
         margin-bottom: 30px;
+        font-family: Poppins;
+        font-size: var(--h1);
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: -0.02em;
+        text-align: center;
+
     }
 
     .otrosTitulo {

@@ -5,6 +5,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import "./CardOtros.css";
 import PropTypes from "prop-types";
+import { CalendarIcon } from "../Svg/Calendar";
 
 export default function ServiceOtherCard({ img, title, description }) {
   return (
@@ -17,7 +18,7 @@ export default function ServiceOtherCard({ img, title, description }) {
       <CardContent className="cardContent">
         <h2 className="cardContentTitle">{title}</h2>
         <p className="CardContentText">{description}</p>
-        <Button size="small">Request</Button>
+        <Button>Request <CalendarIcon/></Button>
       </CardContent>
     </Card>
   );

@@ -2,13 +2,14 @@ import * as React from "react";
 import Box from "@mui/joy/Box";
 import Card from "@mui/joy/Card";
 import CardCover from "@mui/joy/CardCover";
+import "./Iframe.css"
 
 export function MediaIframe() {
   return (
     <Box
       component="ul"
       sx={{ display: "flex", gap: 2, flexWrap: "wrap", p: 0, m: 0 }}
-      style={{ width: "100%", height: "100%", opacity: "0.8" }}
+      className="iframeContainer"
     >
       <Card component="li" style={{width:"100%", height:"100%"}}>
         <CardCover>

@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import "./SobreMi.css";
-import BioCard from "../AboutMe";
 import { Footer } from "../Footer";
 import { MediaIframe } from "../Iframe";
 import { handleScrollAboutMe } from "../../hooks/AboutMe/useScroll";
@@ -27,7 +26,7 @@ export const SobreMi = () => {
             id="container-info"
           >
             <h2 className="aboutContainer__textoContenedor__titulo">
-              Hi there!
+              Hola! 👋🏿
             </h2>
             <br />
             <p className="aboutContainer__textoContenedor__parrafo">
@@ -95,7 +94,6 @@ export const SobreMi = () => {
         </section>
         <section className="bigraphyCard">
           <h2>more about me</h2>
-          <BioCard />
         </section>
         <Footer />
       </section>

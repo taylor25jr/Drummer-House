@@ -1,8 +1,17 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url('../../Helper/Reset.css');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap');
 
-* {
-    font-family: arial;
+:root {
+    --h1: 48px;
+    --h2: 32px;
+    --h3: 20px;
+    --body: 16px;
+    --link: 16px;
+    --primary: #A92935;
+    --dark: #1E1E1E;
+    --white: #FFFFFF;
 }
+
 
 
 @media (max-width: 767px) {
@@ -10,6 +19,8 @@
     .cardOtherServices {
         width: 70%;
         margin-bottom: 50px;
+        padding: 0px, 0px, 20px, 0px !important;
+        border-radius: 20px !important;
     }
 
     .cardOtherServices__img {
@@ -18,24 +29,43 @@
     }
 
     .cardContentTitle {
-        font-size: 18px;
-        color: #000000;
-        font-weight: 400;
-        text-transform: capitalize;
-        font-family: 'Montserrat';
+        font-family: Poppins;
+        font-size: var(--h3);
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: -0.02em;
+        text-align: left;
+
     }
 
     .CardContentText {
-        font-size: 15px;
-        color: #000000;
-        margin-top: 10px;
-        font-weight: 300;
-        font-style: italic;
-        font-family: 'Montserrat';
+        font-family: Poppins;
+        font-size: var(--body);
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: -0.02em;
+        text-align: justified;
+        margin-top: 20px;
     }
 
     .cardContent button {
+        display: flex;
+        width: 140px;
+        height: 48px;
+        padding: 12px, 16px, 12px, 24px;
+        border-radius: 6px;
+        border: 1px solid var(--primary);
+        gap: 10px;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        color: var(--primary);
         margin-top: 20px;
+
+
     }
 
 }
@@ -45,6 +75,8 @@
     .cardOtherServices {
         width: 350px;
         margin-bottom: 50px;
+        padding: 0px, 0px, 20px, 0px !important;
+        border-radius: 20px !important;
     }
 
     .cardOtherServices__img {
@@ -53,25 +85,47 @@
     }
 
     .cardContentTitle {
-        height: 40px;
-        font-size: 18px;
-        color: #000000;
-        font-weight: 400;
-        text-transform: capitalize;
-        font-family: 'Montserrat';
+        font-family: Poppins;
+        font-size: var(--h3);
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        height: 90px;
+        width: 80%;
     }
 
     .CardContentText {
-        font-size: 15px;
-        color: #000000;
-        margin-top: 10px;
-        font-weight: 300;
-        font-style: italic;
-        font-family: 'Montserrat';
+        font-family: Poppins;
+        font-size: var(--body);
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: -0.02em;
+        text-align: justified;
+        height: 154px;
+        margin-top: 20px;
+
     }
 
+
     .cardContent button {
-        margin-top: 20px;
+        display: flex;
+        align-self: end;
+        width: 140px;
+        height: 48px;
+        padding: 12px, 16px, 12px, 24px;
+        border-radius: 6px;
+        border: 1px solid var(--primary);
+        gap: 10px;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        color: var(--primary);
+
+
     }
 }
 
@@ -79,6 +133,8 @@
     .cardOtherServices {
         width: 300px;
         margin-bottom: 50px;
+        padding: 0px, 0px, 20px, 0px !important;
+        border-radius: 20px !important;
     }
 
     .cardOtherServices__img {
@@ -95,26 +151,46 @@
     }
 
     .cardContentTitle {
-        height: 40px;
-        font-size: 18px;
-        color: #000000;
-        margin-top: 20px;
-        font-weight: 500;
-        text-transform: capitalize;
-        font-family: 'Montserrat';
+        font-family: Poppins;
+        font-size: var(--h3);
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        width: 100%;
+        height: 90px;
+
     }
 
     .CardContentText {
-        height: 100px;
-        font-size: 15px;
-        color: #000000;
-        margin-top: 25px;
-        font-weight: 300;
-        font-style: italic;
-        font-family: 'Montserrat';
+        font-family: Poppins;
+        font-size: var(--body);
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: -0.02em;
+        text-align: justify;
+        height: 154px;
+        margin-top: 10px;
+        width: 275px;
     }
 
     .cardContent button {
-        margin-top: 20px;
+        display: flex;
+        align-self: end;
+        width: 140px;
+        height: 48px;
+        padding: 12px, 16px, 12px, 24px;
+        border-radius: 6px;
+        border: 1px solid var(--primary);
+        gap: 10px;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        color: var(--primary);
+        margin-top: 25px;
+
     }
 }
