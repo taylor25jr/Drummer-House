@@ -4,6 +4,9 @@ import ServiceOtherCard from "../CardsOtros";
 import { Footer } from "../Footer";
 
 export const Otros = () => {
+
+  const route = (msg) => `https://api.whatsapp.com/send?phone=3008559576&text=${msg}`;
+
   return (
     <>
       <section className="otrosContainer">
@@ -16,7 +19,7 @@ export const Otros = () => {
             title=" Mantenimiento, reparación y afinación de baterías o percusión."
             description="
             Ofrecemos servicios especializados en el mantenimiento, reparación y afinación de baterías y percusiones, brindando soluciones personalizadas para optimizar el rendimiento.
-"
+"           onButtonCLick={route("Hola! estoy interesado en un sevicios especializados")}
           />
           <ServiceOtherCard
             img="https://i.pinimg.com/736x/67/4a/98/674a98ab2ea0d77929c026d373081db4.jpg"
@@ -24,12 +27,14 @@ export const Otros = () => {
           Venta de accesorios de batería."
             description="Somos tu destino principal para la venta de accesorios de batería,
              donde ofrecemos una amplia gama de productos diseñados para potenciar tu experiencia musical."
+             onButtonCLick={route("Hola! estoy interesado en un accesorio de Bateria")}
           />
           <ServiceOtherCard
             img="https://i.pinimg.com/736x/fd/e5/a5/fde5a5210357844030d2e4da845d70dc.jpg"
             title="Clases de batería personalizadas a domicilios."
             description="
             Toma clases de batería desde la comodidad de tu hogar con nuestras clases personalizadas. Nos enorgullece ofrecer una experiencia educativa única y adaptada a tus necesidades individuales."
+            onButtonCLick={route("Hola! Me gustaria obtener clases perzonalizadas")}
           />
           <ServiceOtherCard
             img="https://i.pinimg.com/736x/86/ff/73/86ff73f2dcba4ff49fc4d21e99558b1c.jpg"
@@ -37,6 +42,7 @@ export const Otros = () => {
             description="
             Facilitamos tu elección del instrumento perfecto con nuestro servicio de asesoría para la compra de instrumentos. 
             estaré dedicado a guiarte a través del emocionante mundo musical,"
+            onButtonCLick={route("Hola! estoy interesado en una Asesoria profesional")}
           />
         </div>
       </section>

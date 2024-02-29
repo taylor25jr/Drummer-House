@@ -22,7 +22,7 @@
 }
 
 .contenedor__body {
-    min-height: calc(100vh - 15vh);
+    min-height: 100vh;
     flex-grow: 1;
     grid-area: body;
 }

@@ -14,7 +14,7 @@ export const Header = ({
   setGradient,
   unsetGradient,
   gradientHeader,
-  handleChangeFooterColor,
+  setFooterColor,
 }) => {
   const [isPC, setIsPC] = useState(window.innerWidth > 768);
 
@@ -35,18 +35,15 @@ export const Header = ({
         <section
           className="header"
           style={
-            gradientHeader
-              ? {
-                  background:
-                    "linear-gradient(180deg, rgba(30, 30, 30, 0.983871) 81.49%, rgba(30, 30, 30, 0) 100%)",
-                }
-              : { background: "#1E1E1E" }
+          {  background: gradientHeader
+            ? "linear-gradient(180deg, rgba(30, 30, 30, 0.983871) 81.49%, rgba(30, 30, 30, 0) 100%)"
+            : "#1E1E1E"}
           }
         >
           <NavLink
             aria-current="page"
             to="/"
-            onClick={setGradient}
+            onClick={() => {setGradient(); setFooterColor(false)}}
             aria-label="Go to main page"
           >
             <LogoIcon alt="Logo de la empresa" />
@@ -61,7 +58,7 @@ export const Header = ({
                     className={({ isActive }) =>
                       `nav__list__item ${isActive ? "active-link" : null}`
                     }
-                    onClick={unsetGradient}
+                    onClick={()=> {unsetGradient(); setFooterColor(false)}}
                   >
                     Servicios
                   </NavLink>
@@ -73,8 +70,8 @@ export const Header = ({
                       `nav__list__item ${isActive ? "active-link" : null}`
                     }
                     onClick={() => {
-                      unsetGradient;
-                      handleChangeFooterColor();
+                      unsetGradient();
+                      setFooterColor(true);
                     }}
                   >
                     Sobre mi
@@ -86,7 +83,7 @@ export const Header = ({
                     className={({ isActive }) =>
                       `nav__list__item ${isActive ? "active-link" : null}`
                     }
-                    onClick={unsetGradient}
+                    onClick={() => {unsetGradient(); setFooterColor(false)}}
                   >
                     Otros
                   </NavLink>
@@ -97,7 +94,7 @@ export const Header = ({
                     className={({ isActive }) =>
                       `nav__list__item ${isActive ? "active-link" : null}`
                     }
-                    onClick={setGradient}
+                    onClick={() => {setGradient(); setFooterColor(false)}}
                   >
                     Contacto
                   </NavLink>
@@ -111,7 +108,7 @@ export const Header = ({
                   `nav__list__item ${isActive ? "active-link" : null}`
                 }
                 to="/servicios"
-                onClick={unsetGradient}
+                onClick={() => {unsetGradient(); setFooterColor(false)}}
               >
                 Servicios
               </NavLink>
@@ -120,7 +117,7 @@ export const Header = ({
                   `nav__list__item ${isActive ? "active-link" : null}`
                 }
                 to="/sobre-mi"
-                onClick={unsetGradient}
+                onClick={() => {unsetGradient(); setFooterColor(true)}}
               >
                 Sobre mí
               </NavLink>
@@ -130,8 +127,8 @@ export const Header = ({
                 }
                 to="/otros"
                 onClick={() => {
-                  unsetGradient;
-                  handleChangeFooterColor();
+                  unsetGradient();
+                  setFooterColor(false);
                 }}
               >
                 Otros
@@ -141,7 +138,7 @@ export const Header = ({
                   `nav__list__item ${isActive ? "active-link" : null}`
                 }
                 to="/contacto"
-                onClick={setGradient}
+                onClick={() => {setGradient(); setFooterColor(false)}}
               >
                 Contacto
               </NavLink>

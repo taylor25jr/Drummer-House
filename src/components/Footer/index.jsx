@@ -17,9 +17,7 @@ export const Footer = ({ footerColor }) => {
     <footer
       className="footerSection"
       style={
-        footerColor
-          ? { backgroundColor: "#FAFAFA" }
-          : { backgroundColor: "#1E1E1E" }
+       { backgroundColor: footerColor ? "#FAFAFA" : "#1E1E1E",}
       }
     >
       <div className="footerSection__container">

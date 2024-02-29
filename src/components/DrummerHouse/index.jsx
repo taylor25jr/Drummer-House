@@ -2,7 +2,7 @@ import "./DrummerHouse.css";
 import { Header } from "../Header";
 import { SobreMi } from "../SobreMi";
 import { Servicios } from "../Servicios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Otros } from "../Otros";
 import { Form } from "../Form";
 import Main from "../Main";
@@ -16,11 +16,12 @@ export const DrummerHouse = () => {
     [gradientHeader, setGradientHeader] = useState(true),
     [footerColor, setFooterColor] = useState(false);
 
+    
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  const handleChangeFooterColor = () => setFooterColor(true);
   const unsetGradient = () => setGradientHeader(false);
   const setGradient = () => setGradientHeader(true);
+
 
   const handleClick = (ref) => {
     if (ref.current.name === "boton1") {
@@ -42,7 +43,7 @@ export const DrummerHouse = () => {
               setGradient={setGradient}
               unsetGradient={unsetGradient}
               gradientHeader={gradientHeader}
-              handleChangeFooterColor={handleChangeFooterColor}
+              setFooterColor={setFooterColor}
             />
           </header>
           <section className="contenedor__body">
@@ -61,7 +62,7 @@ export const DrummerHouse = () => {
                 path="/sobre-mi"
                 element={<SobreMi footerColor={footerColor} />}
               />
-              <Route path="/otros" element={<Otros />} />
+              <Route path="/otros" element={<Otros/>} />
               <Route path="/contacto" element={<Form />} />
               <Route path="*" element={<Error404 />} />
             </Routes>

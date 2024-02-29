@@ -6,8 +6,9 @@ import Button from "@mui/material/Button";
 import "./CardOtros.css";
 import PropTypes from "prop-types";
 import { CalendarIcon } from "../Svg/Calendar";
+import { Link } from "react-router-dom";
 
-export default function ServiceOtherCard({ img, title, description }) {
+export default function ServiceOtherCard({ img, title, description, onButtonCLick }) {
   return (
     <Card className="cardOtherServices">
       <CardMedia
@@ -18,7 +19,14 @@ export default function ServiceOtherCard({ img, title, description }) {
       <CardContent className="cardContent">
         <h2 className="cardContentTitle">{title}</h2>
         <p className="CardContentText">{description}</p>
-        <Button>Request <CalendarIcon/></Button>
+        <article>
+        <Link to={onButtonCLick} target="_blank" className="socialLink">
+          <span>
+            Solicitar 
+            </span>
+            <CalendarIcon/>
+        </Link> 
+          </article>
       </CardContent>
     </Card>
   );
@@ -28,4 +36,5 @@ ServiceOtherCard.propTypes = {
   img: PropTypes.string,
   title: PropTypes.string,
   description: PropTypes.string,
+  onButtonCLick: PropTypes.string,
 };
