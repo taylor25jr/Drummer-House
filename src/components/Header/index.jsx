@@ -11,7 +11,8 @@ import PropTypes from "prop-types";
 //Cambiar color al burger y la ui en mobile
 
 export const Header = ({
-  setGradientHeader,
+  setGradient,
+  unsetGradient,
   gradientHeader,
   handleChangeFooterColor,
 }) => {
@@ -45,7 +46,7 @@ export const Header = ({
           <NavLink
             aria-current="page"
             to="/"
-            onClick={() => setGradientHeader(true)}
+            onClick={setGradient}
             aria-label="Go to main page"
           >
             <LogoIcon alt="Logo de la empresa" />
@@ -60,7 +61,7 @@ export const Header = ({
                     className={({ isActive }) =>
                       `nav__list__item ${isActive ? "active-link" : null}`
                     }
-                    onClick={() => setGradientHeader(false)}
+                    onClick={unsetGradient}
                   >
                     Servicios
                   </NavLink>
@@ -72,7 +73,7 @@ export const Header = ({
                       `nav__list__item ${isActive ? "active-link" : null}`
                     }
                     onClick={() => {
-                      setGradientHeader(false);
+                      unsetGradient;
                       handleChangeFooterColor();
                     }}
                   >
@@ -85,7 +86,7 @@ export const Header = ({
                     className={({ isActive }) =>
                       `nav__list__item ${isActive ? "active-link" : null}`
                     }
-                    onClick={() => setGradientHeader(false)}
+                    onClick={unsetGradient}
                   >
                     Otros
                   </NavLink>
@@ -96,7 +97,7 @@ export const Header = ({
                     className={({ isActive }) =>
                       `nav__list__item ${isActive ? "active-link" : null}`
                     }
-                    onClick={() => setGradientHeader(true)}
+                    onClick={setGradient}
                   >
                     Contacto
                   </NavLink>
@@ -110,7 +111,7 @@ export const Header = ({
                   `nav__list__item ${isActive ? "active-link" : null}`
                 }
                 to="/servicios"
-                onClick={() => setGradientHeader(false)}
+                onClick={unsetGradient}
               >
                 Servicios
               </NavLink>
@@ -119,7 +120,7 @@ export const Header = ({
                   `nav__list__item ${isActive ? "active-link" : null}`
                 }
                 to="/sobre-mi"
-                onClick={() => setGradientHeader(false)}
+                onClick={unsetGradient}
               >
                 Sobre mí
               </NavLink>
@@ -129,7 +130,7 @@ export const Header = ({
                 }
                 to="/otros"
                 onClick={() => {
-                  setGradientHeader(false);
+                  unsetGradient;
                   handleChangeFooterColor();
                 }}
               >
@@ -140,7 +141,7 @@ export const Header = ({
                   `nav__list__item ${isActive ? "active-link" : null}`
                 }
                 to="/contacto"
-                onClick={() => setGradientHeader(true)}
+                onClick={setGradient}
               >
                 Contacto
               </NavLink>
@@ -153,7 +154,8 @@ export const Header = ({
 };
 
 Header.propTypes = {
-  setGradientHeader: PropTypes.func,
+  setGradient: PropTypes.func,
+  unsetGradient: PropTypes.func,
   gradientHeader: PropTypes.bool,
   handleChangeFooterColor: PropTypes.func,
 };

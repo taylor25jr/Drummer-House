@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { SocialFooter } from "../SocialFooter";
 import { LogoArrow } from "../Svg/LogoArrow";
 
-function Main() {
+function Main({unsetGradient}) {
 
   return (
     <>
@@ -17,7 +17,7 @@ function Main() {
         </h1>
         <p className="mainContainer__text">Descubre el poder de tocar batería</p>
          <Link to="/servicios">
-         <Button variant="contained" className="mainContainer__button">
+         <Button variant="contained" className="mainContainer__button" onClick={unsetGradient}>
         <p className="mainContainer__button__paragraph">Inicia ahora</p>
         <LogoArrow/>
       </Button>

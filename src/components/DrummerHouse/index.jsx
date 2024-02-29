@@ -19,6 +19,8 @@ export const DrummerHouse = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const handleChangeFooterColor = () => setFooterColor(true);
+  const unsetGradient = () => setGradientHeader(false);
+  const setGradient = () => setGradientHeader(true);
 
   const handleClick = (ref) => {
     if (ref.current.name === "boton1") {
@@ -37,7 +39,8 @@ export const DrummerHouse = () => {
         <div className="contenedor">
           <header className="contenedor__header">
             <Header
-              setGradientHeader={setGradientHeader}
+              setGradient={setGradient}
+              unsetGradient={unsetGradient}
               gradientHeader={gradientHeader}
               handleChangeFooterColor={handleChangeFooterColor}
             />
@@ -49,7 +52,7 @@ export const DrummerHouse = () => {
               formShow={formShow}
             />
             <Routes>
-              <Route path="/" element={<Main />} />
+              <Route path="/" element={<Main unsetGradient={unsetGradient} />} />
               <Route
                 path="/servicios"
                 element={<Servicios handleClick={handleClick} />}
