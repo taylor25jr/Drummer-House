@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./SobreMi.css";
 import { Footer } from "../Footer";
+import { UpArrowButton } from "../UpArrow";
 import { handleScrollAboutMe } from "../../hooks/AboutMe/useScroll";
 import PropTypes from "prop-types";
 
@@ -93,6 +94,7 @@ export const SobreMi = ({ footerColor }) => {
           </article>
         </section>
         <Footer footerColor={footerColor} />
+        <UpArrowButton />
       </section>
     </>
   );

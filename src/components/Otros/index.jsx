@@ -2,6 +2,7 @@ import React from "react";
 import "./Otros.css";
 import ServiceOtherCard from "../CardsOtros";
 import { Footer } from "../Footer";
+import { UpArrowButton } from "../UpArrow";
 
 export const Otros = () => {
 
@@ -47,6 +48,7 @@ export const Otros = () => {
         </div>
       </section>
       <Footer />
+      <UpArrowButton/>
     </>
   );
 };

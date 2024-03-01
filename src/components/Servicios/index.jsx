@@ -8,6 +8,7 @@ import PensumCard from "../CardGroup";
 import { ArrowIcon } from "../Svg/Arrow";
 import { LineIcon } from "../Svg/Line";
 import {NequiIcon} from "../Svg/Nequi"
+import { UpArrowButton } from "../UpArrow";
 
 
 export const Servicios = ({ handleShow, handleClick }) => {
@@ -149,6 +150,7 @@ export const Servicios = ({ handleShow, handleClick }) => {
           </article>
       </section>
       <Footer />
+      <UpArrowButton/>
     </>
   );
 };
