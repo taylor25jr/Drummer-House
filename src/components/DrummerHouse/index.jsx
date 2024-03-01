@@ -1,8 +1,8 @@
 import "./DrummerHouse.css";
 import { Header } from "../Header";
-import { SobreMi } from "../SobreMi";
-import { Servicios } from "../Servicios";
-import { useEffect, useState } from "react";
+import { SobreMi } from "../AboutMe";
+import { Servicios } from "../Service";
+import {  useState } from "react";
 import { Otros } from "../Otros";
 import { Form } from "../Form";
 import Main from "../Main";
