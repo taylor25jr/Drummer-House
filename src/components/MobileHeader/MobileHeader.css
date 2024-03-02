@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+
+:root {
+    --h1: 48px;
+    --h2: 32px;
+    --h3: 20px;
+    --body: 16px;
+    --link: 16px;
+    --primary: #A92935;
+    --dark: #1E1E1E;
+    --white: #FFFFFF;
+}
+
+.css-16k4q1o-JoyDrawer-content {
+    background-color: rgba(30, 30, 30, 0.8) !important;
+    overflow: hidden !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-evenly !important;
+}
+
+.css-1r2bn3-JoySvgIcon-root {
+    color: var(--white) !important;
+    margin: 20px !important;
+}
+
+#logoModal {
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.linksContainer>* {
+    display: flex;
+    justify-content: center;
+    margin: 0 !important;
+}
+
+.css-17vrhxc-JoyList-root {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.css-17vrhxc-JoyList-root>div {
+    color: var(--white) !important;
+}
+
+
+.css-1rlcuht-JoyListItemButton-root {
+    padding: 5px !important;
+    color: #fff !important;
+    font-size: var(--body) !important;
+    margin: 10px !important;
+    font-weight: 700 !important;
+    font-family: "Poppins", sans-serif !important;
+    text-transform: uppercase !important;
+    transition: 0.4s !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    padding: 0 10px !important;
+    margin: 10px !important;
+    border-radius: 5px !important;
+
+}
+
+.css-1r60ufc-JoyListItemButton-root {
+    color: unset !important;
+}
+
+.active-link {
+    color: #A92935 !important;
+}
+
+.poweredModal {
+    color: var(--white);
+}
+
+.css-1qn4fqe {
+    height: 30%;
+}
