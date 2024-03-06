@@ -12,7 +12,6 @@ import { AxiosIcon } from "../Svg/Axios";
 import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
 
-
 export default function MobileNavbar({
   setGradient,
   unsetGradient,
@@ -85,7 +84,7 @@ export default function MobileNavbar({
               setFooterColor(false);
             }}
             className={({ isActive }) =>
-              `nav__list__item ${isActive ? "active-link" : null}`
+              `nav__list__item mobile-item ${isActive ? "active-link" : null}`
             }
           >
             Home
@@ -98,7 +97,7 @@ export default function MobileNavbar({
               setFooterColor(false);
             }}
             className={({ isActive }) =>
-              `nav__list__item ${isActive ? "active-link" : null}`
+              `nav__list__item mobile-item ${isActive ? "active-link" : null}`
             }
           >
             Servicios
@@ -111,7 +110,7 @@ export default function MobileNavbar({
               setFooterColor(false);
             }}
             className={({ isActive }) =>
-              `nav__list__item ${isActive ? "active-link" : null}`
+              `nav__list__item mobile-item ${isActive ? "active-link" : null}`
             }
           >
             Academia
@@ -124,10 +123,10 @@ export default function MobileNavbar({
               unsetGradient();
             }}
             className={({ isActive }) =>
-              `nav__list__item ${isActive ? "active-link" : null}`
+              `nav__list__item mobile-item ${isActive ? "active-link" : null}`
             }
           >
-          Sobre mi
+            Sobre mi
           </NavLink>
           <NavLink
             to="/contacto"
@@ -137,10 +136,10 @@ export default function MobileNavbar({
               setFooterColor(false);
             }}
             className={({ isActive }) =>
-              `nav__list__item ${isActive ? "active-link" : null}`
+              `nav__list__item mobile-item ${isActive ? "active-link" : null}`
             }
           >
-          Contacto
+            Contacto
           </NavLink>
         </List>
 
@@ -169,7 +168,7 @@ export default function MobileNavbar({
 }
 
 MobileNavbar.propTypes = {
-    setGradient:PropTypes.func,
-    unsetGradient:PropTypes.func,
-    setFooterColor:PropTypes.func,
-}
+  setGradient: PropTypes.func,
+  unsetGradient: PropTypes.func,
+  setFooterColor: PropTypes.func,
+};

@@ -12,6 +12,10 @@
     --white: #FFFFFF;
 }
 
+.mobile-item {
+    margin-bottom: 20px !important;
+}
+
 .css-1vmsvbt {
     background-color: rgba(30, 30, 30, 0.8) !important;
 }
@@ -48,6 +52,7 @@
     height: 30%;
     display: flex;
     justify-content: center;
+    line-height: 3 !important;
 }
 
 .css-17vrhxc-JoyList-root>div {
