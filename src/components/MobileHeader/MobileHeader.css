@@ -12,12 +12,20 @@
     --white: #FFFFFF;
 }
 
+.css-1vmsvbt {
+    background-color: rgba(30, 30, 30, 0.8) !important;
+}
+
 .css-16k4q1o-JoyDrawer-content {
     background-color: rgba(30, 30, 30, 0.8) !important;
     overflow: hidden !important;
     display: flex !important;
     align-items: center !important;
     justify-content: space-evenly !important;
+}
+
+.css-p8cw9t {
+    color: var(--white) !important;
 }
 
 .css-1r2bn3-JoySvgIcon-root {

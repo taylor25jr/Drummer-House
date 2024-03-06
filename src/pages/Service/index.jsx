@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
 import "./Servicios.css";
-import PricingCards from "../Prices";
+import PricingCards from "../../components/Prices";
 import { handleScrollServicios } from "../../hooks/Servicios/useScroll";
-import { Footer } from "../Footer";
+import { Footer } from "../../components/Footer";
 import PropTypes from "prop-types";
-import PensumCard from "../CardGroup";
-import { ArrowIcon } from "../Svg/Arrow";
-import { LineIcon } from "../Svg/Line";
-import {NequiIcon} from "../Svg/Nequi"
-import { UpArrowButton } from "../UpArrow";
+import PensumCard from "../../components/CardGroup";
+import { ArrowIcon } from "../../components/Svg/Arrow";
+import { LineIcon } from "../../components/Svg/Line";
+import {NequiIcon} from "../../components/Svg/Nequi"
+import { UpArrowButton } from "../../components/UpArrow";
 
 
 export const Servicios = ({ handleShow, handleClick }) => {

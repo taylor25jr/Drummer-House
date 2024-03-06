@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./SobreMi.css";
-import { Footer } from "../Footer";
-import { UpArrowButton } from "../UpArrow";
+import { Footer } from "../../components/Footer";
+import { UpArrowButton } from "../../components/UpArrow";
 import { handleScrollAboutMe } from "../../hooks/AboutMe/useScroll";
 import PropTypes from "prop-types";
 

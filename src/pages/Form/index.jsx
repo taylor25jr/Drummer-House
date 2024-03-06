@@ -3,9 +3,9 @@ import Button from "@mui/material/Button";
 import SendIcon from "@mui/icons-material/Send";
 import "./Form.css";
 import { useForm } from "../../hooks/useForm";
-import { Loader } from "../Loader";
-import { SocialFooter } from "../SocialFooter";
-import { SuccessMessage } from "../Success";
+import { Loader } from "../../components/Loader";
+import { SocialFooter } from "../../components/SocialFooter";
+import { SuccessMessage } from "../../components/Success";
 
 const intialForm = {
   name: "",

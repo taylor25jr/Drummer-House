@@ -1,5 +1,5 @@
 import React from 'react'
-import {DrummerHouse} from "./components/DrummerHouse"
+import {DrummerHouse} from "./pages/DrummerHouse"
 
 
 

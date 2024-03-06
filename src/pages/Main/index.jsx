@@ -2,8 +2,8 @@ import "./main.css";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { SocialFooter } from "../SocialFooter";
-import { LogoArrow } from "../Svg/LogoArrow";
+import { SocialFooter } from "../../components/SocialFooter";
+import { LogoArrow } from "../../components/Svg/LogoArrow";
 import PropTypes from "prop-types";
 
 function Main({ unsetGradient }) {

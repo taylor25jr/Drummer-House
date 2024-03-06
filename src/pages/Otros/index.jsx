@@ -1,8 +1,8 @@
 import React from "react";
 import "./Otros.css";
-import ServiceOtherCard from "../CardsOtros";
-import { Footer } from "../Footer";
-import { UpArrowButton } from "../UpArrow";
+import ServiceOtherCard from "../../components/CardsOtros";
+import { Footer } from "../../components/Footer";
+import { UpArrowButton } from "../../components/UpArrow";
 
 export const Otros = () => {
 

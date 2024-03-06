@@ -1,13 +1,13 @@
 import "./DrummerHouse.css";
-import { Header } from "../Header";
+import { Header } from "../../components/Header";
 import { SobreMi } from "../AboutMe";
 import { Servicios } from "../Service";
 import {  useState } from "react";
 import { Otros } from "../Otros";
 import { Form } from "../Form";
 import Main from "../Main";
-import ModalForm from "../Modal";
-import { Error404 } from "../Error404";
+import ModalForm from "../../components/Modal";
+import { Error404 } from "../../components/Error404";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export const DrummerHouse = () => {
