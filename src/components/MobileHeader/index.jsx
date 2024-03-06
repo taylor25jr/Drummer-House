@@ -3,7 +3,6 @@ import Box from "@mui/joy/Box";
 import IconButton from "@mui/joy/IconButton";
 import Drawer from "@mui/joy/Drawer";
 import List from "@mui/joy/List";
-import ListItemButton from "@mui/joy/ListItemButton";
 import ModalClose from "@mui/joy/ModalClose";
 import Menu from "@mui/icons-material/Menu";
 import "./MobileHeader.css";
@@ -89,7 +88,7 @@ export default function MobileNavbar({
               `nav__list__item ${isActive ? "active-link" : null}`
             }
           >
-            <ListItemButton>Home</ListItemButton>
+            Home
           </NavLink>
           <NavLink
             to="/servicios"
@@ -102,7 +101,7 @@ export default function MobileNavbar({
               `nav__list__item ${isActive ? "active-link" : null}`
             }
           >
-            <ListItemButton>Servicios</ListItemButton>
+            Servicios
           </NavLink>
           <NavLink
             to="/otros"
@@ -115,7 +114,7 @@ export default function MobileNavbar({
               `nav__list__item ${isActive ? "active-link" : null}`
             }
           >
-            <ListItemButton>Academia</ListItemButton>
+            Academia
           </NavLink>
           <NavLink
             to="/sobre-mi"
@@ -128,7 +127,7 @@ export default function MobileNavbar({
               `nav__list__item ${isActive ? "active-link" : null}`
             }
           >
-            <ListItemButton>Sobre mi</ListItemButton>
+          Sobre mi
           </NavLink>
           <NavLink
             to="/contacto"
@@ -141,7 +140,7 @@ export default function MobileNavbar({
               `nav__list__item ${isActive ? "active-link" : null}`
             }
           >
-            <ListItemButton>Contacto</ListItemButton>
+          Contacto
           </NavLink>
         </List>
 
