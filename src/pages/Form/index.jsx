@@ -1,11 +1,10 @@
 import React from "react";
-import Button from "@mui/material/Button";
-import SendIcon from "@mui/icons-material/Send";
 import "./Form.css";
 import { useForm } from "../../hooks/useForm";
 import { Loader } from "../../components/Loader";
 import { SocialFooter } from "../../components/SocialFooter";
 import { SuccessMessage } from "../../components/Success";
+import { CommentsIcon } from "../../components/Svg/CommentsIcon";
 
 const intialForm = {
   name: "",
@@ -60,7 +59,8 @@ export const Form = () => {
             <Loader />
           ) : (
             <>
-              <h1 className="container__form__title">Formulario de contacto</h1>
+              <h1 className="container__form__title">Escribeme</h1>
+              <label  htmlFor="name">Nombre</label>
               <input
                 type="text"
                 name="name"
@@ -72,6 +72,7 @@ export const Form = () => {
               />
               {errors.name && <p className="errorAlert">{errors.name}</p>}
               <br />
+              <label htmlFor="email">Correo electronico</label>
               <input
                 type="email"
                 name="email"
@@ -83,6 +84,7 @@ export const Form = () => {
               />
               {errors.email && <p className="errorAlert">{errors.email}</p>}
               <br />
+              <label  htmlFor="subject">Asunto</label>
               <input
                 type="text"
                 name="subject"
@@ -94,6 +96,7 @@ export const Form = () => {
               />
               {errors.subject && <p className="errorAlert">{errors.subject}</p>}
               <br />
+              <label  htmlFor="comments">Comentarios</label>
               <textarea
                 name="comments"
                 cols="50"
@@ -107,13 +110,14 @@ export const Form = () => {
               {errors.comments && (
                 <p className="errorAlert">{errors.comments}</p>
               )}
-                 <Button type="submit" variant="contained" endIcon={<SendIcon />}>
-            Send
-          </Button>
+                 <button type="submit" className="submitButton">
+            Enviar
+            <CommentsIcon/>
+          </button>
             </>
           )}
         </form>
-        {response && <SuccessMessage />}
+        {response && <SuccessMessage/>}
       <SocialFooter/>
       </div>
     </>

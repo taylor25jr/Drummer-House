@@ -93,8 +93,8 @@
 
     .aboutContainer__textoContenedor__titulo {
         text-align: center;
-        font-family: 'Montserrat';
-        font-weight: 500;
+        font-family: Poppins;
+        font-weight: 700;
         text-transform: capitalize;
     }
 
@@ -148,8 +148,8 @@
     .aboutContainer {
         margin-top: 20px;
         font-size: 30px;
+        font-family: Poppins;
         display: flex;
-        font-family: 'Montserrat';
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
@@ -200,8 +200,8 @@
 
     .aboutContainer__textoContenedor__titulo {
         text-align: center;
-        font-family: 'Montserrat';
-        font-weight: 500;
+        font-family: Poppins;
+        font-weight: 700;
         text-transform: capitalize;
     }
 

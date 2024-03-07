@@ -1,10 +1,9 @@
 import React from "react";
-import Button from "@mui/material/Button";
-import SendIcon from "@mui/icons-material/Send";
 import "./WindowForm.css";
 import { useForm } from "../../hooks/useForm";
 import { Loader } from "../Loader";
 import { SuccessMessage } from "../Success";
+import { CommentsIcon } from "../../components/Svg/CommentsIcon";
 import PropTypes from "prop-types";
 
 const intialForm = {
@@ -60,6 +59,7 @@ export const WindowForm = ({ formShow }) => {
               ? "Formulario de contacto Nacionales"
               : "Formulario de contacto Internacionales"}
           </h1>
+          <label  htmlFor="name">Nombre</label>
           <input
             type="text"
             name="name"
@@ -71,6 +71,7 @@ export const WindowForm = ({ formShow }) => {
           />
           {errors.name && <p className="errorAlert">{errors.name}</p>}
           <br />
+          <h3 className="titleLabel">Selecciona tu mejor opción</h3>
           <label htmlFor="clase" className="radioLabel">
             <input
               type="radio"
@@ -112,6 +113,7 @@ export const WindowForm = ({ formShow }) => {
           <br />
           {errors.option && <p className="errorAlert">{errors.option}</p>}
           <br />
+          <label  htmlFor="cellphone">Teléfono</label>
           <input
             type="number"
             name="cellphone"
@@ -122,6 +124,8 @@ export const WindowForm = ({ formShow }) => {
             required
           />
           {errors.cellphone && <p className="errorAlert">{errors.cellphone}</p>}
+          <br />
+          <label  htmlFor="comments">Comentarios</label>
           <textarea
             name="comments"
             cols="50"
@@ -133,9 +137,10 @@ export const WindowForm = ({ formShow }) => {
             required
           ></textarea>
           {errors.comments && <p className="errorAlert">{errors.comments}</p>}
-          <Button type="submit" variant="contained" endIcon={<SendIcon />}>
-            Send
-          </Button>
+          <button type="submit" className="submitButton">
+            Enviar
+            <CommentsIcon/>
+          </button>
           {response && <SuccessMessage />}
         </form>
       )}
