@@ -1,6 +1,7 @@
 import React from "react";
 import "./WindowForm.css";
 import { useForm } from "../../hooks/useForm";
+import CloseIcon from "@mui/icons-material/Close";
 import { Loader } from "../Loader";
 import { SuccessMessage } from "../Success";
 import { CommentsIcon } from "../../components/Svg/CommentsIcon";
@@ -37,7 +38,7 @@ const validation = (form) => {
   return errors;
 };
 
-export const WindowForm = ({ formShow }) => {
+export const WindowForm = ({ formShow, handleClose }) => {
   const {
     form,
     errors,
@@ -54,12 +55,16 @@ export const WindowForm = ({ formShow }) => {
         <Loader />
       ) : (
         <form className="container__form__form" onSubmit={handleSubmit}>
+          <CloseIcon
+            onClick={handleClose}
+            style={{ cursor: "pointer", color: "white" }}
+          />
           <h1 className="container__form__title">
             {formShow
               ? "Formulario de contacto Nacionales"
               : "Formulario de contacto Internacionales"}
           </h1>
-          <label  htmlFor="name">Nombre</label>
+          <label htmlFor="name">Nombre</label>
           <input
             type="text"
             name="name"
@@ -113,7 +118,7 @@ export const WindowForm = ({ formShow }) => {
           <br />
           {errors.option && <p className="errorAlert">{errors.option}</p>}
           <br />
-          <label  htmlFor="cellphone">Teléfono</label>
+          <label htmlFor="cellphone">Teléfono</label>
           <input
             type="number"
             name="cellphone"
@@ -125,7 +130,7 @@ export const WindowForm = ({ formShow }) => {
           />
           {errors.cellphone && <p className="errorAlert">{errors.cellphone}</p>}
           <br />
-          <label  htmlFor="comments">Comentarios</label>
+          <label htmlFor="comments">Comentarios</label>
           <textarea
             name="comments"
             cols="50"
@@ -139,9 +144,9 @@ export const WindowForm = ({ formShow }) => {
           {errors.comments && <p className="errorAlert">{errors.comments}</p>}
           <button type="submit" className="submitButton">
             Enviar
-            <CommentsIcon/>
+            <CommentsIcon />
           </button>
-          {response && <SuccessMessage />}
+          {response && <SuccessMessage handleClose={handleClose}/>}
         </form>
       )}
     </>
@@ -150,4 +155,5 @@ export const WindowForm = ({ formShow }) => {
 
 WindowForm.propTypes = {
   formShow: PropTypes.bool,
+  handleClose: PropTypes.func,
 };

@@ -56,7 +56,7 @@ export const DrummerHouse = () => {
               <Route path="/" element={<Main unsetGradient={unsetGradient} />} />
               <Route
                 path="/servicios"
-                element={<Servicios handleClick={handleClick} />}
+                element={<Servicios handleClick={handleClick} handleClose={handleClose} />}
               />
               <Route
                 path="/sobre-mi"

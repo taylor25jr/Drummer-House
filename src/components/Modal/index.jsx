@@ -12,7 +12,7 @@ function ModalForm({show,handleClose,formShow}) {
           <Modal.Title> Contactate conmigo</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-            <WindowForm formShow={formShow}/>
+            <WindowForm formShow={formShow} handleClose={handleClose}/>
         </Modal.Body>
       </Modal>
     </>
@@ -24,6 +24,6 @@ export default ModalForm;
 ModalForm.propTypes = {
   show: PropTypes.bool,
   handleClose: PropTypes.func,
-  formShow: PropTypes.func,
+  formShow: PropTypes.bool,
 }
 

@@ -60,7 +60,7 @@ export const Form = () => {
           ) : (
             <>
               <h1 className="container__form__title">Escribeme</h1>
-              <label  htmlFor="name">Nombre</label>
+              <label htmlFor="name">Nombre</label>
               <input
                 type="text"
                 name="name"
@@ -84,7 +84,7 @@ export const Form = () => {
               />
               {errors.email && <p className="errorAlert">{errors.email}</p>}
               <br />
-              <label  htmlFor="subject">Asunto</label>
+              <label htmlFor="subject">Asunto</label>
               <input
                 type="text"
                 name="subject"
@@ -96,7 +96,7 @@ export const Form = () => {
               />
               {errors.subject && <p className="errorAlert">{errors.subject}</p>}
               <br />
-              <label  htmlFor="comments">Comentarios</label>
+              <label htmlFor="comments">Comentarios</label>
               <textarea
                 name="comments"
                 cols="50"
@@ -110,15 +110,15 @@ export const Form = () => {
               {errors.comments && (
                 <p className="errorAlert">{errors.comments}</p>
               )}
-                 <button type="submit" className="submitButton">
-            Enviar
-            <CommentsIcon/>
-          </button>
+              <button type="submit" className="submitButton">
+                Enviar
+                <CommentsIcon />
+              </button>
             </>
           )}
         </form>
-        {response && <SuccessMessage/>}
-      <SocialFooter/>
+        {response && <SuccessMessage />}
+        <SocialFooter />
       </div>
     </>
   );
