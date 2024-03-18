@@ -53,6 +53,8 @@ export const WindowForm = ({ formShow, handleClose }) => {
     <>
       {loading ? (
         <Loader />
+      ) : response ? (
+        <SuccessMessage />
       ) : (
         <form className="container__form__form" onSubmit={handleSubmit}>
           <CloseIcon
@@ -100,7 +102,7 @@ export const WindowForm = ({ formShow, handleClose }) => {
               onBlur={handleBlur}
               required
             />{" "}
-            Clase Mensual
+            Mes Normal
           </label>
           <br />
           <label htmlFor="claseMensual2" className="radioLabel">
@@ -113,7 +115,7 @@ export const WindowForm = ({ formShow, handleClose }) => {
               onBlur={handleBlur}
               required
             />{" "}
-            Clase Mensual x2
+            Mes Intensivo
           </label>
           <br />
           {errors.option && <p className="errorAlert">{errors.option}</p>}
@@ -146,7 +148,7 @@ export const WindowForm = ({ formShow, handleClose }) => {
             Enviar
             <CommentsIcon />
           </button>
-          {response && <SuccessMessage handleClose={handleClose}/>}
+          {response && <SuccessMessage handleClose={handleClose} />}
         </form>
       )}
     </>

@@ -12,29 +12,15 @@
     --white: #FFFFFF;
 }
 
-.mi-titulo-clase {
-    font-family: Poppins;
-}
-
-.mi-contenido-clase {
-    font-family: Poppins;
-}
-
-.swal2-icon .swal2-success .swal2-icon-show {
-    justify-self: center;
-}
-
-.swal2-success-ring {
-    height: 100%;
-    width: 100%;
-}
-
-.swal2-confirm {
-    background-color: var(--primary);
-    font-family: Poppins;
-}
-
-div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
-    background-color: var(--primary) !important;
+strong {
     font-family: Poppins !important;
+    font-size: 10px !important;
+}
+
+@media screen and (min-width: 768px) {
+    strong {
+        font-family: Poppins !important;
+        font-size: 18px !important;
+    }
+
 }

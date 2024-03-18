@@ -1,4 +1,3 @@
-import React from "react";
 import { FacebookIcon } from "../Svg/Facebook";
 import { WhatsappIcon } from "../Svg/Whatsapp";
 import { InstagramIcon } from "../Svg/Instagram";
@@ -10,26 +9,30 @@ import { AxiosBlackIcon } from "../Svg/BlackIcons/Axios";
 import { LogoIcon } from "../Svg/Logo";
 import { AxiosIcon } from "../Svg/Axios";
 import "./Footer.css";
-import PropTypes from "prop-types";
+import { useLocation } from "react-router-dom";
 
-export const Footer = ({ footerColor }) => {
+export const Footer = () => {
+  const routesWithGradient = ["/sobre-mi"];
+  const { pathname } = useLocation();
+  const gradientFooterNew = routesWithGradient.includes(pathname);
+
   return (
     <footer
       className="footerSection"
-      style={
-       { backgroundColor: footerColor ? "#FAFAFA" : "#1E1E1E",}
-      }
+      style={{ backgroundColor: gradientFooterNew ? "#FAFAFA" : "#1E1E1E" }}
     >
       <div className="footerSection__container">
         <section className="social">
           <h2
             className="footerTitle"
-            style={footerColor ? { color: "#1E1E1E" } : { color: "#FAFAFA" }}
+            style={
+              gradientFooterNew ? { color: "#1E1E1E" } : { color: "#FAFAFA" }
+            }
           >
             Visitame
           </h2>
           <article className="socialIcons">
-            {footerColor ? (
+            {gradientFooterNew ? (
               <>
                 <WhatsappBlackIcon />
                 <FacebookBlackIcon />
@@ -46,7 +49,7 @@ export const Footer = ({ footerColor }) => {
         </section>
         <section className="footer-info">
           <article className="footer-logo">
-            {footerColor ? (
+            {gradientFooterNew ? (
               <>
                 <LogoBlackIcon />
               </>
@@ -59,7 +62,9 @@ export const Footer = ({ footerColor }) => {
           <article className="footer-content">
             <p
               className="footerTitle"
-              style={footerColor ? { color: "#1E1E1E" } : { color: "#FAFAFA" }}
+              style={
+                gradientFooterNew ? { color: "#1E1E1E" } : { color: "#FAFAFA" }
+              }
             >
               Términos y Condiciones | Ayuda | © 2024 The Drummer's House Todos
               los derechos reservados
@@ -69,11 +74,13 @@ export const Footer = ({ footerColor }) => {
         <section className="powered-section">
           <h2
             className="footerTitle"
-            style={footerColor ? { color: "#1E1E1E" } : { color: "#FAFAFA" }}
+            style={
+              gradientFooterNew ? { color: "#1E1E1E" } : { color: "#FAFAFA" }
+            }
           >
             powered by
           </h2>
-          {footerColor ? (
+          {gradientFooterNew ? (
             <>
               <AxiosBlackIcon />
             </>
@@ -86,8 +93,4 @@ export const Footer = ({ footerColor }) => {
       </div>
     </footer>
   );
-};
-
-Footer.propTypes = {
-  footerColor: PropTypes.bool,
 };

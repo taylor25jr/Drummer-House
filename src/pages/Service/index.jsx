@@ -7,9 +7,8 @@ import PropTypes from "prop-types";
 import PensumCard from "../../components/CardGroup";
 import { ArrowIcon } from "../../components/Svg/Arrow";
 import { LineIcon } from "../../components/Svg/Line";
-import {NequiIcon} from "../../components/Svg/Nequi"
+import { NequiIcon } from "../../components/Svg/Nequi";
 import { UpArrowButton } from "../../components/UpArrow";
-
 
 export const Servicios = ({ handleShow, handleClick }) => {
   useEffect(() => {
@@ -116,41 +115,42 @@ export const Servicios = ({ handleShow, handleClick }) => {
             <PricingCards handleShow={handleShow} handleClick={handleClick} />
           </article>
         </section>
-          <article className="medios">
-            <article className="medios__titulo">
-              <h2 className="fechas__titulo medios__titulo__h2">Medios de pago</h2>
-            </article>
-            <article className="medios__methods__container">
-              <div>
+        <article className="medios">
+          <article className="medios__titulo">
+            <h2 className="fechas__titulo medios__titulo__h2">
+              Medios de pago
+            </h2>
+          </article>
+          <article className="medios__methods__container">
+            <div>
               <section className="logo__container">
-                  <NequiIcon/>
-              <h2 className="fechas__cards__inscripciones__titulo medios__methods__container__title">
+                <h2 className="fechas__cards__inscripciones__titulo medios__methods__container__title">
                   bbva
                 </h2>
-                </section>
-                <h3 className="fechas__cards__inscripciones__parrafo">
-                323 206 7061
-                </h3>
-              </div>
-              <div>
-                <LineIcon/>
-              </div>
-              <div>
-                <section className="logo__container">
-                  <NequiIcon/>
-              <h2 className="fechas__cards__inscripciones__titulo medios__methods__container__title">
+              </section>
+              <h3 className="fechas__cards__inscripciones__parrafo">
+                Proximamente
+              </h3>
+            </div>
+            <div>
+              <LineIcon />
+            </div>
+            <div>
+              <section className="logo__container">
+                <NequiIcon />
+                <h2 className="fechas__cards__inscripciones__titulo medios__methods__container__title">
                   Nequi
                 </h2>
-                </section>
-                <h3 className="fechas__cards__inscripciones__parrafo">
+              </section>
+              <h3 className="fechas__cards__inscripciones__parrafo">
                 323 206 7061
-                </h3>
-              </div>
-            </article>
+              </h3>
+            </div>
           </article>
+        </article>
       </section>
       <Footer />
-      <UpArrowButton/>
+      <UpArrowButton />
     </>
   );
 };

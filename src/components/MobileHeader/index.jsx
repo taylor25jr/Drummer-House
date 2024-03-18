@@ -13,8 +13,6 @@ import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
 
 export default function MobileNavbar({
-  setGradient,
-  unsetGradient,
   setFooterColor,
 }) {
   const [open, setOpen] = React.useState(false);
@@ -81,7 +79,6 @@ export default function MobileNavbar({
             to="/"
             onClick={() => {
               setOpen(false);
-              setGradient();
               setFooterColor(false);
             }}
             className={({ isActive }) =>
@@ -94,7 +91,6 @@ export default function MobileNavbar({
             to="/servicios"
             onClick={() => {
               setOpen(false);
-              unsetGradient();
               setFooterColor(false);
             }}
             className={({ isActive }) =>
@@ -107,7 +103,6 @@ export default function MobileNavbar({
             to="/otros"
             onClick={() => {
               setOpen(false);
-              unsetGradient();
               setFooterColor(false);
             }}
             className={({ isActive }) =>
@@ -121,7 +116,6 @@ export default function MobileNavbar({
             onClick={() => {
               setOpen(false);
               setFooterColor(true);
-              unsetGradient();
             }}
             className={({ isActive }) =>
               `nav__list__item mobile-item ${isActive ? "active-link" : null}`
@@ -133,7 +127,6 @@ export default function MobileNavbar({
             to="/contacto"
             onClick={() => {
               setOpen(false);
-              setGradient();
               setFooterColor(false);
             }}
             className={({ isActive }) =>
@@ -169,7 +162,5 @@ export default function MobileNavbar({
 }
 
 MobileNavbar.propTypes = {
-  setGradient: PropTypes.func,
-  unsetGradient: PropTypes.func,
   setFooterColor: PropTypes.func,
 };

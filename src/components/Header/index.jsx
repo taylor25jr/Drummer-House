@@ -4,14 +4,9 @@ import { LogoIcon } from "../Svg/Logo";
 import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import MobileNavbar from "../MobileHeader";
+import { useLocation } from "react-router-dom";
 
-
-export const Header = ({
-  setGradient,
-  unsetGradient,
-  gradientHeader,
-  setFooterColor,
-}) => {
+export const Header = () => {
   const [isPC, setIsPC] = useState(window.innerWidth > 768);
 
   useEffect(() => {
@@ -25,34 +20,26 @@ export const Header = ({
     };
   }, []);
 
+  const routesWithGradient = ["/", "/contacto"];
+  const { pathname } = useLocation();
+  const gradientHeaderNew = routesWithGradient.includes(pathname);
+
   return (
     <>
       {
         <section
           className="header"
           style={{
-            background: gradientHeader
+            background: gradientHeaderNew
               ? "linear-gradient(180deg, rgba(30, 30, 30, 0.983871) 81.49%, rgba(30, 30, 30, 0) 100%)"
               : "#1E1E1E",
           }}
         >
-          <NavLink
-            aria-current="page"
-            to="/"
-            onClick={() => {
-              setGradient();
-              setFooterColor(false);
-            }}
-            aria-label="Go to main page"
-          >
+          <NavLink aria-current="page" to="/" aria-label="Go to main page">
             <LogoIcon alt="Logo de la empresa" />
           </NavLink>
           {!isPC ? (
-            <MobileNavbar
-              setGradient={setGradient}
-              unsetGradient={unsetGradient}
-              setFooterColor={setFooterColor}
-            />
+            <MobileNavbar />
           ) : (
             <nav className=" nav__list">
               <NavLink
@@ -60,10 +47,6 @@ export const Header = ({
                   `nav__list__item ${isActive ? "active-link" : null}`
                 }
                 to="/servicios"
-                onClick={() => {
-                  unsetGradient();
-                  setFooterColor(false);
-                }}
               >
                 Servicios
               </NavLink>
@@ -72,10 +55,6 @@ export const Header = ({
                   `nav__list__item ${isActive ? "active-link" : null}`
                 }
                 to="/sobre-mi"
-                onClick={() => {
-                  unsetGradient();
-                  setFooterColor(true);
-                }}
               >
                 Sobre mí
               </NavLink>
@@ -84,10 +63,6 @@ export const Header = ({
                   `nav__list__item ${isActive ? "active-link" : null}`
                 }
                 to="/otros"
-                onClick={() => {
-                  unsetGradient();
-                  setFooterColor(false);
-                }}
               >
                 Otros
               </NavLink>
@@ -96,10 +71,6 @@ export const Header = ({
                   `nav__list__item ${isActive ? "active-link" : null}`
                 }
                 to="/contacto"
-                onClick={() => {
-                  setGradient();
-                  setFooterColor(false);
-                }}
               >
                 Contacto
               </NavLink>
@@ -109,12 +80,4 @@ export const Header = ({
       }
     </>
   );
-};
-
-Header.propTypes = {
-  setGradient: PropTypes.func,
-  unsetGradient: PropTypes.func,
-  gradientHeader: PropTypes.bool,
-  handleChangeFooterColor: PropTypes.func,
-  setFooterColor: PropTypes.func,
 };

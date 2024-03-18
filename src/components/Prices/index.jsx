@@ -48,21 +48,21 @@ export default function PricingCards({ handleClick }) {
               <BlackCircle />
               <h2 className="classesType">Clase</h2>
             </ListItemDecorator>
-            <h3 className="classesPrice">$40.000</h3>
+            <h3 className="classesPrice">$45.000</h3>
           </ListItem>
           <ListItem className="listItemContainer">
             <ListItemDecorator className="classType__container">
               <BlackCircle />
-              <h2 className="classesType">Clase mensual</h2>
+              <h2 className="classesType">Mes Normal</h2>
             </ListItemDecorator>
-            <h3 className="classesPrice">$120.000</h3>
+            <h3 className="classesPrice">$140.000</h3>
           </ListItem>
           <ListItem className="listItemContainer">
             <ListItemDecorator className="classType__container">
               <BlackCircle />
-              <h2 className="classesType">Clase mensual x2</h2>
+              <h2 className="classesType">Mes Intensivo</h2>
             </ListItemDecorator>
-            <h3 className="classesPrice">$200.000</h3>
+            <h3 className="classesPrice">$280.000</h3>
           </ListItem>
         </List>
         <hr className="divider" />
@@ -103,21 +103,21 @@ export default function PricingCards({ handleClick }) {
               <WhiteCircle />
               <h2 className="classesType blacktype">Clase</h2>
             </ListItemDecorator>
-            <h3 className="classesPrice blackPrice">$40.000</h3>
+            <h3 className="classesPrice blackPrice">$20 USD</h3>
           </ListItem>
           <ListItem className="listItemContainer">
             <ListItemDecorator className="classType__container">
               <WhiteCircle />
-              <h2 className="classesType blacktype">Clase mensual</h2>
+              <h2 className="classesType blacktype">Mes Normal</h2>
             </ListItemDecorator>
-            <h3 className="classesPrice blackPrice">$120.000</h3>
+            <h3 className="classesPrice blackPrice">$60 USD</h3>
           </ListItem>
           <ListItem className="listItemContainer">
             <ListItemDecorator className="classType__container">
               <WhiteCircle />
-              <h2 className="classesType blacktype">Clase mensual x2</h2>
+              <h2 className="classesType blacktype">Mes Intensivo</h2>
             </ListItemDecorator>
-            <h3 className="classesPrice blackPrice">$200.000</h3>
+            <h3 className="classesPrice blackPrice">$90 USD</h3>
           </ListItem>
         </List>
         <hr className="divider" />

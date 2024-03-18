@@ -36,7 +36,7 @@
         color: #ffffff;
         margin-top: 20px;
         text-transform: uppercase;
-        font-family: 'Montserrat';
+        font-family: Poppins;
     }
 
     .servicios__cards {
@@ -85,7 +85,6 @@
         text-align: center;
         margin-bottom: 30px;
         font-size: 25px;
-        font-family: 'Montserrat';
     }
 
     .card__body {
@@ -106,8 +105,7 @@
         list-style: decimal;
         font-weight: bolder;
         font-size: 15px;
-        font-family: 'Montserrat';
-
+        font-family: Poppins;
     }
 
     .card-effect {
@@ -135,7 +133,7 @@
         color: #fff;
         min-height: 30vh;
         margin-top: 50px;
-
+        font-family: Poppins;
     }
 
     .fechas__container {
@@ -275,7 +273,6 @@
     .servicios__info__titulo {
         color: rgb(255, 255, 255);
         font-weight: bolder;
-        font-family: 'Montserrat';
         font-size: 30px;
         text-transform: uppercase;
     }
@@ -323,12 +320,11 @@
 
     .card__header__titulo {
         font-weight: bolder;
-        font-family: 'Montserrat';
         text-transform: uppercase;
         text-align: center;
         margin-bottom: 30px;
         font-size: 25px;
-
+        font-family: Poppins;
     }
 
     .card__body {
@@ -350,8 +346,7 @@
         font-weight: lighter;
         font-weight: 500;
         font-size: 20px;
-        font-family: 'Montserrat';
-
+        font-family: Poppins;
 
     }
 
@@ -464,6 +459,7 @@
         margin-bottom: 30px;
         margin-top: 20px;
         color: #ffffff;
+        font-family: Poppins;
 
 
     }
@@ -575,7 +571,7 @@
         text-align: center;
         margin-bottom: 30px;
         font-size: 25px;
-        font-family: 'Montserrat';
+        font-family: Poppins;
 
     }
 
@@ -590,9 +586,10 @@
     .container__list__item {
         line-height: 25px;
         list-style: decimal;
-        font-family: 'Montserrat';
         font-weight: lighter;
         font-size: 20px;
+        font-family: Poppins;
+
     }
 
     .card-effect {

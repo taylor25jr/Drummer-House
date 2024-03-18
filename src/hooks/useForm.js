@@ -5,7 +5,7 @@ export const useForm = (initialForm, validations) => {
   const [form, setForm] = useState(initialForm);
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
-  const [response, setResponse] = useState(null);
+  const [response, setResponse] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -35,12 +35,12 @@ export const useForm = (initialForm, validations) => {
             Accept: "application/json",
           },
         })
-        .then((res) => {
+        .then(() => {
           setLoading(false);
           setResponse(true);
           setTimeout(() => {
             setResponse(false);
-          }, 5000);
+          }, 3000);
           setForm(initialForm);
         });
     } else {

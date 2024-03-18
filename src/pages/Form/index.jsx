@@ -57,6 +57,8 @@ export const Form = () => {
         <form className="container__form__form" onSubmit={handleSubmit}>
           {loading ? (
             <Loader />
+          ) : response ? (
+            <SuccessMessage />
           ) : (
             <>
               <h1 className="container__form__title">Escribeme</h1>
@@ -117,7 +119,6 @@ export const Form = () => {
             </>
           )}
         </form>
-        {response && <SuccessMessage />}
         <SocialFooter />
       </div>
     </>
