@@ -13,8 +13,6 @@ import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
 
 export default function MobileNavbar({
-  setGradient,
-  unsetGradient,
   setFooterColor,
 }) {
   const [open, setOpen] = React.useState(false);
