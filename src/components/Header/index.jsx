@@ -4,6 +4,7 @@ import { LogoIcon } from "../Svg/Logo";
 import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import MobileNavbar from "../MobileHeader";
+import { useLocation } from "react-router-dom";
 
 
 export const Header = ({
@@ -13,6 +14,11 @@ export const Header = ({
   setFooterColor,
 }) => {
   const [isPC, setIsPC] = useState(window.innerWidth > 768);
+
+  const routesWithGradient = ['/', '/contacto'];
+  const { pathname } = useLocation();
+  const gradientHeaderNew = routesWithGradient.includes(pathname);
+  
 
   useEffect(() => {
     const handleResize = () => {
@@ -31,7 +37,7 @@ export const Header = ({
         <section
           className="header"
           style={{
-            background: gradientHeader
+            background: gradientHeaderNew
               ? "linear-gradient(180deg, rgba(30, 30, 30, 0.983871) 81.49%, rgba(30, 30, 30, 0) 100%)"
               : "#1E1E1E",
           }}
@@ -49,8 +55,7 @@ export const Header = ({
           </NavLink>
           {!isPC ? (
             <MobileNavbar
-              setGradient={setGradient}
-              unsetGradient={unsetGradient}
+
               setFooterColor={setFooterColor}
             />
           ) : (
@@ -61,7 +66,6 @@ export const Header = ({
                 }
                 to="/servicios"
                 onClick={() => {
-                  unsetGradient();
                   setFooterColor(false);
                 }}
               >
@@ -73,7 +77,6 @@ export const Header = ({
                 }
                 to="/sobre-mi"
                 onClick={() => {
-                  unsetGradient();
                   setFooterColor(true);
                 }}
               >
@@ -85,7 +88,6 @@ export const Header = ({
                 }
                 to="/otros"
                 onClick={() => {
-                  unsetGradient();
                   setFooterColor(false);
                 }}
               >
@@ -97,7 +99,6 @@ export const Header = ({
                 }
                 to="/contacto"
                 onClick={() => {
-                  setGradient();
                   setFooterColor(false);
                 }}
               >
