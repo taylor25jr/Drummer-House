@@ -2,7 +2,6 @@ import { NavLink } from "react-router-dom";
 import "./Header.css";
 import { LogoIcon } from "../Svg/Logo";
 import { useEffect, useState } from "react";
-import PropTypes from "prop-types";
 import MobileNavbar from "../MobileHeader";
 import { useLocation } from "react-router-dom";
 

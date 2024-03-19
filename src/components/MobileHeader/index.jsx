@@ -12,9 +12,7 @@ import { AxiosIcon } from "../Svg/Axios";
 import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
 
-export default function MobileNavbar({
-  setFooterColor,
-}) {
+export default function MobileNavbar() {
   const [open, setOpen] = React.useState(false);
 
   return (
@@ -79,7 +77,6 @@ export default function MobileNavbar({
             to="/"
             onClick={() => {
               setOpen(false);
-              setFooterColor(false);
             }}
             className={({ isActive }) =>
               `nav__list__item mobile-item ${isActive ? "active-link" : null}`
@@ -91,7 +88,6 @@ export default function MobileNavbar({
             to="/servicios"
             onClick={() => {
               setOpen(false);
-              setFooterColor(false);
             }}
             className={({ isActive }) =>
               `nav__list__item mobile-item ${isActive ? "active-link" : null}`
@@ -103,7 +99,6 @@ export default function MobileNavbar({
             to="/otros"
             onClick={() => {
               setOpen(false);
-              setFooterColor(false);
             }}
             className={({ isActive }) =>
               `nav__list__item mobile-item ${isActive ? "active-link" : null}`
@@ -115,7 +110,6 @@ export default function MobileNavbar({
             to="/sobre-mi"
             onClick={() => {
               setOpen(false);
-              setFooterColor(true);
             }}
             className={({ isActive }) =>
               `nav__list__item mobile-item ${isActive ? "active-link" : null}`
@@ -127,7 +121,6 @@ export default function MobileNavbar({
             to="/contacto"
             onClick={() => {
               setOpen(false);
-              setFooterColor(false);
             }}
             className={({ isActive }) =>
               `nav__list__item mobile-item ${isActive ? "active-link" : null}`
