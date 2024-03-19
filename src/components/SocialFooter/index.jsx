@@ -10,7 +10,7 @@ export const SocialFooter = () => {
   const routes = {
     facebook: "https://www.facebook.com/profile.php?id=100064800582592&locale=es_LA",
     instagram: "https://www.instagram.com/johan_sebas00/",
-    whatsapp: "https://api.whatsapp.com/send?phone=3008559576&text=hola,soy luis"
+    whatsapp: "https://api.whatsapp.com/send?phone=+573232067061&text=Hola,me gustaria conocer tus servicios!"
   }
 
   const {facebook,instagram,whatsapp} = routes

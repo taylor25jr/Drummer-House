@@ -6,7 +6,7 @@ import { UpArrowButton } from "../../components/UpArrow";
 
 export const Otros = () => {
 
-  const route = (msg) => `https://api.whatsapp.com/send?phone=3008559576&text=${msg}`;
+  const route = (msg) => `https://api.whatsapp.com/send?phone=+573232067061&text=${msg}`;
 
   return (
     <>

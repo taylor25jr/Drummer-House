@@ -9,12 +9,21 @@ import { AxiosBlackIcon } from "../Svg/BlackIcons/Axios";
 import { LogoIcon } from "../Svg/Logo";
 import { AxiosIcon } from "../Svg/Axios";
 import "./Footer.css";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export const Footer = () => {
   const routesWithGradient = ["/sobre-mi"];
   const { pathname } = useLocation();
   const gradientFooterNew = routesWithGradient.includes(pathname);
+
+  const routes = {
+    facebook: "https://www.facebook.com/profile.php?id=100064800582592&locale=es_LA",
+    instagram: "https://www.instagram.com/johan_sebas00/",
+    whatsapp: "https://api.whatsapp.com/send?phone=+573232067061&text=Hola,me gustaria conocer tus servicios!"
+  }
+
+  const {facebook,instagram,whatsapp} = routes
+
 
   return (
     <footer
@@ -34,15 +43,27 @@ export const Footer = () => {
           <article className="socialIcons">
             {gradientFooterNew ? (
               <>
-                <WhatsappBlackIcon />
-                <FacebookBlackIcon />
+              <Link to={whatsapp}>
                 <InstagramBlackIcon />
+              </Link>
+              <Link to={facebook}>
+                <FacebookBlackIcon />
+              </Link>
+              <Link to={instagram}>
+                <WhatsappBlackIcon />
+              </Link>
               </>
             ) : (
               <>
+              <Link to={instagram}>
                 <InstagramIcon />
+              </Link>
+              <Link to={facebook}>
                 <FacebookIcon />
+              </Link>
+              <Link to={whatsapp}>
                 <WhatsappIcon />
+              </Link>
               </>
             )}
           </article>
