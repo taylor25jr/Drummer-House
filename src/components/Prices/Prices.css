@@ -219,6 +219,7 @@
 
     .international {
         color: var(--white) !important;
+        font-size: var(--h2) !important;
     }
 
     .blacktype {

@@ -36,7 +36,7 @@ export default function PricingCards({ handleClick }) {
           BASIC
         </Chip>
         <Typography level="h2" className="nacionalesTitle">
-          Nacionales
+          Nacional
         </Typography>
         <hr className="divider" />
         <List
@@ -91,7 +91,7 @@ export default function PricingCards({ handleClick }) {
           MÁS POPULAR
         </Chip>
         <Typography level="h2" className="nacionalesTitle international">
-          Internacionales
+          Internacional
         </Typography>
         <hr className="divider" />
         <List
