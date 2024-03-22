@@ -8,7 +8,7 @@ import { Form } from "../Form";
 import Main from "../Main";
 import ModalForm from "../../components/Modal";
 import { Error404 } from "../../components/Error404";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 export const DrummerHouse = () => {
   const [show, setShow] = useState(false),
@@ -32,7 +32,7 @@ export const DrummerHouse = () => {
 
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <div className="contenedor">
           <header className="contenedor__header">
             <Header
@@ -60,7 +60,7 @@ export const DrummerHouse = () => {
             </Routes>
           </section>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 };
