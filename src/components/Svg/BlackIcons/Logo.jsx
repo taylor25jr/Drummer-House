@@ -4,8 +4,6 @@ export const LogoBlackIcon = () => {
   return (
     <>
       <svg
-     width="175"
-     height="81"
         viewBox="0 0 120 54"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

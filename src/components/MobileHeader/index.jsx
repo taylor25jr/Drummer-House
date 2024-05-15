@@ -39,15 +39,6 @@ export default function MobileNavbar() {
             width: "100%",
           }}
         >
-          <ModalClose
-            id="close-icon"
-            sx={{
-              position: "initial",
-              "&:hover": {
-                backgroundColor: "#1E1E1E",
-              },
-            }}
-          />
         </Box>
         <Box
           sx={{
