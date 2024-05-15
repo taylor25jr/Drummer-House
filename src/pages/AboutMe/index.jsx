@@ -3,6 +3,7 @@ import "./SobreMi.css";
 import { Footer } from "../../components/Footer";
 import { UpArrowButton } from "../../components/UpArrow";
 import { handleScrollAboutMe } from "../../hooks/AboutMe/useScroll";
+import images from '../../assets/images'
 import PropTypes from "prop-types";
 
 export const SobreMi = ({ footerColor }) => {
@@ -20,7 +21,7 @@ export const SobreMi = ({ footerColor }) => {
         <h1 className="generalContainer__titulo">Sobre mi</h1>
         <section className="aboutContainer">
           <article className="aboutContainer__imagenContenedor" id="about">
-            <img src="https://i.ibb.co/hfPWj9H/Pic-2.png" />
+            <img src={images.img6} />
           </article>
           <article
             className="aboutContainer__textoContenedor"
@@ -46,7 +47,7 @@ export const SobreMi = ({ footerColor }) => {
             className="aboutContainer__imagenContenedor container2"
             id="about"
           >
-            <img src="https://i.ibb.co/RSNkd9q/Pic-1.png" />
+            <img src={images.img7} />
           </article>
           <article
             className="aboutContainer__textoContenedor"
@@ -68,7 +69,7 @@ export const SobreMi = ({ footerColor }) => {
             className="aboutContainer__imagenContenedor container3"
             id="about"
           >
-            <img src="https://i.ibb.co/hV8qqrV/Pic.png" />
+            <img src={images.img5} />
           </article>
           <article
             className="aboutContainer__textoContenedor"
