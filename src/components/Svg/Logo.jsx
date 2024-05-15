@@ -6,6 +6,8 @@ export const LogoIcon = ({alt}) => {
   return (
     <>
       <svg
+        width="175"
+        height="50"
         viewBox="0 0 175 81"
         fill="none"
         alt={alt}
