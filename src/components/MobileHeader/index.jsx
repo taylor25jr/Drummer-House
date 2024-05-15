@@ -22,6 +22,7 @@ export default function MobileNavbar() {
         color="neutral"
         onClick={() => setOpen(true)}
         aria-label="burgerButton"
+        style={{ backgroundColor: "#F3EAE8 " }}
       >
         <Menu />
       </IconButton>

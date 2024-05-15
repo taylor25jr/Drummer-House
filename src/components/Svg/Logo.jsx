@@ -13,6 +13,7 @@ export const LogoIcon = ({alt}) => {
         alt={alt}
         xmlns="http://www.w3.org/2000/svg"
         className="logo-header"
+        style={{ width: "175px", height:"50" }}
       >
         <g clipPath="url(#clip0_242_65)">
           <path

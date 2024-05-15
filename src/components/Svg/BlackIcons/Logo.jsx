@@ -9,7 +9,7 @@ export const LogoBlackIcon = () => {
         viewBox="0 0 120 54"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        style={{ width: "175px" }}
+        style={{ width: "175px", height:"50" }}
       >
         <g clipPath="url(#clip0_335_169)">
           <path
