@@ -273,8 +273,10 @@
     .servicios__info__titulo {
         color: rgb(255, 255, 255);
         font-weight: bolder;
-        font-size: 30px;
+        font-size: 40px;
         text-transform: uppercase;
+        margin-top: 20px;
+        font-family: Poppins;
     }
 
     .servicios__cards {

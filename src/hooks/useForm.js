@@ -28,7 +28,7 @@ export const useForm = (initialForm, validations) => {
     if (Object.keys(errors).length === 0) {
       setLoading(true);
       helpHttp()
-        .post("https://formsubmit.co/ajax/jsebastianrincon@mail.uniatlantico.edu.co", {
+        .post("https://formsubmit.co/ajax/rinconjohan82@gmail.com", {
           body: form,
           headers: {
             "Content-Type": "application/json",

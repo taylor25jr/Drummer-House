@@ -12,6 +12,24 @@
     --white: #FFFFFF;
 }
 
+
+.css-1r2bn3-JoySvgIcon-root {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-top: 20px !important;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentColor;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    font-size: var(--Icon-fontSize, var(--joy-fontSize-xl2, 1.5rem));
+    color:white !important;
+}
+
 .mobile-item {
     line-height: 3 !important;
 }
@@ -32,14 +50,6 @@
     color: var(--white) !important;
 }
 
-.css-1r2bn3-JoySvgIcon-root {
-    color: var(--white) !important;
-    margin: 20px !important;
-}
-
-.css-1r2bn3-JoySvgIcon-root{
-color: white !important;
-}
 
 #logoModal {
     margin-bottom: 50px;
